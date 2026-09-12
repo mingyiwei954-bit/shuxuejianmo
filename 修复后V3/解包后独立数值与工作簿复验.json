@@ -1,0 +1,1781 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-09-12T23:27:32.513220+08:00",
+  "checks": [
+    {
+      "check": "q1_dispatch.count",
+      "status": "PASS",
+      "actual": 144
+    },
+    {
+      "check": "q1_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 1.1368683772161603e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q1_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q1_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 2.3874235921539366e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q1_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.0,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 715.6530333333334
+      }
+    },
+    {
+      "check": "q1_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 1.1368683772161603e-13
+    },
+    {
+      "check": "q1_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.7053025658242404e-13
+    },
+    {
+      "check": "q1_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q1_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q2_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q2_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q2_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q2_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.547473508864641e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q2_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.0,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333334
+      }
+    },
+    {
+      "check": "q2_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.3447910280083306e-13
+    },
+    {
+      "check": "q2_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.1368683772161603e-12
+    },
+    {
+      "check": "q2_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q2_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q2_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q2_mean_forecast_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q2_mean_forecast_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q2_mean_forecast_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q2_mean_forecast_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.547473508864641e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q2_mean_forecast_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.0,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333334
+      }
+    },
+    {
+      "check": "q2_mean_forecast_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.5579538487363607e-13
+    },
+    {
+      "check": "q2_mean_forecast_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.3642420526593924e-12
+    },
+    {
+      "check": "q2_mean_forecast_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q2_mean_forecast_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q2_mean_forecast_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q2_no_storage_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q2_no_storage_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q2_no_storage_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q2_no_storage_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 0.0,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q2_no_storage_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 6000.0,
+        "max_soc": 6000.0,
+        "max_charge": 0.0,
+        "max_discharge": 0.0
+      }
+    },
+    {
+      "check": "q2_no_storage_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.2737367544323206e-13
+    },
+    {
+      "check": "q2_no_storage_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.1368683772161603e-12
+    },
+    {
+      "check": "q2_no_storage_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q2_no_storage_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q2_no_storage_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q3_S0_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q3_S0_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q3_S0_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3_S0_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.661160346586257e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q3_S0_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.0,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333334
+      }
+    },
+    {
+      "check": "q3_S0_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.3447910280083306e-13
+    },
+    {
+      "check": "q3_S0_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.1368683772161603e-12
+    },
+    {
+      "check": "q3_S0_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q3_S0_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q3_S0_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q3_S1_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q3_S1_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q3_S1_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3_S1_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.547473508864641e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q3_S1_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.000000000002,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333335
+      }
+    },
+    {
+      "check": "q3_S1_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 3.410605131648481e-13
+    },
+    {
+      "check": "q3_S1_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.5916157281026244e-12
+    },
+    {
+      "check": "q3_S1_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q3_S1_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q3_S1_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q3_S2_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q3_S2_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q3_S2_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3_S2_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.547473508864641e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q3_S2_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.000000000002,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333335
+      }
+    },
+    {
+      "check": "q3_S2_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.4158453015843406e-13
+    },
+    {
+      "check": "q3_S2_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.3642420526593924e-12
+    },
+    {
+      "check": "q3_S2_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": -2.2737367544323206e-13
+    },
+    {
+      "check": "q3_S2_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q3_S2_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q3_S3_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q3_S3_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q3_S3_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3_S3_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.547473508864641e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q3_S3_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.000000000002,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333335
+      }
+    },
+    {
+      "check": "q3_S3_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.4158453015843406e-13
+    },
+    {
+      "check": "q3_S3_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.3642420526593924e-12
+    },
+    {
+      "check": "q3_S3_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": -2.2737367544323206e-13
+    },
+    {
+      "check": "q3_S3_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q3_S3_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q3_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q3_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q3_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.547473508864641e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q3_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.000000000002,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333335
+      }
+    },
+    {
+      "check": "q3_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.4158453015843406e-13
+    },
+    {
+      "check": "q3_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.3642420526593924e-12
+    },
+    {
+      "check": "q3_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": -2.2737367544323206e-13
+    },
+    {
+      "check": "q3_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q3_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q4_2_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q4_2_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q4_2_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_2_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.519051799434237e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q4_2_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.0,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333334
+      }
+    },
+    {
+      "check": "q4_2_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.3447910280083306e-13
+    },
+    {
+      "check": "q4_2_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.3642420526593924e-12
+    },
+    {
+      "check": "q4_2_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_2_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q4_2_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q4_2_mean_forecast_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q4_2_mean_forecast_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q4_2_mean_forecast_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_2_mean_forecast_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.405364961712621e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q4_2_mean_forecast_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.0,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333334
+      }
+    },
+    {
+      "check": "q4_2_mean_forecast_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.5579538487363607e-13
+    },
+    {
+      "check": "q4_2_mean_forecast_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.3642420526593924e-12
+    },
+    {
+      "check": "q4_2_mean_forecast_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_2_mean_forecast_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q4_2_mean_forecast_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q4_2_no_storage_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q4_2_no_storage_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q4_2_no_storage_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_2_no_storage_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 0.0,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q4_2_no_storage_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 6000.0,
+        "max_soc": 6000.0,
+        "max_charge": 0.0,
+        "max_discharge": 0.0
+      }
+    },
+    {
+      "check": "q4_2_no_storage_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.2737367544323206e-13
+    },
+    {
+      "check": "q4_2_no_storage_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.3642420526593924e-12
+    },
+    {
+      "check": "q4_2_no_storage_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_2_no_storage_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q4_2_no_storage_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q4_3_S0_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q4_3_S0_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q4_3_S0_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3_S0_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.661160346586257e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q4_3_S0_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.0,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333334
+      }
+    },
+    {
+      "check": "q4_3_S0_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.3447910280083306e-13
+    },
+    {
+      "check": "q4_3_S0_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.1652900866465643e-12
+    },
+    {
+      "check": "q4_3_S0_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_3_S0_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q4_3_S0_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q4_3_S1_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q4_3_S1_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q4_3_S1_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3_S1_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.547473508864641e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q4_3_S1_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1200.0,
+        "max_soc": 10800.000000000002,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333335
+      }
+    },
+    {
+      "check": "q4_3_S1_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 3.410605131648481e-13
+    },
+    {
+      "check": "q4_3_S1_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.8189894035458565e-12
+    },
+    {
+      "check": "q4_3_S1_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_3_S1_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q4_3_S1_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q4_3_S2_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q4_3_S2_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q4_3_S2_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3_S2_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.547473508864641e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q4_3_S2_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1199.9999999999995,
+        "max_soc": 10800.000000000004,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333335
+      }
+    },
+    {
+      "check": "q4_3_S2_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.3447910280083306e-13
+    },
+    {
+      "check": "q4_3_S2_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.3642420526593924e-12
+    },
+    {
+      "check": "q4_3_S2_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": -4.547473508864641e-13
+    },
+    {
+      "check": "q4_3_S2_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q4_3_S2_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q4_3_S3_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q4_3_S3_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q4_3_S3_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3_S3_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.547473508864641e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q4_3_S3_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1199.999999999999,
+        "max_soc": 10800.000000000004,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333335
+      }
+    },
+    {
+      "check": "q4_3_S3_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.3447910280083306e-13
+    },
+    {
+      "check": "q4_3_S3_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.3642420526593924e-12
+    },
+    {
+      "check": "q4_3_S3_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": -4.547473508864641e-13
+    },
+    {
+      "check": "q4_3_S3_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q4_3_S3_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q4_3_dispatch.count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q4_3_dispatch.raw_load_pv_price",
+      "status": "PASS",
+      "actual": {
+        "load": 2.2737367544323206e-13,
+        "pv": 2.2737367544323206e-13,
+        "price": 0.0
+      }
+    },
+    {
+      "check": "q4_3_dispatch.physical_interval",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3_dispatch.soc",
+      "status": "PASS",
+      "actual": {
+        "recursion": 4.547473508864641e-12,
+        "continuity": 0.0
+      }
+    },
+    {
+      "check": "q4_3_dispatch.device_constraints",
+      "status": "PASS",
+      "actual": {
+        "min_soc": 1199.999999999999,
+        "max_soc": 10800.000000000004,
+        "max_charge": 833.3333333333333,
+        "max_discharge": 833.3333333333335
+      }
+    },
+    {
+      "check": "q4_3_dispatch.realized_balance",
+      "status": "PASS",
+      "actual": 2.3447910280083306e-13
+    },
+    {
+      "check": "q4_3_dispatch.main_cost",
+      "status": "PASS",
+      "actual": 1.3642420526593924e-12
+    },
+    {
+      "check": "q4_3_dispatch.same_path_inequality",
+      "status": "PASS",
+      "actual": -4.547473508864641e-13
+    },
+    {
+      "check": "q4_3_dispatch.end_soc",
+      "status": "PASS",
+      "actual": 6000.0
+    },
+    {
+      "check": "q4_3_dispatch.January_link",
+      "status": "PASS",
+      "actual": {
+        "january_end": 6000.0,
+        "february_start": 6000.0
+      }
+    },
+    {
+      "check": "q2_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 2.4959444999694824e-07
+    },
+    {
+      "check": "q2_mean_forecast_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 8.381903171539307e-08
+    },
+    {
+      "check": "q2_no_storage_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 1.1920928955078125e-07
+    },
+    {
+      "check": "q4_2_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 5.4016709327697754e-08
+    },
+    {
+      "check": "q4_2_mean_forecast_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 8.568167686462402e-08
+    },
+    {
+      "check": "q4_2_no_storage_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 6.332993507385254e-08
+    },
+    {
+      "check": "q3_S0_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 1.6391277313232422e-07
+    },
+    {
+      "check": "q3_S1_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 1.6391277313232422e-07
+    },
+    {
+      "check": "q3_S2_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 1.6391277313232422e-07
+    },
+    {
+      "check": "q3_S3_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 1.6391277313232422e-07
+    },
+    {
+      "check": "q4_3_S0_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 1.0989606380462646e-07
+    },
+    {
+      "check": "q4_3_S1_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 9.499490261077881e-08
+    },
+    {
+      "check": "q4_3_S2_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 1.5459954738616943e-07
+    },
+    {
+      "check": "q4_3_S3_dispatch.summary_reconciliation",
+      "status": "PASS",
+      "actual": 1.4901161193847656e-07
+    },
+    {
+      "check": "q3.S0.common_plan",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q3.S0.formal_chain",
+      "status": "PASS",
+      "actual": {
+        "old_commitment_errors": 0,
+        "past_rewrites": 0,
+        "final_error": 0.0,
+        "sequential_error": 4.547473508864641e-13
+      }
+    },
+    {
+      "check": "q3.S1.common_plan",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q3.S1.formal_chain",
+      "status": "PASS",
+      "actual": {
+        "old_commitment_errors": 0,
+        "past_rewrites": 0,
+        "final_error": 0.0,
+        "sequential_error": 6.821210263296962e-13
+      }
+    },
+    {
+      "check": "q3.S2.common_plan",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q3.S2.formal_chain",
+      "status": "PASS",
+      "actual": {
+        "old_commitment_errors": 0,
+        "past_rewrites": 0,
+        "final_error": 0.0,
+        "sequential_error": 4.547473508864641e-13
+      }
+    },
+    {
+      "check": "q3.S3.common_plan",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q3.S3.formal_chain",
+      "status": "PASS",
+      "actual": {
+        "old_commitment_errors": 0,
+        "past_rewrites": 0,
+        "final_error": 0.0,
+        "sequential_error": 4.547473508864641e-13
+      }
+    },
+    {
+      "check": "q4_3.S0.common_plan",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_3.S0.formal_chain",
+      "status": "PASS",
+      "actual": {
+        "old_commitment_errors": 0,
+        "past_rewrites": 0,
+        "final_error": 0.0,
+        "sequential_error": 6.821210263296962e-13
+      }
+    },
+    {
+      "check": "q4_3.S1.common_plan",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_3.S1.formal_chain",
+      "status": "PASS",
+      "actual": {
+        "old_commitment_errors": 0,
+        "past_rewrites": 0,
+        "final_error": 0.0,
+        "sequential_error": 6.821210263296962e-13
+      }
+    },
+    {
+      "check": "q4_3.S2.common_plan",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_3.S2.formal_chain",
+      "status": "PASS",
+      "actual": {
+        "old_commitment_errors": 0,
+        "past_rewrites": 0,
+        "final_error": 0.0,
+        "sequential_error": 6.821210263296962e-13
+      }
+    },
+    {
+      "check": "q4_3.S3.common_plan",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_3.S3.formal_chain",
+      "status": "PASS",
+      "actual": {
+        "old_commitment_errors": 0,
+        "past_rewrites": 0,
+        "final_error": 0.0,
+        "sequential_error": 6.821210263296962e-13
+      }
+    },
+    {
+      "check": "q2.January_startup",
+      "status": "PASS",
+      "actual": {
+        "rows": 4464,
+        "history_before_decision": true,
+        "cost_error": 9.094947017729282e-13,
+        "cost": 2637166.812410332
+      }
+    },
+    {
+      "check": "q4_2.January_startup",
+      "status": "PASS",
+      "actual": {
+        "rows": 4464,
+        "history_before_decision": true,
+        "cost_error": 1.1368683772161603e-12,
+        "cost": 2939367.9864944685
+      }
+    },
+    {
+      "check": "q3.January_startup",
+      "status": "PASS",
+      "actual": {
+        "rows": 4464,
+        "history_before_decision": true,
+        "cost_error": 9.094947017729282e-13,
+        "cost": 2637166.812410332
+      }
+    },
+    {
+      "check": "q4_3.January_startup",
+      "status": "PASS",
+      "actual": {
+        "rows": 4464,
+        "history_before_decision": true,
+        "cost_error": 1.1368683772161603e-12,
+        "cost": 2939367.9864944685
+      }
+    },
+    {
+      "check": "observation_availability",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "Q1.independent_optimum",
+      "status": "PASS",
+      "actual": 35126.948589289634
+    },
+    {
+      "check": "result1.required_sheets",
+      "status": "PASS",
+      "actual": [
+        "充放电量",
+        "指定时段",
+        "时段映射",
+        "计划购电量"
+      ]
+    },
+    {
+      "check": "result1.计划购电量",
+      "status": "PASS",
+      "actual": 5.000000010113581e-05
+    },
+    {
+      "check": "result1.all_storage_blocks",
+      "status": "PASS",
+      "actual": 3.333333324917476e-05
+    },
+    {
+      "check": "result1.specified_physical_values",
+      "status": "PASS",
+      "actual": []
+    },
+    {
+      "check": "result2.required_sheets",
+      "status": "PASS",
+      "actual": [
+        "充放电量",
+        "指定时段",
+        "时段映射",
+        "紧急购电量",
+        "计划购电量"
+      ]
+    },
+    {
+      "check": "result2.计划购电量",
+      "status": "PASS",
+      "actual": 5.000000010113581e-05
+    },
+    {
+      "check": "result2.计划购电量.daily_totals_and_dates",
+      "status": "PASS",
+      "actual": {
+        "max_error": 5.0000002374872565e-05,
+        "dates_match": true
+      }
+    },
+    {
+      "check": "result2.all_storage_blocks",
+      "status": "PASS",
+      "actual": 5.000000055588316e-05
+    },
+    {
+      "check": "result2.emergency_intervals",
+      "status": "PASS",
+      "actual": {
+        "rows": 3460,
+        "expected": 3460,
+        "value_error": 5.000000000165983e-05
+      }
+    },
+    {
+      "check": "result2.specified_physical_values",
+      "status": "PASS",
+      "actual": []
+    },
+    {
+      "check": "result3.required_sheets",
+      "status": "PASS",
+      "actual": [
+        "充放电量",
+        "指定时段",
+        "时段映射",
+        "紧急购电量",
+        "计划购电量",
+        "调整购电量"
+      ]
+    },
+    {
+      "check": "result3.计划购电量",
+      "status": "PASS",
+      "actual": 5.000000010113581e-05
+    },
+    {
+      "check": "result3.计划购电量.daily_totals_and_dates",
+      "status": "PASS",
+      "actual": {
+        "max_error": 5.0000002374872565e-05,
+        "dates_match": true
+      }
+    },
+    {
+      "check": "result3.调整购电量",
+      "status": "PASS",
+      "actual": 5.000000010113581e-05
+    },
+    {
+      "check": "result3.调整购电量.daily_totals_and_dates",
+      "status": "PASS",
+      "actual": {
+        "max_error": 4.999623342882842e-05,
+        "dates_match": true
+      }
+    },
+    {
+      "check": "result3.all_storage_blocks",
+      "status": "PASS",
+      "actual": 5.000000055588316e-05
+    },
+    {
+      "check": "result3.emergency_intervals",
+      "status": "PASS",
+      "actual": {
+        "rows": 5041,
+        "expected": 5041,
+        "value_error": 5.000000000165983e-05
+      }
+    },
+    {
+      "check": "result3.specified_physical_values",
+      "status": "PASS",
+      "actual": []
+    },
+    {
+      "check": "result4-2.required_sheets",
+      "status": "PASS",
+      "actual": [
+        "充放电量",
+        "指定时段",
+        "时段映射",
+        "紧急购电量",
+        "计划购电量"
+      ]
+    },
+    {
+      "check": "result4-2.计划购电量",
+      "status": "PASS",
+      "actual": 5.000000010113581e-05
+    },
+    {
+      "check": "result4-2.计划购电量.daily_totals_and_dates",
+      "status": "PASS",
+      "actual": {
+        "max_error": 4.9845679313875735e-05,
+        "dates_match": true
+      }
+    },
+    {
+      "check": "result4-2.all_storage_blocks",
+      "status": "PASS",
+      "actual": 5.000000055588316e-05
+    },
+    {
+      "check": "result4-2.emergency_intervals",
+      "status": "PASS",
+      "actual": {
+        "rows": 3464,
+        "expected": 3464,
+        "value_error": 4.9999999998107114e-05
+      }
+    },
+    {
+      "check": "result4-2.specified_physical_values",
+      "status": "PASS",
+      "actual": []
+    },
+    {
+      "check": "result4-3.required_sheets",
+      "status": "PASS",
+      "actual": [
+        "充放电量",
+        "指定时段",
+        "时段映射",
+        "紧急购电量",
+        "计划购电量",
+        "调整购电量"
+      ]
+    },
+    {
+      "check": "result4-3.计划购电量",
+      "status": "PASS",
+      "actual": 5.000000010113581e-05
+    },
+    {
+      "check": "result4-3.计划购电量.daily_totals_and_dates",
+      "status": "PASS",
+      "actual": {
+        "max_error": 5.0000002374872565e-05,
+        "dates_match": true
+      }
+    },
+    {
+      "check": "result4-3.调整购电量",
+      "status": "PASS",
+      "actual": 5.000000010113581e-05
+    },
+    {
+      "check": "result4-3.调整购电量.daily_totals_and_dates",
+      "status": "PASS",
+      "actual": {
+        "max_error": 4.9759953981265426e-05,
+        "dates_match": true
+      }
+    },
+    {
+      "check": "result4-3.all_storage_blocks",
+      "status": "PASS",
+      "actual": 5.000000055588316e-05
+    },
+    {
+      "check": "result4-3.emergency_intervals",
+      "status": "PASS",
+      "actual": {
+        "rows": 5072,
+        "expected": 5072,
+        "value_error": 4.99999999945544e-05
+      }
+    },
+    {
+      "check": "result4-3.specified_physical_values",
+      "status": "PASS",
+      "actual": []
+    }
+  ],
+  "metrics": {
+    "q1_dispatch": {
+      "total_cost": 35126.948589289634,
+      "plan_cost": 35126.948589289634,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 3.6860114960290956e-13,
+      "emergency_kwh": 1.7053025658242404e-13,
+      "emergency_intervals": 0,
+      "max_emergency_kwh": 1.1368683772161603e-13
+    },
+    "q2_dispatch": {
+      "total_cost": 14794949.723302985,
+      "plan_cost": 13628630.292233499,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 1166319.4310694847,
+      "emergency_kwh": 304382.5519326809,
+      "emergency_intervals": 9273,
+      "max_emergency_kwh": 414.9727791666664
+    },
+    "q2_mean_forecast_dispatch": {
+      "total_cost": 16457210.178009618,
+      "plan_cost": 12222245.679277007,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 4234964.49873261,
+      "emergency_kwh": 1084623.2193395726,
+      "emergency_intervals": 23250,
+      "max_emergency_kwh": 482.4504031250001
+    },
+    "q2_no_storage_dispatch": {
+      "total_cost": 18581927.00349625,
+      "plan_cost": 17595538.10252946,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 986388.9009667881,
+      "emergency_kwh": 243596.76103749996,
+      "emergency_intervals": 8443,
+      "max_emergency_kwh": 321.32707083333355
+    },
+    "q3_S0_dispatch": {
+      "total_cost": 15755992.08649035,
+      "plan_cost": 13787650.619556583,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 1968341.4669337645,
+      "emergency_kwh": 480127.6922929619,
+      "emergency_intervals": 11058,
+      "max_emergency_kwh": 310.93097916666716
+    },
+    "q3_S1_dispatch": {
+      "total_cost": 15719285.748136751,
+      "plan_cost": 13787650.619556583,
+      "adjustment_cost": 2195.854702490524,
+      "emergency_cost": 1929439.2738776754,
+      "emergency_kwh": 458877.2937762432,
+      "emergency_intervals": 11295,
+      "max_emergency_kwh": 296.1190750000003
+    },
+    "q3_S2_dispatch": {
+      "total_cost": 15632278.966420833,
+      "plan_cost": 13787650.619556583,
+      "adjustment_cost": -94843.94621816197,
+      "emergency_cost": 1939472.2930824086,
+      "emergency_kwh": 461452.2837987803,
+      "emergency_intervals": 11546,
+      "max_emergency_kwh": 261.80331527777764
+    },
+    "q3_S3_dispatch": {
+      "total_cost": 15632485.47660346,
+      "plan_cost": 13787650.619556583,
+      "adjustment_cost": -94795.01856178365,
+      "emergency_cost": 1939629.8756086575,
+      "emergency_kwh": 461512.7474726136,
+      "emergency_intervals": 11550,
+      "max_emergency_kwh": 261.80331527777764
+    },
+    "q3_dispatch": {
+      "total_cost": 15632485.47660346,
+      "plan_cost": 13787650.619556583,
+      "adjustment_cost": -94795.01856178365,
+      "emergency_cost": 1939629.8756086575,
+      "emergency_kwh": 461512.7474726136,
+      "emergency_intervals": 11550,
+      "max_emergency_kwh": 261.80331527777764
+    },
+    "q4_2_dispatch": {
+      "total_cost": 15623134.832286313,
+      "plan_cost": 14398125.99221784,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 1225008.840068472,
+      "emergency_kwh": 301847.56977805536,
+      "emergency_intervals": 9224,
+      "max_emergency_kwh": 414.9727791666664
+    },
+    "q4_2_mean_forecast_dispatch": {
+      "total_cost": 17291874.897115458,
+      "plan_cost": 12916749.719462488,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 4375125.177652971,
+      "emergency_kwh": 1084623.2193395726,
+      "emergency_intervals": 23250,
+      "max_emergency_kwh": 482.450403125
+    },
+    "q4_2_no_storage_dispatch": {
+      "total_cost": 19297857.399670042,
+      "plan_cost": 18250804.512098156,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 1047052.8875718904,
+      "emergency_kwh": 244173.5421375,
+      "emergency_intervals": 8496,
+      "max_emergency_kwh": 321.32707083333355
+    },
+    "q4_3_S0_dispatch": {
+      "total_cost": 16611123.323671104,
+      "plan_cost": 14529578.194483764,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 2081545.1291873395,
+      "emergency_kwh": 491220.5871284065,
+      "emergency_intervals": 11175,
+      "max_emergency_kwh": 347.7264458333336
+    },
+    "q4_3_S1_dispatch": {
+      "total_cost": 16551767.481859904,
+      "plan_cost": 14529578.194483764,
+      "adjustment_cost": 22283.774623837322,
+      "emergency_cost": 1999905.5127523013,
+      "emergency_kwh": 458919.97174033953,
+      "emergency_intervals": 11315,
+      "max_emergency_kwh": 296.1190750000003
+    },
+    "q4_3_S2_dispatch": {
+      "total_cost": 16455768.849250369,
+      "plan_cost": 14529578.194483764,
+      "adjustment_cost": -76753.83251292045,
+      "emergency_cost": 2002944.487279524,
+      "emergency_kwh": 461095.1851385763,
+      "emergency_intervals": 11560,
+      "max_emergency_kwh": 261.80331527777764
+    },
+    "q4_3_S3_dispatch": {
+      "total_cost": 16455780.595434045,
+      "plan_cost": 14529578.194483764,
+      "adjustment_cost": -76763.205394034,
+      "emergency_cost": 2002965.6063443157,
+      "emergency_kwh": 461100.4099214854,
+      "emergency_intervals": 11559,
+      "max_emergency_kwh": 261.80331527777764
+    },
+    "q4_3_dispatch": {
+      "total_cost": 16455780.595434045,
+      "plan_cost": 14529578.194483764,
+      "adjustment_cost": -76763.205394034,
+      "emergency_cost": 2002965.6063443157,
+      "emergency_kwh": 461100.4099214854,
+      "emergency_intervals": 11559,
+      "max_emergency_kwh": 261.80331527777764
+    }
+  },
+  "formal_settlement": [
+    {
+      "mode": "q3",
+      "scenario": "S0",
+      "formal_chain_cost_yuan": 15755992.08649035,
+      "main_cost_yuan": 15755992.08649035,
+      "difference_yuan": 0.0
+    },
+    {
+      "mode": "q3",
+      "scenario": "S1",
+      "formal_chain_cost_yuan": 15719285.748136751,
+      "main_cost_yuan": 15719285.748136751,
+      "difference_yuan": 0.0
+    },
+    {
+      "mode": "q3",
+      "scenario": "S2",
+      "formal_chain_cost_yuan": 15728445.92020967,
+      "main_cost_yuan": 15632278.966420833,
+      "difference_yuan": 96166.95378883742
+    },
+    {
+      "mode": "q3",
+      "scenario": "S3",
+      "formal_chain_cost_yuan": 15728646.003742158,
+      "main_cost_yuan": 15632485.47660346,
+      "difference_yuan": 96160.52713869885
+    },
+    {
+      "mode": "q4_3",
+      "scenario": "S0",
+      "formal_chain_cost_yuan": 16611123.323671104,
+      "main_cost_yuan": 16611123.323671104,
+      "difference_yuan": 0.0
+    },
+    {
+      "mode": "q4_3",
+      "scenario": "S1",
+      "formal_chain_cost_yuan": 16551767.481859904,
+      "main_cost_yuan": 16551767.481859904,
+      "difference_yuan": 0.0
+    },
+    {
+      "mode": "q4_3",
+      "scenario": "S2",
+      "formal_chain_cost_yuan": 16554595.47006325,
+      "main_cost_yuan": 16455768.849250369,
+      "difference_yuan": 98826.62081288174
+    },
+    {
+      "mode": "q4_3",
+      "scenario": "S3",
+      "formal_chain_cost_yuan": 16554607.216246929,
+      "main_cost_yuan": 16455780.595434045,
+      "difference_yuan": 98826.6208128836
+    }
+  ]
+}

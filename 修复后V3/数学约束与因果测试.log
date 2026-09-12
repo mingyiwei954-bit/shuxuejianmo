@@ -13,6 +13,6 @@ test_partition_does_not_impose_terminal_reset (test_closed_loop.ClosedLoopTests.
 test_separate_charge_discharge_efficiencies (test_closed_loop.ClosedLoopTests.test_separate_charge_discharge_efficiencies) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 3.815s
+Ran 7 tests in 1.322s
 
 OK

@@ -7,8 +7,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3554,
-      "sha256": "d161f3bf5ef52cdfd656b15c0ea76ad83b158ae53b3cb0ddc12237113147d117"
+      "bytes": 3164,
+      "sha256": "d7c19c47cd48aee748d22d879e1d8764c0963caa32845b4f443039848c0209b3"
     },
     {
       "path": "V3结果独立复核与讨论.md",
@@ -16,9 +16,9 @@
       "sha256": "b66acbdccad0aa76d8edb2b4191f210b7c07bc7df4d2aa63ca6109155c4eeb2f"
     },
     {
-      "path": "V3闭环修复_全部结果.zip",
-      "bytes": 22199779,
-      "sha256": "73ba44925e1d9e9f02d46c482cbb74e266094ee8bc15e4f2e0e3a9f25486e5a3"
+      "path": "V3论文增强版_全部结果.zip",
+      "bytes": 19567401,
+      "sha256": "099ffb627d4b91761af31bd6827d30fcae7b0c7373ab4c890d0944ffc27170dc"
     },
     {
       "path": "modeling-result-audit/SKILL.md",
@@ -47,23 +47,23 @@
     },
     {
       "path": "修复后V3/AI工具使用详情.pdf",
-      "bytes": 157079,
-      "sha256": "1240fafdd70782e9102cabdcec404851251f00670588b4e9d2a3e0e9b20bf52f"
+      "bytes": 197205,
+      "sha256": "6bc3ac18ae7675b8a6dba811eacbf25d8406120eb8a9c0cd4341a601a1687850"
     },
     {
       "path": "修复后V3/C题论文_v3.docx",
-      "bytes": 303563,
-      "sha256": "4239cac18c63e06e69bf328999326e5d36e2a94efebec0c49e0c3a090d43deac"
+      "bytes": 545284,
+      "sha256": "3c83515864ce774eff67ede8eb64248b24e8250e5a01885aaf89a4b7bb3911d0"
     },
     {
       "path": "修复后V3/C题论文_v3.pdf",
-      "bytes": 1576124,
-      "sha256": "a6356802aaca68dcb10f0d3f006a94fc46ad7cb498c31bb173b15f9659348612"
+      "bytes": 3144201,
+      "sha256": "ecff358ac0ceba706300ff746e4c95f03bc0f60f89834923b6af238e8f160248"
     },
     {
-      "path": "修复后V3/SHA256SUMS.json",
-      "bytes": 2948,
-      "sha256": "d5dfad7a934a5c13f00dca3817c9fc2d76d8cd7d7f1926a54670cfabc42f23f8"
+      "path": "修复后V3/SHA256SUMS_v3.json",
+      "bytes": 5925,
+      "sha256": "ff5602793ceaf888ebcade0a6b849d0aeb8b9988fc696282e6c1923ddb1d3606"
     },
     {
       "path": "修复后V3/comparison_stats.csv",
@@ -77,13 +77,88 @@
     },
     {
       "path": "修复后V3/final_validation_v3.json",
-      "bytes": 3049,
-      "sha256": "620de0a74494902eace4af0267d56e4db05427a3caf7d83ace8322dd4bfc4a0d"
+      "bytes": 6419,
+      "sha256": "e93b0cbe07f952b311f33f0a915891eb0fdafcf7820f9fe741256180bb52f34f"
     },
     {
       "path": "修复后V3/official_summary.csv",
       "bytes": 1015,
       "sha256": "0c33b9874c63c508027924d682b9e510c7448f9d0ff482edda71b55c738a51f8"
+    },
+    {
+      "path": "修复后V3/research/annual_independent_checks.json",
+      "bytes": 1770,
+      "sha256": "184252b0e33d8e5aced98fc32969a0e24a9283176be780a22423daf65501ae8a"
+    },
+    {
+      "path": "修复后V3/research/annual_solver_comparison.csv",
+      "bytes": 455,
+      "sha256": "e35a449584b3504c6490e1bd41c7fb5186069d9a6e214c12ae3a11979031b219"
+    },
+    {
+      "path": "修复后V3/research/block_sensitivity.csv",
+      "bytes": 1255,
+      "sha256": "833bc8480093f51b5387fcc31c85dcb2cdcc27a19f17ee3358d8e0003aa364c6"
+    },
+    {
+      "path": "修复后V3/research/monthly_mechanisms.csv",
+      "bytes": 5580,
+      "sha256": "897d5864eddca7d026b0db89d3230f5a12056e78b777158fc6bc86831e60e371"
+    },
+    {
+      "path": "修复后V3/research/prediction_error.csv",
+      "bytes": 1622,
+      "sha256": "7970508eef89f4a61d4a633a6727cddf70cd54c88c745d964fc34ebe425d36fa"
+    },
+    {
+      "path": "修复后V3/research/protocol.json",
+      "bytes": 1390,
+      "sha256": "e0d51c553ce428b14a2376abe361efec4d2426568a28988803e5c8d5b406bb97"
+    },
+    {
+      "path": "修复后V3/research/q3_S2_ipm_daily.csv",
+      "bytes": 64430,
+      "sha256": "a649373c13e30cdb4c9dbd31d2629f8d00f792aa8eab06e5a924fa6666e72c09"
+    },
+    {
+      "path": "修复后V3/research/q3_S2_ipm_solvers.csv",
+      "bytes": 374539,
+      "sha256": "334356878173b9f7e296e6fa9769b9e622195c02b3c3e6814d80bce7b4dbb51e"
+    },
+    {
+      "path": "修复后V3/research/q3_S3_ipm_daily.csv",
+      "bytes": 64282,
+      "sha256": "8faabcc2621b5265e2038451fbb9e98b74df2a1b07a019083f04cbedf6914e4f"
+    },
+    {
+      "path": "修复后V3/research/q3_S3_ipm_solvers.csv",
+      "bytes": 499136,
+      "sha256": "71161ad2c176dbe9b5058c6ad578ab8f396fca7909f7625b72e17871d618053d"
+    },
+    {
+      "path": "修复后V3/research/q4_3_S2_ipm_daily.csv",
+      "bytes": 63153,
+      "sha256": "e3b8fc7519be149cfa9141d45543be0d4dd1536a20263c47ce99dd8ea2d6b6b3"
+    },
+    {
+      "path": "修复后V3/research/q4_3_S2_ipm_solvers.csv",
+      "bytes": 376476,
+      "sha256": "17a2f40dd9427624ea74337f7bf1eae616e84f349c0c50c41e4e6d4e470347c4"
+    },
+    {
+      "path": "修复后V3/research/q4_3_S3_ipm_daily.csv",
+      "bytes": 63226,
+      "sha256": "b5947824ddaf6c7a581445fdc1905d39923e2d929a77ea986c80bed7e7a5eaa0"
+    },
+    {
+      "path": "修复后V3/research/q4_3_S3_ipm_solvers.csv",
+      "bytes": 501882,
+      "sha256": "723e4f898a4581031f6a18aa755f8b7dfcd9af39204ad478df844e0b6111ed3c"
+    },
+    {
+      "path": "修复后V3/research/tail_risk.csv",
+      "bytes": 518,
+      "sha256": "7b7366433e5a72d534940c63ec999a2122c1e3127731ead1b9732c258f991951"
     },
     {
       "path": "修复后V3/settlement_sensitivity.csv",
@@ -117,28 +192,43 @@
     },
     {
       "path": "修复后V3/支撑材料.zip",
-      "bytes": 18479747,
-      "sha256": "5f42804119b58540be0ec5c8fbc7c1c9d97b73fb2d7acbe7a85bcf0f5440a8c0"
+      "bytes": 14417692,
+      "sha256": "4ce9d69b623e01b860a31798182c6a4ba3ae4f7f626a34358f6acd8c19a82ce7"
     },
     {
       "path": "修复后V3/数学约束与因果测试.log",
       "bytes": 1628,
-      "sha256": "486ccc8d633391787f6f1bd6791582908a1392317ed381346779cb0fbbd9a860"
+      "sha256": "07576b47c25e5c3bd6684d21e2a55c675d8c80baffa5200072e3f588a475573d"
     },
     {
       "path": "修复后V3/最终交付复验.json",
-      "bytes": 637,
-      "sha256": "9d0f8865d377041d63ab1ee103ee65af6a1f2949d5b21b9f3137b688647b88d7"
+      "bytes": 614,
+      "sha256": "58c46d0e038e980115aa18f539ed7181aa6f107355d8075515bc40faffd7c24a"
     },
     {
-      "path": "修复后V3/独立数值与工作簿复验.json",
+      "path": "修复后V3/本轮研究与交付修订报告.md",
+      "bytes": 2946,
+      "sha256": "908280666846dcb9394921d330766c07eea5055e39d10a7e37bf58eeaab4fbf2"
+    },
+    {
+      "path": "修复后V3/解包后独立数值与工作簿复验.json",
       "bytes": 43349,
-      "sha256": "5dac16989f595948d3b3e8b912eb63804b3a22808cf06173650f95c493b9a501"
+      "sha256": "a22a3a4dd41783f8e53cc4b23b57b1ca92d5e10059f52f3381baf4b264be77de"
     },
     {
-      "path": "修复后V3/闭环修复与独立复验报告.md",
-      "bytes": 10615,
-      "sha256": "652aed9941a599b75798946d5a7f114ce4fe15d6d320cfc1125ee260d4f4d5de"
+      "path": "修复后V3/解包后补充实验复验.json",
+      "bytes": 1770,
+      "sha256": "184252b0e33d8e5aced98fc32969a0e24a9283176be780a22423daf65501ae8a"
+    },
+    {
+      "path": "修复后V3/论文逐页检查.json",
+      "bytes": 1036,
+      "sha256": "345c7ed0e14395bac18a514a53e991715c6c2202713acb7cf95677785731fce8"
+    },
+    {
+      "path": "修复后V3/阅读与提交说明.md",
+      "bytes": 2515,
+      "sha256": "d0710098b7d79d4d4325aa5086c0f183fbeca3cd36922cfb4e63c6192d7c29b5"
     },
     {
       "path": "历史复核/V3当前版本独立复核与讨论_本轮修复前.md",

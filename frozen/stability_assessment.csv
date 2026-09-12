@@ -1,5 +1,0 @@
-﻿mode,settlement,comparison,replicates,difference_min_yuan,difference_max_yuan,rounded_cent_values,direction_values,conclusion
-q3,final_relative_to_00_plan,S3_minus_S2,9,-961.7720701061189,1255.821461495012,-961.77|-116.79|-116.73|-29.9|1255.82,-1|1,numerically_indistinguishable
-q3,sequential_sensitivity,S3_minus_S2,9,4309.607362234965,7030.619408378378,4309.61|5149.17|5661.1|5674.09|7030.62,1,numerically_indistinguishable
-q4_3,final_relative_to_00_plan,S3_minus_S2,9,-1203.8500480689108,861.7238090634346,-1203.85|-665.4|199.9|308.45|861.72,-1|1,numerically_indistinguishable
-q4_3,sequential_sensitivity,S3_minus_S2,9,4167.946740068495,6652.0425738580525,4167.95|4708.48|6057.15|6065.0|6652.04,1,numerically_indistinguishable

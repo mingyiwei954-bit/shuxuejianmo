@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-09-12T22:40:58.700910+08:00",
+  "scope": "current_run_numeric_document_and_export_checks",
+  "checks": [
+    {
+      "check": "independent_model_and_workbooks",
+      "status": "PASS",
+      "actual": "PASS"
+    },
+    {
+      "check": "no_unresolved_placeholders",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "A4_pages",
+      "status": "PASS",
+      "actual": 28
+    },
+    {
+      "check": "PDF_under_20MB",
+      "status": "PASS",
+      "actual": 1576124
+    },
+    {
+      "check": "all_17_specified_date_groups",
+      "status": "PASS",
+      "actual": {
+        "groups": 17,
+        "missing": []
+      }
+    },
+    {
+      "check": "paper_numbers_independently_reconciled",
+      "status": "PASS",
+      "actual": []
+    },
+    {
+      "check": "all_table_numeric_strings_survive_PDF",
+      "status": "PASS",
+      "actual": []
+    },
+    {
+      "check": "PDF_corrected_physical_value_480.4125",
+      "status": "PASS",
+      "actual": "480.4125"
+    },
+    {
+      "check": "five_workbooks",
+      "status": "PASS",
+      "actual": 5
+    },
+    {
+      "check": "AI_details_nonempty",
+      "status": "PASS",
+      "actual": 1
+    },
+    {
+      "check": "charts_present",
+      "status": "PASS",
+      "actual": 4
+    }
+  ],
+  "metrics": {
+    "pdf_pages": 28,
+    "docx_tables": 94,
+    "specified_date_groups": 17
+  },
+  "limitations": [
+    "Historical scenarios do not guarantee unseen tail-risk coverage.",
+    "Refund and delivery-time pricing are declared interpretations, not additional official rules.",
+    "Solver diagnostics cover 32 exact LP instances, not full-year alternative-solver policy rollouts.",
+    "Team submission approval and authorship signoff are not asserted."
+  ],
+  "artifact_hashes": [
+    {
+      "path": "paper/C题论文.docx",
+      "sha256": "4239cac18c63e06e69bf328999326e5d36e2a94efebec0c49e0c3a090d43deac"
+    },
+    {
+      "path": "paper/AI工具使用详情.docx",
+      "sha256": "748674217d3d957eb5240606ceb81f3c51cb2a164e15851249c803fcfee2cb76"
+    },
+    {
+      "path": "paper/C题论文.pdf",
+      "sha256": "a6356802aaca68dcb10f0d3f006a94fc46ad7cb498c31bb173b15f9659348612"
+    },
+    {
+      "path": "paper/AI工具使用详情.pdf",
+      "sha256": "1240fafdd70782e9102cabdcec404851251f00670588b4e9d2a3e0e9b20bf52f"
+    },
+    {
+      "path": "workbooks/result4-2.xlsx",
+      "sha256": "210c5065ef83c8ac61d3778f47f6a6dbfec4929f21bead781c5315557a2578d8"
+    },
+    {
+      "path": "workbooks/result4-3.xlsx",
+      "sha256": "cb790c50fa5c2d2e5f5f31755479f86c3e4a24f0e1a1668c634eefd17b237f98"
+    },
+    {
+      "path": "workbooks/result2.xlsx",
+      "sha256": "2db29466a1874d6137c0607e6763cfcaabb60bf265049014a60dd0d3dc807262"
+    },
+    {
+      "path": "workbooks/result3.xlsx",
+      "sha256": "be6be4a3c026978e137bb83f25936e043b2540d05edacf2526c88510acbd0093"
+    },
+    {
+      "path": "workbooks/result1.xlsx",
+      "sha256": "540a296e27824b74b617ed3cca2606b19ad1c2220790e5227c3022b4d7e177b6"
+    }
+  ]
+}

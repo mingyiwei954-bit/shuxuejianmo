@@ -1,5 +1,0 @@
-{"stage": "ablation", "mode": "q3", "arm": "raw_baseline", "cost": 18574252.51807162}
-{"stage": "ablation", "mode": "q3", "arm": "crossday_only", "cost": 18576083.559095338}
-{"stage": "ablation", "mode": "q3", "arm": "bias_only", "cost": 17444035.340744313}
-{"stage": "ablation", "mode": "q3", "arm": "bias_crossday", "cost": 17453613.677441433}
-{"stage": "ablation", "mode": "q3", "arm": "scenario_crossday", "cost": 16799379.992603816}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "verified_at": "2026-09-12T22:43:16.655083+08:00",
+  "zip_bytes": 18479747,
+  "zip_sha256": "5f42804119b58540be0ec5c8fbc7c1c9d97b73fb2d7acbe7a85bcf0f5440a8c0",
+  "zip_internal_hash_entries": 70,
+  "extracted_independent_checks": 237,
+  "extracted_audit_status": "PASS",
+  "lossless_roundtrip": {
+    "status": "PASS",
+    "generated_at": "2026-09-12T22:39:38.946851+08:00",
+    "csv_files": 52,
+    "bad": [],
+    "original_csv_bytes": 471627654,
+    "solid_archive_bytes": 15533416,
+    "method": "lossless column deduplication; all restored CSV bytes compared to current run"
+  },
+  "root_paper_matches": true
+}

@@ -1,0 +1,5 @@
+﻿mode,main_cost,same_chain_sequential_cost,no_refund_same_path_cost,note
+q2,14794949.723302983,14794949.723302983,14794949.723302983,same actions; no reoptimization; delivery-time prices
+q3,15632485.47660346,15728646.003742158,16097957.533045324,same actions; no reoptimization; delivery-time prices
+q4_2,15623134.832286313,15623134.832286313,15623134.832286313,same actions; no reoptimization; delivery-time prices
+q4_3,16455780.595434045,16554607.216246929,16936032.60724278,same actions; no reoptimization; delivery-time prices

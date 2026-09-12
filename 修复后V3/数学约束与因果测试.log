@@ -1,0 +1,18 @@
+/Users/frihed/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/xml/etree/ElementTree.py:1284: ResourceWarning: unclosed file <_io.BufferedReader name='/Users/frihed/Desktop/CUMCM2026Problems/C题/附件/附件2.xlsx'>
+  self._parser.feed(data)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/frihed/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/xml/etree/ElementTree.py:1284: ResourceWarning: unclosed file <_io.BufferedReader name='/Users/frihed/Desktop/CUMCM2026Problems/C题/附件/附件4.xlsx'>
+  self._parser.feed(data)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_charge_limit_and_year_end (test_closed_loop.ClosedLoopTests.test_charge_limit_and_year_end) ... ok
+test_future_observations_cannot_change_decision (test_closed_loop.ClosedLoopTests.test_future_observations_cannot_change_decision) ... ok
+test_later_forecasts_not_visible (test_closed_loop.ClosedLoopTests.test_later_forecasts_not_visible) ... ok
+test_no_future_cold_start (test_closed_loop.ClosedLoopTests.test_no_future_cold_start) ... ok
+test_nonanticipativity_and_formal_ledger (test_closed_loop.ClosedLoopTests.test_nonanticipativity_and_formal_ledger) ... ok
+test_partition_does_not_impose_terminal_reset (test_closed_loop.ClosedLoopTests.test_partition_does_not_impose_terminal_reset) ... ok
+test_separate_charge_discharge_efficiencies (test_closed_loop.ClosedLoopTests.test_separate_charge_discharge_efficiencies) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.815s
+
+OK

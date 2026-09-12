@@ -1,0 +1,169 @@
+{
+  "files": [
+    {
+      "path": "C题反AI机制与建模陷阱核查.md",
+      "bytes": 17851,
+      "sha256": "bfd00aa48aa885d6a0905b05431799420f5b055aa74a22fd1e0d5a64f50e4a74"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3554,
+      "sha256": "d161f3bf5ef52cdfd656b15c0ea76ad83b158ae53b3cb0ddc12237113147d117"
+    },
+    {
+      "path": "V3结果独立复核与讨论.md",
+      "bytes": 10865,
+      "sha256": "b66acbdccad0aa76d8edb2b4191f210b7c07bc7df4d2aa63ca6109155c4eeb2f"
+    },
+    {
+      "path": "V3闭环修复_全部结果.zip",
+      "bytes": 22199779,
+      "sha256": "73ba44925e1d9e9f02d46c482cbb74e266094ee8bc15e4f2e0e3a9f25486e5a3"
+    },
+    {
+      "path": "modeling-result-audit/SKILL.md",
+      "bytes": 6157,
+      "sha256": "b5b1c1adbc5bcde976a5e6e1a35cfb2567dfb65b0a5e600e4563c928548c4369"
+    },
+    {
+      "path": "modeling-result-audit/agents/openai.yaml",
+      "bytes": 348,
+      "sha256": "1027aa6714f5a5ab2b3ecf7408e8f16326474ef273755c35e7cc2c81c6966d81"
+    },
+    {
+      "path": "modeling-result-audit/references/C题反AI机制与建模陷阱核查.md",
+      "bytes": 17851,
+      "sha256": "bfd00aa48aa885d6a0905b05431799420f5b055aa74a22fd1e0d5a64f50e4a74"
+    },
+    {
+      "path": "modeling-result-audit/references/V3结果独立复核与讨论.md",
+      "bytes": 10050,
+      "sha256": "ca6e98293d146388fe111321112c04ed9f3cf4ab4784cfe28378f0691446e321"
+    },
+    {
+      "path": "modeling-result-audit/references/c2026-evidence-chain.md",
+      "bytes": 4594,
+      "sha256": "50baed189c92ee45e922590cb995fc583a6674df6aeed5b6b04dc197440f2b20"
+    },
+    {
+      "path": "修复后V3/AI工具使用详情.pdf",
+      "bytes": 157079,
+      "sha256": "1240fafdd70782e9102cabdcec404851251f00670588b4e9d2a3e0e9b20bf52f"
+    },
+    {
+      "path": "修复后V3/C题论文_v3.docx",
+      "bytes": 303563,
+      "sha256": "4239cac18c63e06e69bf328999326e5d36e2a94efebec0c49e0c3a090d43deac"
+    },
+    {
+      "path": "修复后V3/C题论文_v3.pdf",
+      "bytes": 1576124,
+      "sha256": "a6356802aaca68dcb10f0d3f006a94fc46ad7cb498c31bb173b15f9659348612"
+    },
+    {
+      "path": "修复后V3/SHA256SUMS.json",
+      "bytes": 2948,
+      "sha256": "d5dfad7a934a5c13f00dca3817c9fc2d76d8cd7d7f1926a54670cfabc42f23f8"
+    },
+    {
+      "path": "修复后V3/comparison_stats.csv",
+      "bytes": 613,
+      "sha256": "d34700a9a4f18d1843e1064bfbd6a4750fb3ad5b934b52262755e31462e46631"
+    },
+    {
+      "path": "修复后V3/experiment_summary.csv",
+      "bytes": 2883,
+      "sha256": "2d17185148f6ca315ce65519f027939417b5999524c8d4227a1fa48b7e925d5b"
+    },
+    {
+      "path": "修复后V3/final_validation_v3.json",
+      "bytes": 3049,
+      "sha256": "620de0a74494902eace4af0267d56e4db05427a3caf7d83ace8322dd4bfc4a0d"
+    },
+    {
+      "path": "修复后V3/official_summary.csv",
+      "bytes": 1015,
+      "sha256": "0c33b9874c63c508027924d682b9e510c7448f9d0ff482edda71b55c738a51f8"
+    },
+    {
+      "path": "修复后V3/settlement_sensitivity.csv",
+      "bytes": 538,
+      "sha256": "91f87ce4368a2b45fffc7f83d657ee5dfe10d7f97b3ab722c4fb0ac5600a2d8c"
+    },
+    {
+      "path": "修复后V3/workbooks/result1.xlsx",
+      "bytes": 12517,
+      "sha256": "540a296e27824b74b617ed3cca2606b19ad1c2220790e5227c3022b4d7e177b6"
+    },
+    {
+      "path": "修复后V3/workbooks/result2.xlsx",
+      "bytes": 458697,
+      "sha256": "2db29466a1874d6137c0607e6763cfcaabb60bf265049014a60dd0d3dc807262"
+    },
+    {
+      "path": "修复后V3/workbooks/result3.xlsx",
+      "bytes": 811098,
+      "sha256": "be6be4a3c026978e137bb83f25936e043b2540d05edacf2526c88510acbd0093"
+    },
+    {
+      "path": "修复后V3/workbooks/result4-2.xlsx",
+      "bytes": 461760,
+      "sha256": "210c5065ef83c8ac61d3778f47f6a6dbfec4929f21bead781c5315557a2578d8"
+    },
+    {
+      "path": "修复后V3/workbooks/result4-3.xlsx",
+      "bytes": 814747,
+      "sha256": "cb790c50fa5c2d2e5f5f31755479f86c3e4a24f0e1a1668c634eefd17b237f98"
+    },
+    {
+      "path": "修复后V3/支撑材料.zip",
+      "bytes": 18479747,
+      "sha256": "5f42804119b58540be0ec5c8fbc7c1c9d97b73fb2d7acbe7a85bcf0f5440a8c0"
+    },
+    {
+      "path": "修复后V3/数学约束与因果测试.log",
+      "bytes": 1628,
+      "sha256": "486ccc8d633391787f6f1bd6791582908a1392317ed381346779cb0fbbd9a860"
+    },
+    {
+      "path": "修复后V3/最终交付复验.json",
+      "bytes": 637,
+      "sha256": "9d0f8865d377041d63ab1ee103ee65af6a1f2949d5b21b9f3137b688647b88d7"
+    },
+    {
+      "path": "修复后V3/独立数值与工作簿复验.json",
+      "bytes": 43349,
+      "sha256": "5dac16989f595948d3b3e8b912eb63804b3a22808cf06173650f95c493b9a501"
+    },
+    {
+      "path": "修复后V3/闭环修复与独立复验报告.md",
+      "bytes": 10615,
+      "sha256": "652aed9941a599b75798946d5a7f114ce4fe15d6d320cfc1125ee260d4f4d5de"
+    },
+    {
+      "path": "历史复核/V3当前版本独立复核与讨论_本轮修复前.md",
+      "bytes": 26600,
+      "sha256": "98255735bc6486bfed11ba192e58ea60e39f49f6367906649886cb56a7fc26a6"
+    },
+    {
+      "path": "历史复核/V3结果独立复核与讨论_修复前历史报告.md",
+      "bytes": 10050,
+      "sha256": "ca6e98293d146388fe111321112c04ed9f3cf4ab4784cfe28378f0691446e321"
+    },
+    {
+      "path": "历史复核/本轮修复前独立复核证据与脚本.zip",
+      "bytes": 63771,
+      "sha256": "a61928c1139b7f78f644ff2055929b45b2691fabd6b2c084e6aad86847d2a04b"
+    },
+    {
+      "path": "建模结果独立复核技能包.zip",
+      "bytes": 38571,
+      "sha256": "2b92b502d1a76fbfd81c9fdc5467fd011a9dd40866126b7474bdd8f96fd42547"
+    },
+    {
+      "path": "给其他AI的独立复核提示词.md",
+      "bytes": 3746,
+      "sha256": "487d677ea36c63f4fa898b55007e66bd37642d0fc343785dfb090f5bc95c5be3"
+    }
+  ]
+}

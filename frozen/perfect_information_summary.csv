@@ -1,3 +1,0 @@
-﻿mode,information,days,initial_soc_kwh,terminal_soc_kwh,purchase_cost_yuan,grid_kwh,solver_seconds,max_balance_residual_kwh,max_soc_residual_kwh
-q2,perfect_information_lower_bound,334,6000.0,6000.0,12230383.64620781,20189815.79785095,8.311557958999401,3.410605131648481e-13,1.0231815394945443e-12
-q4_2,perfect_information_lower_bound,334,6000.0,6000.0,12783021.738684963,20237609.39573697,8.17174737499954,3.410605131648481e-13,1.0231815394945443e-12

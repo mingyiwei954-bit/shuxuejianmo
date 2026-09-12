@@ -1,0 +1,392 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "q1.row_count",
+      "status": "PASS",
+      "actual": 144
+    },
+    {
+      "check": "q1.daily_144_unique",
+      "status": "PASS",
+      "actual": 1
+    },
+    {
+      "check": "q1.soc_recursion",
+      "status": "PASS",
+      "actual": 8.313350008393172e-13
+    },
+    {
+      "check": "q1.actual_balance",
+      "status": "PASS",
+      "actual": 2.2737367544323206e-13
+    },
+    {
+      "check": "q1.cost_reconcile",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q1.soc_continuity",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q1.no_simultaneous_charge_discharge",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q1.soc_bounds",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q1.curtail_within_forecast_pv",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q1.endpoints",
+      "status": "PASS",
+      "actual": [
+        "6000.0",
+        "6000.0"
+      ]
+    },
+    {
+      "check": "q2.row_count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q2.daily_144_unique",
+      "status": "PASS",
+      "actual": 334
+    },
+    {
+      "check": "q2.soc_recursion",
+      "status": "PASS",
+      "actual": 1.0231815394945443e-12
+    },
+    {
+      "check": "q2.actual_balance",
+      "status": "PASS",
+      "actual": 2.2737367544323206e-13
+    },
+    {
+      "check": "q2.cost_reconcile",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q2.soc_continuity",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q2.no_simultaneous_charge_discharge",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q2.soc_bounds",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q2.curtail_within_forecast_pv",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q2.endpoints",
+      "status": "PASS",
+      "actual": [
+        "6000.0",
+        "6000.0"
+      ]
+    },
+    {
+      "check": "q3.row_count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q3.daily_144_unique",
+      "status": "PASS",
+      "actual": 334
+    },
+    {
+      "check": "q3.soc_recursion",
+      "status": "PASS",
+      "actual": 9.094947017729282e-13
+    },
+    {
+      "check": "q3.actual_balance",
+      "status": "PASS",
+      "actual": 2.2737367544323206e-13
+    },
+    {
+      "check": "q3.cost_reconcile",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q3.soc_continuity",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q3.no_simultaneous_charge_discharge",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3.soc_bounds",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3.curtail_within_forecast_pv",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3.endpoints",
+      "status": "PASS",
+      "actual": [
+        "6000.0",
+        "6000.0"
+      ]
+    },
+    {
+      "check": "q3.settlement_sensitivity_distinct",
+      "status": "PASS",
+      "actual": -204566.66008583928
+    },
+    {
+      "check": "q4_2.row_count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q4_2.daily_144_unique",
+      "status": "PASS",
+      "actual": 334
+    },
+    {
+      "check": "q4_2.soc_recursion",
+      "status": "PASS",
+      "actual": 1.0231815394945443e-12
+    },
+    {
+      "check": "q4_2.actual_balance",
+      "status": "PASS",
+      "actual": 2.2737367544323206e-13
+    },
+    {
+      "check": "q4_2.cost_reconcile",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_2.soc_continuity",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_2.no_simultaneous_charge_discharge",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_2.soc_bounds",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_2.curtail_within_forecast_pv",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_2.endpoints",
+      "status": "PASS",
+      "actual": [
+        "6000.0",
+        "6000.0"
+      ]
+    },
+    {
+      "check": "q4_3.row_count",
+      "status": "PASS",
+      "actual": 48096
+    },
+    {
+      "check": "q4_3.daily_144_unique",
+      "status": "PASS",
+      "actual": 334
+    },
+    {
+      "check": "q4_3.soc_recursion",
+      "status": "PASS",
+      "actual": 9.094947017729282e-13
+    },
+    {
+      "check": "q4_3.actual_balance",
+      "status": "PASS",
+      "actual": 2.2737367544323206e-13
+    },
+    {
+      "check": "q4_3.cost_reconcile",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_3.soc_continuity",
+      "status": "PASS",
+      "actual": 0.0
+    },
+    {
+      "check": "q4_3.no_simultaneous_charge_discharge",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3.soc_bounds",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3.curtail_within_forecast_pv",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3.endpoints",
+      "status": "PASS",
+      "actual": [
+        "6000.0",
+        "6000.000000000002"
+      ]
+    },
+    {
+      "check": "q4_3.settlement_sensitivity_distinct",
+      "status": "PASS",
+      "actual": -201870.19140613548
+    },
+    {
+      "check": "q3.causal_history",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3.recourse_not_committed",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3.version_rows",
+      "status": "PASS",
+      "actual": 192168
+    },
+    {
+      "check": "q3.sensitivity_chain",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3.sensitivity_counts",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q3.full_next_day_preview",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3.causal_history",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3.recourse_not_committed",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3.version_rows",
+      "status": "PASS",
+      "actual": 192168
+    },
+    {
+      "check": "q4_3.sensitivity_chain",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3.sensitivity_counts",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "q4_3.full_next_day_preview",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "stability.full_factorial",
+      "status": "PASS",
+      "actual": {
+        "rows": 36,
+        "unique": 36
+      }
+    },
+    {
+      "check": "stability.annual_feasible",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "stability.two_settlements",
+      "status": "PASS",
+      "actual": {
+        "rows": 4,
+        "keys": [
+          [
+            "q3",
+            "final_relative_to_00_plan",
+            "S3_minus_S2"
+          ],
+          [
+            "q3",
+            "sequential_sensitivity",
+            "S3_minus_S2"
+          ],
+          [
+            "q4_3",
+            "final_relative_to_00_plan",
+            "S3_minus_S2"
+          ],
+          [
+            "q4_3",
+            "sequential_sensitivity",
+            "S3_minus_S2"
+          ]
+        ]
+      }
+    },
+    {
+      "check": "manifest.hashes",
+      "status": "PASS",
+      "actual": []
+    },
+    {
+      "check": "portable_metadata",
+      "status": "PASS",
+      "actual": []
+    }
+  ]
+}

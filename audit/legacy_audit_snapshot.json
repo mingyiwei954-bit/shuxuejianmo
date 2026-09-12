@@ -1,0 +1,1619 @@
+{
+  "note": "Immutable snapshot of legacy statuses; final results do not overwrite or clear these findings.",
+  "sources": [
+    {
+      "path": "<project_root>/outputs/c_audit_v1/audit_summary.json",
+      "sha256": "482d17b3b4a4cb9250717d18066f29b45fb89f6a2989522cb4dcd3bf06b426c8",
+      "status_counts": {
+        "PASS": 33,
+        "WARN": 7,
+        "NOT_VERIFIABLE": 4,
+        "FAIL": 1
+      },
+      "checks": [
+        {
+          "id": "INPUT-COMPLETE",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "attachments 1-4",
+          "evidence": "Independent workbook read",
+          "actual": {
+            "dates": 365,
+            "intervals": 144,
+            "forecast_records": 1460,
+            "nan_load": 0,
+            "nan_pv": 0,
+            "nan_price": 0
+          },
+          "expected": "365 dates x144 intervals; 4 forecasts/day; no numeric gaps",
+          "impact": "Defines audit population and prevents blanks from becoming zero.",
+          "acceptance": "All required records exist, dates/times are unique, numeric, and complete."
+        },
+        {
+          "id": "Q1-INPUT",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "144/144 intervals",
+          "evidence": "result1.xlsx 核验明细 I:K vs 附件1 B:D",
+          "actual": 5.000000010113581e-05,
+          "expected": "max abs <= 5.1e-5 after 4-decimal export",
+          "impact": "Wrong source/time mapping would invalidate all Q1 values.",
+          "acceptance": "All 144 price/load/PV rows map within display precision."
+        },
+        {
+          "id": "Q1-PHYS",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "144/144 intervals",
+          "evidence": "Independent recomputation from exported decision columns",
+          "actual": {
+            "balance": 0.0001000000001454282,
+            "soc": 0.00011999999981071596,
+            "continuity": 0.0,
+            "soc_min": 1200.0,
+            "soc_max": 10800.0,
+            "power_max": 833.3333,
+            "simultaneous": 0,
+            "negative": 0
+          },
+          "expected": "balance/SOC <=2.1e-4; bounds; no simultaneous; E0=E144=6000",
+          "impact": "Determines physical feasibility of Q1 result.",
+          "acceptance": "Every interval and both endpoints satisfy stated constraints within derived display tolerance."
+        },
+        {
+          "id": "Q1-COST",
+          "status": "PASS",
+          "severity": "high",
+          "scope": "144 costs and daily total",
+          "evidence": "result1.xlsx 核验明细 L and 汇总 B3",
+          "actual": {
+            "row_max_error": 4.9039999964861636e-05,
+            "recomputed_total": 35126.9484,
+            "summary": 35126.9484
+          },
+          "expected": "cost_t=p_t B_t; exact displayed-column total",
+          "impact": "Cost claims depend on this reconciliation.",
+          "acceptance": "All row costs and total reconcile from source price and plan."
+        },
+        {
+          "id": "result2.xlsx-COVERAGE",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "main 334 days + full 365-day initialization",
+          "evidence": "result2.xlsx 核验明细 and 核验明细-全年365天",
+          "actual": {
+            "main_rows": 48096,
+            "main_days": 334,
+            "start": "2025-02-01",
+            "end": "2025-12-31",
+            "full_rows": 52560
+          },
+          "expected": "48096 rows (334x144) and 52560 rows (365x144)",
+          "impact": "Wrong population contaminates totals and comparisons.",
+          "acceptance": "Exact dates, unique 144 intervals/day, and separated January initialization."
+        },
+        {
+          "id": "result2.xlsx-PHYS",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "all 48096 ten-minute records",
+          "evidence": "result2.xlsx 核验明细 C:O; residual fields ignored",
+          "actual": {
+            "balance_max": 0.00010000000031595846,
+            "soc_dynamic_max": 0.00014444444563821435,
+            "adjacent_soc_max": 0.0,
+            "soc_min": 1200.0,
+            "soc_max": 10800.0,
+            "step_power_max": 833.3333,
+            "simultaneous": 0,
+            "negative": 0
+          },
+          "expected": "independent balance/SOC and all bounds within display tolerance",
+          "impact": "Physical infeasibility invalidates the result.",
+          "acceptance": "Every ten-minute row passes independent equations and constraints."
+        },
+        {
+          "id": "result2.xlsx-INPUT",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "all 48096 source mappings",
+          "evidence": "result2.xlsx 核验明细 vs 附件1/2/4 by date and position",
+          "actual": {
+            "load": 5.000000010113581e-05,
+            "pv": 5.000000010113581e-05,
+            "price": 0.0
+          },
+          "expected": "max abs <=5.1e-5 after export",
+          "impact": "Detects off-by-one or wrong-date source mapping.",
+          "acceptance": "All load/PV/price records match the raw attachment at the same row position."
+        },
+        {
+          "id": "result2.xlsx-FULLSLICE",
+          "status": "PASS",
+          "severity": "high",
+          "scope": "all exported numeric detail fields",
+          "evidence": "result2.xlsx main sheet vs rows for Feb-Dec in 365-day sheet",
+          "actual": 0.0,
+          "expected": "<=5e-5",
+          "impact": "Shows whether January is only an initialization trail or a different version.",
+          "acceptance": "Main rows equal the Feb-Dec slice of the 365-day trajectory."
+        },
+        {
+          "id": "result2.xlsx-4H",
+          "status": "PASS",
+          "severity": "medium",
+          "scope": "334x6 four-hour charge/discharge totals",
+          "evidence": "result2.xlsx 充放电量 vs independent sums of 24 rows",
+          "actual": 0.0004000000008090865,
+          "expected": "<=4.1e-4 from 4-decimal aggregation",
+          "impact": "Affects required Table 2 output.",
+          "acceptance": "Every four-hour total reconciles to ten-minute detail."
+        },
+        {
+          "id": "result2.xlsx-COST",
+          "status": "PASS",
+          "severity": "high",
+          "scope": "all 48096 cost terms",
+          "evidence": "result2.xlsx detail cost column and 汇总",
+          "actual": {
+            "direct_p_times_B": 12229460.69963767,
+            "stored_cost_sum": 12229460.696700001,
+            "summary": 12229460.6967,
+            "summary_error": 1.862645149230957e-09,
+            "row_formula_max_error": 5.000000001587068e-05
+          },
+          "expected": "stored row cost rounds pB+5pQ to 4 decimals; summary sums stored rows",
+          "impact": "Verifies the stated cost for the retained offline benchmark while separating row rounding from solver precision.",
+          "acceptance": "Every row matches within 0.00005 yuan and the stored cost column sums exactly to the summary."
+        },
+        {
+          "id": "result2.xlsx-INFO",
+          "status": "WARN",
+          "severity": "critical",
+          "scope": "model information structure",
+          "evidence": "result2.xlsx uses actual future load/PV",
+          "actual": {
+            "future_actual_load": true,
+            "future_actual_pv": true,
+            "future_actual_price": false
+          },
+          "expected": "Executable day-ahead plan must use only information available at 0:00",
+          "impact": "This is a perfect-information benchmark, not an executable strategy and not automatically a theoretical lower bound for another settlement model.",
+          "acceptance": "Retain as offline comparator; add a causal forecast baseline and use identical objective/bounds/endpoints for any lower-bound claim."
+        },
+        {
+          "id": "result2.xlsx-EMERGENCY-AGG",
+          "status": "PASS",
+          "severity": "medium",
+          "scope": "all emergency interval aggregates",
+          "evidence": "result2.xlsx 紧急购电量 vs detail Q column",
+          "actual": {
+            "aggregate": 0.0,
+            "detail": 0.0,
+            "rows": 0
+          },
+          "expected": "equal within cumulative 4-decimal export bound",
+          "impact": "Affects Table 3 and emergency totals.",
+          "acceptance": "Every merged interval is reproduced from contiguous positive ten-minute Q and totals reconcile."
+        },
+        {
+          "id": "result3.xlsx-COVERAGE",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "main 334 days + full 365-day initialization",
+          "evidence": "result3.xlsx 核验明细 and 核验明细-全年365天",
+          "actual": {
+            "main_rows": 48096,
+            "main_days": 334,
+            "start": "2025-02-01",
+            "end": "2025-12-31",
+            "full_rows": 52560
+          },
+          "expected": "48096 rows (334x144) and 52560 rows (365x144)",
+          "impact": "Wrong population contaminates totals and comparisons.",
+          "acceptance": "Exact dates, unique 144 intervals/day, and separated January initialization."
+        },
+        {
+          "id": "result3.xlsx-PHYS",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "all 48096 ten-minute records",
+          "evidence": "result3.xlsx 核验明细 C:O; residual fields ignored",
+          "actual": {
+            "balance_max": 0.00020000000017716957,
+            "soc_dynamic_max": 0.00014444444559558178,
+            "adjacent_soc_max": 0.0,
+            "soc_min": 1200.0,
+            "soc_max": 10800.0,
+            "step_power_max": 833.3333,
+            "simultaneous": 0,
+            "negative": 0
+          },
+          "expected": "independent balance/SOC and all bounds within display tolerance",
+          "impact": "Physical infeasibility invalidates the result.",
+          "acceptance": "Every ten-minute row passes independent equations and constraints."
+        },
+        {
+          "id": "result3.xlsx-INPUT",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "all 48096 source mappings",
+          "evidence": "result3.xlsx 核验明细 vs 附件1/2/4 by date and position",
+          "actual": {
+            "load": 5.000000010113581e-05,
+            "pv": 5.000000010113581e-05,
+            "price": 0.0
+          },
+          "expected": "max abs <=5.1e-5 after export",
+          "impact": "Detects off-by-one or wrong-date source mapping.",
+          "acceptance": "All load/PV/price records match the raw attachment at the same row position."
+        },
+        {
+          "id": "result3.xlsx-FULLSLICE",
+          "status": "PASS",
+          "severity": "high",
+          "scope": "all exported numeric detail fields",
+          "evidence": "result3.xlsx main sheet vs rows for Feb-Dec in 365-day sheet",
+          "actual": 0.0,
+          "expected": "<=5e-5",
+          "impact": "Shows whether January is only an initialization trail or a different version.",
+          "acceptance": "Main rows equal the Feb-Dec slice of the 365-day trajectory."
+        },
+        {
+          "id": "result3.xlsx-4H",
+          "status": "PASS",
+          "severity": "medium",
+          "scope": "334x6 four-hour charge/discharge totals",
+          "evidence": "result3.xlsx 充放电量 vs independent sums of 24 rows",
+          "actual": 1.8189894035458565e-12,
+          "expected": "<=4.1e-4 from 4-decimal aggregation",
+          "impact": "Affects required Table 2 output.",
+          "acceptance": "Every four-hour total reconciles to ten-minute detail."
+        },
+        {
+          "id": "result3.xlsx-COST",
+          "status": "PASS",
+          "severity": "high",
+          "scope": "all 48096 cost terms",
+          "evidence": "result3.xlsx detail and 汇总",
+          "actual": {
+            "recomputed_final_relative": {
+              "total": 16979519.75063832,
+              "normal": 12265874.39955631,
+              "down": 153064.04451262997,
+              "up": 381665.93618222995,
+              "emergency": 4178915.37038715
+            },
+            "summary": {
+              "total": 16979519.7506,
+              "normal": 12265874.3996,
+              "down": 153064.0445,
+              "up": 381665.9362,
+              "emergency": 4178915.3704
+            },
+            "max_error": 4.36883419752121e-05,
+            "alternative_plan_plus_penalties": 17285647.83966358
+          },
+          "expected": "final-relative replacement settlement: p*min(B,A)+.5p(B-A)+ +1.5p(A-B)+ +5pQ",
+          "impact": "The workbook totals are correct only under this explicit settlement assumption.",
+          "acceptance": "Summary reconciles and the adopted settlement convention is stated in the model contract."
+        },
+        {
+          "id": "result3.xlsx-SUMMARY-ROUNDING",
+          "status": "WARN",
+          "severity": "low",
+          "scope": "three 334-day energy summaries",
+          "evidence": "result3.xlsx 汇总 note says detail-column totals agree digit-for-digit",
+          "actual": {
+            "detail_sums": {
+              "adjusted_purchase": 20258643.4821,
+              "emergency": 979343.1423000001,
+              "curtailment": 2115217.5048
+            },
+            "summary": {
+              "adjusted_purchase": 20258643.4821,
+              "emergency": 979343.1491,
+              "curtailment": 2115217.5303
+            },
+            "differences": {
+              "adjusted_purchase": 0.0,
+              "emergency": 0.006799999973736703,
+              "curtailment": 0.02549999998882413
+            }
+          },
+          "expected": "If described as digit-for-digit, differences must be zero; otherwise state that totals use a different full-precision source",
+          "impact": "Differences are immaterial and within cumulative export rounding, but the provenance note is too strong.",
+          "acceptance": "Regenerate summary from displayed detail or revise the note and retain the full-precision source file."
+        },
+        {
+          "id": "result3.xlsx-CAUSAL-LOG",
+          "status": "NOT_VERIFIABLE",
+          "severity": "critical",
+          "scope": "334 daily plans and final adjusted schedules",
+          "evidence": "result3.xlsx only stores initial plan and final adjustment; no 6:00/12:00/18:00 version log or solver source",
+          "actual": {
+            "before_06": 0,
+            "06_12": 1630,
+            "12_18": 5317,
+            "18_24": 78
+          },
+          "expected": "past decisions frozen and each update uses only then-visible forecast/input versions",
+          "impact": "Physical feasibility does not prove causal executability or sequential settlement.",
+          "acceptance": "Provide source, solve logs, and all three timestamped schedule versions with information-access traces."
+        },
+        {
+          "id": "result3.xlsx-EMERGENCY-AGG",
+          "status": "PASS",
+          "severity": "medium",
+          "scope": "all emergency interval aggregates",
+          "evidence": "result3.xlsx 紧急购电量 vs detail Q column",
+          "actual": {
+            "aggregate": 979343.146,
+            "detail": 979343.1423000001,
+            "rows": 2199
+          },
+          "expected": "equal within cumulative 4-decimal export bound",
+          "impact": "Affects Table 3 and emergency totals.",
+          "acceptance": "Every merged interval is reproduced from contiguous positive ten-minute Q and totals reconcile."
+        },
+        {
+          "id": "result4-2.xlsx-COVERAGE",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "main 334 days + full 365-day initialization",
+          "evidence": "result4-2.xlsx 核验明细 and 核验明细-全年365天",
+          "actual": {
+            "main_rows": 48096,
+            "main_days": 334,
+            "start": "2025-02-01",
+            "end": "2025-12-31",
+            "full_rows": 52560
+          },
+          "expected": "48096 rows (334x144) and 52560 rows (365x144)",
+          "impact": "Wrong population contaminates totals and comparisons.",
+          "acceptance": "Exact dates, unique 144 intervals/day, and separated January initialization."
+        },
+        {
+          "id": "result4-2.xlsx-PHYS",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "all 48096 ten-minute records",
+          "evidence": "result4-2.xlsx 核验明细 C:O; residual fields ignored",
+          "actual": {
+            "balance_max": 0.00010000000031595846,
+            "soc_dynamic_max": 0.00014444444526873212,
+            "adjacent_soc_max": 0.0,
+            "soc_min": 1200.0,
+            "soc_max": 10800.0,
+            "step_power_max": 833.3333,
+            "simultaneous": 0,
+            "negative": 0
+          },
+          "expected": "independent balance/SOC and all bounds within display tolerance",
+          "impact": "Physical infeasibility invalidates the result.",
+          "acceptance": "Every ten-minute row passes independent equations and constraints."
+        },
+        {
+          "id": "result4-2.xlsx-INPUT",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "all 48096 source mappings",
+          "evidence": "result4-2.xlsx 核验明细 vs 附件1/2/4 by date and position",
+          "actual": {
+            "load": 5.000000010113581e-05,
+            "pv": 5.000000010113581e-05,
+            "price": 0.0
+          },
+          "expected": "max abs <=5.1e-5 after export",
+          "impact": "Detects off-by-one or wrong-date source mapping.",
+          "acceptance": "All load/PV/price records match the raw attachment at the same row position."
+        },
+        {
+          "id": "result4-2.xlsx-FULLSLICE",
+          "status": "PASS",
+          "severity": "high",
+          "scope": "all exported numeric detail fields",
+          "evidence": "result4-2.xlsx main sheet vs rows for Feb-Dec in 365-day sheet",
+          "actual": 0.0,
+          "expected": "<=5e-5",
+          "impact": "Shows whether January is only an initialization trail or a different version.",
+          "acceptance": "Main rows equal the Feb-Dec slice of the 365-day trajectory."
+        },
+        {
+          "id": "result4-2.xlsx-4H",
+          "status": "PASS",
+          "severity": "medium",
+          "scope": "334x6 four-hour charge/discharge totals",
+          "evidence": "result4-2.xlsx 充放电量 vs independent sums of 24 rows",
+          "actual": 1.8189894035458565e-12,
+          "expected": "<=4.1e-4 from 4-decimal aggregation",
+          "impact": "Affects required Table 2 output.",
+          "acceptance": "Every four-hour total reconciles to ten-minute detail."
+        },
+        {
+          "id": "result4-2.xlsx-COST",
+          "status": "PASS",
+          "severity": "high",
+          "scope": "all 48096 cost terms",
+          "evidence": "result4-2.xlsx detail cost column and 汇总",
+          "actual": {
+            "direct_p_times_B": 12782591.78032631,
+            "stored_cost_sum": 12782591.7771,
+            "summary": 12782591.7771,
+            "summary_error": 0.0,
+            "row_formula_max_error": 5.000000010113581e-05
+          },
+          "expected": "stored row cost rounds pB+5pQ to 4 decimals; summary sums stored rows",
+          "impact": "Verifies the stated cost for the retained offline benchmark while separating row rounding from solver precision.",
+          "acceptance": "Every row matches within 0.00005 yuan and the stored cost column sums exactly to the summary."
+        },
+        {
+          "id": "result4-2.xlsx-INFO",
+          "status": "WARN",
+          "severity": "critical",
+          "scope": "model information structure",
+          "evidence": "result4-2.xlsx uses actual future load/PV/price",
+          "actual": {
+            "future_actual_load": true,
+            "future_actual_pv": true,
+            "future_actual_price": true
+          },
+          "expected": "Executable day-ahead plan must use only information available at 0:00",
+          "impact": "This is a perfect-information benchmark, not an executable strategy and not automatically a theoretical lower bound for another settlement model.",
+          "acceptance": "Retain as offline comparator; add a causal forecast baseline and use identical objective/bounds/endpoints for any lower-bound claim."
+        },
+        {
+          "id": "result4-2.xlsx-EMERGENCY-AGG",
+          "status": "PASS",
+          "severity": "medium",
+          "scope": "all emergency interval aggregates",
+          "evidence": "result4-2.xlsx 紧急购电量 vs detail Q column",
+          "actual": {
+            "aggregate": 0.0,
+            "detail": 0.0,
+            "rows": 0
+          },
+          "expected": "equal within cumulative 4-decimal export bound",
+          "impact": "Affects Table 3 and emergency totals.",
+          "acceptance": "Every merged interval is reproduced from contiguous positive ten-minute Q and totals reconcile."
+        },
+        {
+          "id": "result4-3.xlsx-COVERAGE",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "main 334 days + full 365-day initialization",
+          "evidence": "result4-3.xlsx 核验明细 and 核验明细-全年365天",
+          "actual": {
+            "main_rows": 48096,
+            "main_days": 334,
+            "start": "2025-02-01",
+            "end": "2025-12-31",
+            "full_rows": 52560
+          },
+          "expected": "48096 rows (334x144) and 52560 rows (365x144)",
+          "impact": "Wrong population contaminates totals and comparisons.",
+          "acceptance": "Exact dates, unique 144 intervals/day, and separated January initialization."
+        },
+        {
+          "id": "result4-3.xlsx-PHYS",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "all 48096 ten-minute records",
+          "evidence": "result4-3.xlsx 核验明细 C:O; residual fields ignored",
+          "actual": {
+            "balance_max": 0.00020000000017716957,
+            "soc_dynamic_max": 0.00014444444559558178,
+            "adjacent_soc_max": 0.0,
+            "soc_min": 1200.0,
+            "soc_max": 10800.0,
+            "step_power_max": 833.3333,
+            "simultaneous": 0,
+            "negative": 0
+          },
+          "expected": "independent balance/SOC and all bounds within display tolerance",
+          "impact": "Physical infeasibility invalidates the result.",
+          "acceptance": "Every ten-minute row passes independent equations and constraints."
+        },
+        {
+          "id": "result4-3.xlsx-INPUT",
+          "status": "PASS",
+          "severity": "critical",
+          "scope": "all 48096 source mappings",
+          "evidence": "result4-3.xlsx 核验明细 vs 附件1/2/4 by date and position",
+          "actual": {
+            "load": 5.000000010113581e-05,
+            "pv": 5.000000010113581e-05,
+            "price": 0.0
+          },
+          "expected": "max abs <=5.1e-5 after export",
+          "impact": "Detects off-by-one or wrong-date source mapping.",
+          "acceptance": "All load/PV/price records match the raw attachment at the same row position."
+        },
+        {
+          "id": "result4-3.xlsx-FULLSLICE",
+          "status": "PASS",
+          "severity": "high",
+          "scope": "all exported numeric detail fields",
+          "evidence": "result4-3.xlsx main sheet vs rows for Feb-Dec in 365-day sheet",
+          "actual": 0.0,
+          "expected": "<=5e-5",
+          "impact": "Shows whether January is only an initialization trail or a different version.",
+          "acceptance": "Main rows equal the Feb-Dec slice of the 365-day trajectory."
+        },
+        {
+          "id": "result4-3.xlsx-4H",
+          "status": "PASS",
+          "severity": "medium",
+          "scope": "334x6 four-hour charge/discharge totals",
+          "evidence": "result4-3.xlsx 充放电量 vs independent sums of 24 rows",
+          "actual": 1.8189894035458565e-12,
+          "expected": "<=4.1e-4 from 4-decimal aggregation",
+          "impact": "Affects required Table 2 output.",
+          "acceptance": "Every four-hour total reconciles to ten-minute detail."
+        },
+        {
+          "id": "result4-3.xlsx-COST",
+          "status": "PASS",
+          "severity": "high",
+          "scope": "all 48096 cost terms",
+          "evidence": "result4-3.xlsx detail and 汇总",
+          "actual": {
+            "recomputed_final_relative": {
+              "total": 17722202.601719014,
+              "normal": 12806091.05147974,
+              "down": 168171.66703900002,
+              "up": 411859.64360902505,
+              "emergency": 4336080.23959125
+            },
+            "summary": {
+              "total": 17722202.6017,
+              "normal": 12806091.0515,
+              "down": 168171.667,
+              "up": 411859.6436,
+              "emergency": 4336080.2396
+            },
+            "max_error": 3.900003503076732e-05,
+            "alternative_plan_plus_penalties": 18058545.935797013
+          },
+          "expected": "final-relative replacement settlement: p*min(B,A)+.5p(B-A)+ +1.5p(A-B)+ +5pQ",
+          "impact": "The workbook totals are correct only under this explicit settlement assumption.",
+          "acceptance": "Summary reconciles and the adopted settlement convention is stated in the model contract."
+        },
+        {
+          "id": "result4-3.xlsx-SUMMARY-ROUNDING",
+          "status": "WARN",
+          "severity": "low",
+          "scope": "three 334-day energy summaries",
+          "evidence": "result4-3.xlsx 汇总 note says detail-column totals agree digit-for-digit",
+          "actual": {
+            "detail_sums": {
+              "adjusted_purchase": 20300971.3193,
+              "emergency": 984371.3655000001,
+              "curtailment": 2101427.9162
+            },
+            "summary": {
+              "adjusted_purchase": 20300971.3193,
+              "emergency": 984371.3715,
+              "curtailment": 2101427.9404
+            },
+            "differences": {
+              "adjusted_purchase": 0.0,
+              "emergency": 0.005999999935738742,
+              "curtailment": 0.02420000033453107
+            }
+          },
+          "expected": "If described as digit-for-digit, differences must be zero; otherwise state that totals use a different full-precision source",
+          "impact": "Differences are immaterial and within cumulative export rounding, but the provenance note is too strong.",
+          "acceptance": "Regenerate summary from displayed detail or revise the note and retain the full-precision source file."
+        },
+        {
+          "id": "result4-3.xlsx-CAUSAL-LOG",
+          "status": "NOT_VERIFIABLE",
+          "severity": "critical",
+          "scope": "334 daily plans and final adjusted schedules",
+          "evidence": "result4-3.xlsx only stores initial plan and final adjustment; no 6:00/12:00/18:00 version log or solver source",
+          "actual": {
+            "before_06": 0,
+            "06_12": 1865,
+            "12_18": 5424,
+            "18_24": 96
+          },
+          "expected": "past decisions frozen and each update uses only then-visible forecast/input versions",
+          "impact": "Physical feasibility does not prove causal executability or sequential settlement.",
+          "acceptance": "Provide source, solve logs, and all three timestamped schedule versions with information-access traces."
+        },
+        {
+          "id": "result4-3.xlsx-EMERGENCY-AGG",
+          "status": "PASS",
+          "severity": "medium",
+          "scope": "all emergency interval aggregates",
+          "evidence": "result4-3.xlsx 紧急购电量 vs detail Q column",
+          "actual": {
+            "aggregate": 984371.368,
+            "detail": 984371.3655000001,
+            "rows": 2199
+          },
+          "expected": "equal within cumulative 4-decimal export bound",
+          "impact": "Affects Table 3 and emergency totals.",
+          "acceptance": "Every merged interval is reproduced from contiguous positive ten-minute Q and totals reconcile."
+        },
+        {
+          "id": "CSV-Q2-FIRST",
+          "status": "PASS",
+          "severity": "high",
+          "scope": "36 ten-minute intervals for 2025-03-20 06:00-12:00",
+          "evidence": "附件3 0:00 forecast, 附件2 actual PV, 附件1 price; output granular CSV",
+          "actual": {
+            "energy": 6059.487266666668,
+            "cost": 27352.34127482501,
+            "arithmetic_price": 0.8527666666666668,
+            "quantity_weighted_price": 0.9027939187294165,
+            "published_energy": 6059.4873,
+            "published_cost": 27352.3413,
+            "published_price": 0.8528
+          },
+          "expected": "q=max(forecast-actual,0)/6; cost=sum 5*p_t*q_t",
+          "impact": "Explains the apparent aggregate price/cost discrepancy without treating it as a rounding error.",
+          "acceptance": "Granular rows reproduce energy and cost; merged explanatory price is relabeled arithmetic mean or replaced by quantity-weighted mean."
+        },
+        {
+          "id": "PAPER-AUX-334",
+          "status": "FAIL",
+          "severity": "high",
+          "scope": "Q3_指定日期论文表.xlsx month/hour/error auxiliary sheets",
+          "evidence": "Month sheet contains January and hourly total equals the 365-day trajectory although surrounding prose says 334 days",
+          "actual": {
+            "months": {
+              "01": 78399.5813,
+              "02": 84646.6134,
+              "03": 95112.7943,
+              "04": 89113.1276,
+              "05": 86818.0238,
+              "06": 82449.1692,
+              "07": 97748.5124,
+              "08": 95921.4538,
+              "09": 91048.9847,
+              "10": 102090.2439,
+              "11": 75131.8797,
+              "12": 79262.3442
+            },
+            "monthly_total": 1057742.7283,
+            "hourly_total": 1057742.7283,
+            "feb_dec_total": 979343.147,
+            "result3_main": 979343.1423000001,
+            "result3_full": 1057742.7233
+          },
+          "expected": "All auxiliary statistics use 2025-02-01..12-31 when described as 334 days",
+          "impact": "January contaminates monthly/hourly totals and changes forecast-error MAE values.",
+          "acceptance": "Use the three generated *_334d_fixed.csv files, or relabel all original sheets as 365-day initialization trajectory."
+        },
+        {
+          "id": "PAPER-PROVENANCE",
+          "status": "WARN",
+          "severity": "high",
+          "scope": "designated-date workbook and paper conclusions",
+          "evidence": "<source_root>/Q3_指定日期论文表.xlsx",
+          "actual": {
+            "has_formulas": false,
+            "source_solver_missing": true
+          },
+          "expected": "Every displayed number traceable to one frozen result version and reproducible script",
+          "impact": "The workbook is static; result linkage and generation script are absent.",
+          "acceptance": "Regenerate from audited detail with a version hash and single source-of-truth script."
+        },
+        {
+          "id": "TIME-SEMANTICS",
+          "status": "WARN",
+          "severity": "high",
+          "scope": "all questions",
+          "evidence": "附件 timestamps 00:10..24:00; official detailed template labels 00:10-00:20..24:00-24:10; four-hour rows say 00:00-04:00 etc.",
+          "actual": {
+            "source_first": "00:10",
+            "source_last": "24:00",
+            "template_first": "0:10-0:20",
+            "template_last": "0:00+1-0:10+1"
+          },
+          "expected": "One explicit physical interval convention used consistently for SOC, 4-hour groups, forecasts, and reported clock times",
+          "impact": "Existing arrays are positionally consistent but their clock labels mix a right-endpoint physical day with start-time template labels.",
+          "acceptance": "Adopt time_mapping.csv; do not shift arrays without new official evidence; disclose template labels as labels and physical intervals separately."
+        },
+        {
+          "id": "SOLVER-PROVENANCE",
+          "status": "NOT_VERIFIABLE",
+          "severity": "critical",
+          "scope": "all legacy workbooks",
+          "evidence": "No Q1-Q4 solver source, dependency lock, raw full-precision decisions, or original logs found in supplied directory; only an old read-only Q1/Q2 QA script exists.",
+          "actual": {
+            "legacy_result_hashes": {
+              "result1.xlsx": "4100a0a00a9306276a3779f01ec95a8291782808164feafa23e7d3f6703f81b7",
+              "result2.xlsx": "56e34d699b9ebb7e0811f2c9c05ae26659d8bbe65b53fb86412704e98947fbea",
+              "result3.xlsx": "26141b5016584a666254bdf3a6bb87fa3b05743e24ee11a9dfe9778e3e8f5ec1",
+              "result4-2.xlsx": "170aa0cdd5abf7826d5c37a1be95b254d42246b9f2074b82880e40a8b06a3510",
+              "result4-3.xlsx": "2bb31ee1d4aeb17b1a5ca402b17c4542763fc02786e43b4a6dde651aad61b7e1"
+            }
+          },
+          "expected": "Original generating code and logs",
+          "impact": "Optimality, forecast access, S2/S3 tolerances, and algorithm identity cannot be authenticated.",
+          "acceptance": "Provide exact source commit, environment, parameters, raw outputs, and solver logs; otherwise cite the new independent baseline only."
+        },
+        {
+          "id": "S2-S3",
+          "status": "NOT_VERIFIABLE",
+          "severity": "high",
+          "scope": "reported 1.82/1.74 yuan differences",
+          "evidence": "Only aggregate statements/CSV supplied; no fixed-price S0-S3 data, decision trajectories, solver logs, basis status, primal/dual residuals, or tolerances.",
+          "actual": {
+            "fixed_reported": 1.82,
+            "realtime_csv_difference": 1.742921382188797
+          },
+          "expected": "Same objective/feasible set except information update; actual solver residual and repeated-solve stability evidence",
+          "impact": "Cannot call the small differences numerically established or infer lack of forecast value generally.",
+          "acceptance": "Re-run S2/S3 with logged tolerances, identical endpoints/windows, full precision, and at least one tighter-tolerance/repeated-method check."
+        },
+        {
+          "id": "ENDPOINT-COMPARABILITY",
+          "status": "WARN",
+          "severity": "high",
+          "scope": "cross-scenario 334-day comparisons",
+          "evidence": "Trajectory endpoints extracted independently",
+          "actual": [
+            {
+              "workbook": "result2.xlsx",
+              "main_start_soc": 7950.0,
+              "main_end_soc": 6000.0,
+              "full_start_soc": 6000.0,
+              "full_end_soc": 6000.0
+            },
+            {
+              "workbook": "result3.xlsx",
+              "main_start_soc": 1200.0,
+              "main_end_soc": 1200.0,
+              "full_start_soc": 6000.0,
+              "full_end_soc": 1200.0
+            },
+            {
+              "workbook": "result4-2.xlsx",
+              "main_start_soc": 7200.0,
+              "main_end_soc": 6000.0,
+              "full_start_soc": 6000.0,
+              "full_end_soc": 6000.0
+            },
+            {
+              "workbook": "result4-3.xlsx",
+              "main_start_soc": 1200.0,
+              "main_end_soc": 1200.0,
+              "full_start_soc": 6000.0,
+              "full_end_soc": 1200.0
+            }
+          ],
+          "expected": "Compared strategies use the same 2025-02-01 initial SOC and the same 2025-12-31 terminal condition, or a common-endpoint control is reported",
+          "impact": "Q2 and Q4-2 inherit different January endpoints (7950 vs 7200 kWh); their published 4.52% comparison is slightly confounded. Q3 and Q4-3 both use 1200 to 1200 over the 334-day window.",
+          "acceptance": "Use baseline_summary.json common-endpoint Q2/Q4-2 runs for the fair price comparison; disclose inherited-state comparisons separately."
+        }
+      ]
+    },
+    {
+      "path": "<project_root>/outputs/c_audit_v1/rolling_audit_summary.json",
+      "sha256": "e8e243f32268a785aabe76fe25868a5f9a1ed121d739997b11e962b0880161a6",
+      "status_counts": {
+        "PASS": 19
+      },
+      "checks": [
+        {
+          "id": "q3-S2-COVERAGE",
+          "status": "PASS",
+          "scope": "baseline_causal_q3_s2_detail.csv",
+          "actual": {
+            "rows": 48096,
+            "days": 334,
+            "rows_per_day": [
+              144
+            ]
+          },
+          "expected": "334 days x 144 intervals",
+          "impact": "Completeness of the executed trajectory"
+        },
+        {
+          "id": "q3-S2-PHYS",
+          "status": "PASS",
+          "scope": "baseline_causal_q3_s2_detail.csv",
+          "actual": {
+            "balance_max": 2.2737367544323206e-13,
+            "soc_dynamic_max": 2.2666313270747196e-12,
+            "soc_continuity_max": 0.0,
+            "daily_endpoint_max": 1.4551915228366852e-11,
+            "soc_min": 1199.999999999989,
+            "soc_max": 10800.000000000015,
+            "power_max": 833.3333333333334,
+            "simultaneous": 0
+          },
+          "expected": "exact full-precision balance/SOC, daily 6000->6000, continuity and all bounds",
+          "impact": "Physical feasibility of the independent rolling baseline"
+        },
+        {
+          "id": "q3-S2-COST",
+          "status": "PASS",
+          "scope": "baseline_causal_q3_s2_detail.csv",
+          "actual": {
+            "row_formula_max_error": 0.0,
+            "total": 18577564.700247407
+          },
+          "expected": "final-relative formula on every row",
+          "impact": "Settlement reproducibility"
+        },
+        {
+          "id": "q3-S2-SUMMARY",
+          "status": "PASS",
+          "scope": "detail vs rolling_summary.json",
+          "actual": 1.2293457984924316e-07,
+          "expected": "max absolute reconciliation <= 1e-6",
+          "impact": "Aggregate result provenance"
+        },
+        {
+          "id": "q3-S3-COVERAGE",
+          "status": "PASS",
+          "scope": "baseline_causal_q3_s3_detail.csv",
+          "actual": {
+            "rows": 48096,
+            "days": 334,
+            "rows_per_day": [
+              144
+            ]
+          },
+          "expected": "334 days x 144 intervals",
+          "impact": "Completeness of the executed trajectory"
+        },
+        {
+          "id": "q3-S3-PHYS",
+          "status": "PASS",
+          "scope": "baseline_causal_q3_s3_detail.csv",
+          "actual": {
+            "balance_max": 2.2737367544323206e-13,
+            "soc_dynamic_max": 2.2666313270747196e-12,
+            "soc_continuity_max": 0.0,
+            "daily_endpoint_max": 1.4551915228366852e-11,
+            "soc_min": 1199.999999999989,
+            "soc_max": 10800.000000000015,
+            "power_max": 833.3333333333334,
+            "simultaneous": 0
+          },
+          "expected": "exact full-precision balance/SOC, daily 6000->6000, continuity and all bounds",
+          "impact": "Physical feasibility of the independent rolling baseline"
+        },
+        {
+          "id": "q3-S3-COST",
+          "status": "PASS",
+          "scope": "baseline_causal_q3_s3_detail.csv",
+          "actual": {
+            "row_formula_max_error": 0.0,
+            "total": 18577564.807839125
+          },
+          "expected": "final-relative formula on every row",
+          "impact": "Settlement reproducibility"
+        },
+        {
+          "id": "q3-S3-SUMMARY",
+          "status": "PASS",
+          "scope": "detail vs rolling_summary.json",
+          "actual": 1.2665987014770508e-07,
+          "expected": "max absolute reconciliation <= 1e-6",
+          "impact": "Aggregate result provenance"
+        },
+        {
+          "id": "q3-VERSION-CAUSALITY",
+          "status": "PASS",
+          "scope": "baseline_causal_q3_s3_versions.csv",
+          "actual": {
+            "rows": 120240,
+            "bad_boundary": 0,
+            "future_history_references": 0,
+            "previous_commitment_mismatches": 0,
+            "decision_count_mismatches": 0
+          },
+          "expected": "334 days x (144+108+72+36); no past rewrite; history dates precede decision day; commitments chain exactly",
+          "impact": "Evidence that updates are reproducible and freeze elapsed intervals"
+        },
+        {
+          "id": "q4_3-S2-COVERAGE",
+          "status": "PASS",
+          "scope": "baseline_causal_q4_3_s2_detail.csv",
+          "actual": {
+            "rows": 48096,
+            "days": 334,
+            "rows_per_day": [
+              144
+            ]
+          },
+          "expected": "334 days x 144 intervals",
+          "impact": "Completeness of the executed trajectory"
+        },
+        {
+          "id": "q4_3-S2-PHYS",
+          "status": "PASS",
+          "scope": "baseline_causal_q4_3_s2_detail.csv",
+          "actual": {
+            "balance_max": 2.2737367544323206e-13,
+            "soc_dynamic_max": 2.2666313270747196e-12,
+            "soc_continuity_max": 0.0,
+            "daily_endpoint_max": 1.4551915228366852e-11,
+            "soc_min": 1199.999999999989,
+            "soc_max": 10800.000000000015,
+            "power_max": 833.3333333333334,
+            "simultaneous": 0
+          },
+          "expected": "exact full-precision balance/SOC, daily 6000->6000, continuity and all bounds",
+          "impact": "Physical feasibility of the independent rolling baseline"
+        },
+        {
+          "id": "q4_3-S2-COST",
+          "status": "PASS",
+          "scope": "baseline_causal_q4_3_s2_detail.csv",
+          "actual": {
+            "row_formula_max_error": 0.0,
+            "total": 19543206.36032899
+          },
+          "expected": "final-relative formula on every row",
+          "impact": "Settlement reproducibility"
+        },
+        {
+          "id": "q4_3-S2-SUMMARY",
+          "status": "PASS",
+          "scope": "detail vs rolling_summary.json",
+          "actual": 1.0803341865539551e-07,
+          "expected": "max absolute reconciliation <= 1e-6",
+          "impact": "Aggregate result provenance"
+        },
+        {
+          "id": "q4_3-S3-COVERAGE",
+          "status": "PASS",
+          "scope": "baseline_causal_q4_3_s3_detail.csv",
+          "actual": {
+            "rows": 48096,
+            "days": 334,
+            "rows_per_day": [
+              144
+            ]
+          },
+          "expected": "334 days x 144 intervals",
+          "impact": "Completeness of the executed trajectory"
+        },
+        {
+          "id": "q4_3-S3-PHYS",
+          "status": "PASS",
+          "scope": "baseline_causal_q4_3_s3_detail.csv",
+          "actual": {
+            "balance_max": 2.2737367544323206e-13,
+            "soc_dynamic_max": 2.2666313270747196e-12,
+            "soc_continuity_max": 0.0,
+            "daily_endpoint_max": 1.4551915228366852e-11,
+            "soc_min": 1199.99999999999,
+            "soc_max": 10800.000000000015,
+            "power_max": 833.3333333333334,
+            "simultaneous": 0
+          },
+          "expected": "exact full-precision balance/SOC, daily 6000->6000, continuity and all bounds",
+          "impact": "Physical feasibility of the independent rolling baseline"
+        },
+        {
+          "id": "q4_3-S3-COST",
+          "status": "PASS",
+          "scope": "baseline_causal_q4_3_s3_detail.csv",
+          "actual": {
+            "row_formula_max_error": 0.0,
+            "total": 19543206.53139454
+          },
+          "expected": "final-relative formula on every row",
+          "impact": "Settlement reproducibility"
+        },
+        {
+          "id": "q4_3-S3-SUMMARY",
+          "status": "PASS",
+          "scope": "detail vs rolling_summary.json",
+          "actual": 1.1175870895385742e-07,
+          "expected": "max absolute reconciliation <= 1e-6",
+          "impact": "Aggregate result provenance"
+        },
+        {
+          "id": "q4_3-VERSION-CAUSALITY",
+          "status": "PASS",
+          "scope": "baseline_causal_q4_3_s3_versions.csv",
+          "actual": {
+            "rows": 120240,
+            "bad_boundary": 0,
+            "future_history_references": 0,
+            "previous_commitment_mismatches": 0,
+            "decision_count_mismatches": 0
+          },
+          "expected": "334 days x (144+108+72+36); no past rewrite; history dates precede decision day; commitments chain exactly",
+          "impact": "Evidence that updates are reproducible and freeze elapsed intervals"
+        },
+        {
+          "id": "ROLLING-SOLVER",
+          "status": "PASS",
+          "scope": "all rolling LP solves",
+          "actual": {
+            "solver_run_count": 2672,
+            "max_balance_residual_kwh": 2.2737367544323206e-13,
+            "max_soc_residual_kwh": 1.0231815394945443e-12,
+            "simultaneous_charge_discharge_count": 0
+          },
+          "expected": "2672 successful LPs; residuals <=1e-8; no simultaneous charge/discharge",
+          "impact": "Numerical reliability"
+        }
+      ]
+    }
+  ],
+  "status_counts": {
+    "PASS": 52,
+    "WARN": 7,
+    "NOT_VERIFIABLE": 4,
+    "FAIL": 1
+  },
+  "nonpass_check_ids": [
+    "result2.xlsx-INFO",
+    "result3.xlsx-SUMMARY-ROUNDING",
+    "result3.xlsx-CAUSAL-LOG",
+    "result4-2.xlsx-INFO",
+    "result4-3.xlsx-SUMMARY-ROUNDING",
+    "result4-3.xlsx-CAUSAL-LOG",
+    "PAPER-AUX-334",
+    "PAPER-PROVENANCE",
+    "TIME-SEMANTICS",
+    "SOLVER-PROVENANCE",
+    "S2-S3",
+    "ENDPOINT-COMPARABILITY"
+  ],
+  "missing_sources": [],
+  "supplemental_exact_emergency_checks": [
+    {
+      "id": "FINAL-legacy-result3.xlsx-EMERGENCY-SEGMENTS",
+      "status": "FAIL",
+      "severity": "critical",
+      "scope": "legacy-result3.xlsx",
+      "actual": {
+        "threshold_kwh": 5e-05,
+        "rounding_rule": "ROUND_HALF_UP to 4 decimals",
+        "detail_source": "<project_root>/../../../../Desktop/CUMCM2026Problems/result3.xlsx",
+        "expected_segments": 2198,
+        "actual_segments": 2199,
+        "sheet_scan": {
+          "error_count": 0,
+          "samples": []
+        },
+        "missing_count": 3,
+        "missing_samples": [
+          {
+            "date": "2025-06-13",
+            "interval": "18:50-19:00",
+            "display_kwh": 0.0009
+          },
+          {
+            "date": "2025-07-01",
+            "interval": "04:40-06:50",
+            "display_kwh": 1150.0938
+          },
+          {
+            "date": "2025-12-10",
+            "interval": "06:40-10:50",
+            "display_kwh": 2566.0853
+          }
+        ],
+        "extra_count": 4,
+        "extra_samples": [
+          {
+            "date": "2025-07-01",
+            "interval": "4:40-4:50",
+            "amount": 0.0131
+          },
+          {
+            "date": "2025-07-01",
+            "interval": "5:00-6:50",
+            "amount": 1150.0802
+          },
+          {
+            "date": "2025-12-10",
+            "interval": "6:40-6:50",
+            "amount": 0.3381
+          },
+          {
+            "date": "2025-12-10",
+            "interval": "7:00-10:50",
+            "amount": 2565.7467
+          }
+        ],
+        "amount_error_count": 639,
+        "amount_error_samples": [
+          {
+            "date": "2025-02-01",
+            "interval": "06:00-09:10",
+            "actual": 1745.8774,
+            "expected_display": 1745.8772,
+            "full_precision": 1745.8772
+          },
+          {
+            "date": "2025-02-02",
+            "interval": "06:00-06:50",
+            "actual": 300.5089,
+            "expected_display": 300.5088,
+            "full_precision": 300.5088
+          },
+          {
+            "date": "2025-02-03",
+            "interval": "06:00-09:50",
+            "actual": 2610.5042,
+            "expected_display": 2610.5044,
+            "full_precision": 2610.5044
+          },
+          {
+            "date": "2025-02-04",
+            "interval": "06:00-07:50",
+            "actual": 1090.5506,
+            "expected_display": 1090.5507,
+            "full_precision": 1090.5507
+          },
+          {
+            "date": "2025-02-04",
+            "interval": "09:00-09:50",
+            "actual": 601.0485,
+            "expected_display": 601.0486,
+            "full_precision": 601.0486
+          },
+          {
+            "date": "2025-02-04",
+            "interval": "10:00-10:30",
+            "actual": 69.8565,
+            "expected_display": 69.8566,
+            "full_precision": 69.8566
+          },
+          {
+            "date": "2025-02-05",
+            "interval": "06:00-07:50",
+            "actual": 1018.6938,
+            "expected_display": 1018.6936,
+            "full_precision": 1018.6936
+          },
+          {
+            "date": "2025-02-05",
+            "interval": "08:00-09:50",
+            "actual": 1201.0617,
+            "expected_display": 1201.0616,
+            "full_precision": 1201.0616
+          },
+          {
+            "date": "2025-02-05",
+            "interval": "10:00-10:30",
+            "actual": 208.5968,
+            "expected_display": 208.5967,
+            "full_precision": 208.5967
+          },
+          {
+            "date": "2025-02-06",
+            "interval": "06:00-08:50",
+            "actual": 1891.2964,
+            "expected_display": 1891.2966,
+            "full_precision": 1891.2966
+          },
+          {
+            "date": "2025-02-06",
+            "interval": "09:00-09:50",
+            "actual": 422.2884,
+            "expected_display": 422.2883,
+            "full_precision": 422.2883
+          },
+          {
+            "date": "2025-02-06",
+            "interval": "12:00-13:00",
+            "actual": 250.6579,
+            "expected_display": 250.6578,
+            "full_precision": 250.6578
+          },
+          {
+            "date": "2025-02-07",
+            "interval": "06:00-06:50",
+            "actual": 331.3229,
+            "expected_display": 331.323,
+            "full_precision": 331.323
+          },
+          {
+            "date": "2025-02-07",
+            "interval": "07:00-07:50",
+            "actual": 665.3994,
+            "expected_display": 665.3995,
+            "full_precision": 665.3995
+          },
+          {
+            "date": "2025-02-07",
+            "interval": "09:00-09:50",
+            "actual": 612.2343,
+            "expected_display": 612.2342,
+            "full_precision": 612.2342
+          },
+          {
+            "date": "2025-02-08",
+            "interval": "06:00-08:40",
+            "actual": 1515.9639,
+            "expected_display": 1515.9636,
+            "full_precision": 1515.9636
+          },
+          {
+            "date": "2025-02-08",
+            "interval": "09:20-10:50",
+            "actual": 832.6974,
+            "expected_display": 832.6973,
+            "full_precision": 832.6973
+          },
+          {
+            "date": "2025-02-08",
+            "interval": "14:40-15:00",
+            "actual": 12.2015,
+            "expected_display": 12.2016,
+            "full_precision": 12.2016
+          },
+          {
+            "date": "2025-02-10",
+            "interval": "07:00-12:00",
+            "actual": 3476.6595,
+            "expected_display": 3476.6596,
+            "full_precision": 3476.6596
+          },
+          {
+            "date": "2025-02-11",
+            "interval": "06:00-12:00",
+            "actual": 3759.5281,
+            "expected_display": 3759.5278,
+            "full_precision": 3759.5278
+          },
+          {
+            "date": "2025-02-13",
+            "interval": "06:00-12:00",
+            "actual": 3862.0578,
+            "expected_display": 3862.0577,
+            "full_precision": 3862.0577
+          },
+          {
+            "date": "2025-02-14",
+            "interval": "06:00-07:50",
+            "actual": 1313.5845,
+            "expected_display": 1313.5844,
+            "full_precision": 1313.5844
+          },
+          {
+            "date": "2025-02-16",
+            "interval": "06:00-12:00",
+            "actual": 4502.3399,
+            "expected_display": 4502.3398,
+            "full_precision": 4502.3398
+          },
+          {
+            "date": "2025-02-17",
+            "interval": "07:00-07:50",
+            "actual": 856.0789,
+            "expected_display": 856.079,
+            "full_precision": 856.079
+          },
+          {
+            "date": "2025-02-17",
+            "interval": "09:00-09:40",
+            "actual": 445.5287,
+            "expected_display": 445.5286,
+            "full_precision": 445.5286
+          },
+          {
+            "date": "2025-02-17",
+            "interval": "12:00-12:40",
+            "actual": 165.3661,
+            "expected_display": 165.366,
+            "full_precision": 165.366
+          },
+          {
+            "date": "2025-02-17",
+            "interval": "13:40-14:00",
+            "actual": 38.2382,
+            "expected_display": 38.2383,
+            "full_precision": 38.2383
+          },
+          {
+            "date": "2025-02-18",
+            "interval": "07:00-07:50",
+            "actual": 634.482,
+            "expected_display": 634.4818,
+            "full_precision": 634.4818
+          },
+          {
+            "date": "2025-02-18",
+            "interval": "08:00-08:50",
+            "actual": 557.0184,
+            "expected_display": 557.0185,
+            "full_precision": 557.0185
+          },
+          {
+            "date": "2025-02-18",
+            "interval": "09:00-09:40",
+            "actual": 406.6859,
+            "expected_display": 406.6858,
+            "full_precision": 406.6858
+          }
+        ],
+        "order_exact": false
+      },
+      "expected": "Every displayed segment exactly equals the contiguous non-display-zero full-precision records, in chronological order.",
+      "evidence": "<project_root>/../../../../Desktop/CUMCM2026Problems/result3.xlsx:紧急购电量",
+      "impact": "A total-only comparison can hide omitted or incorrectly split intervals."
+    },
+    {
+      "id": "FINAL-legacy-result4-3.xlsx-EMERGENCY-SEGMENTS",
+      "status": "FAIL",
+      "severity": "critical",
+      "scope": "legacy-result4-3.xlsx",
+      "actual": {
+        "threshold_kwh": 5e-05,
+        "rounding_rule": "ROUND_HALF_UP to 4 decimals",
+        "detail_source": "<project_root>/../../../../Desktop/CUMCM2026Problems/result4-3.xlsx",
+        "expected_segments": 2198,
+        "actual_segments": 2199,
+        "sheet_scan": {
+          "error_count": 0,
+          "samples": []
+        },
+        "missing_count": 3,
+        "missing_samples": [
+          {
+            "date": "2025-06-13",
+            "interval": "18:50-19:00",
+            "display_kwh": 0.0009
+          },
+          {
+            "date": "2025-07-01",
+            "interval": "04:40-06:50",
+            "display_kwh": 1150.0938
+          },
+          {
+            "date": "2025-12-10",
+            "interval": "06:40-10:50",
+            "display_kwh": 2566.0853
+          }
+        ],
+        "extra_count": 4,
+        "extra_samples": [
+          {
+            "date": "2025-07-01",
+            "interval": "4:40-4:50",
+            "amount": 0.0131
+          },
+          {
+            "date": "2025-07-01",
+            "interval": "5:00-6:50",
+            "amount": 1150.0802
+          },
+          {
+            "date": "2025-12-10",
+            "interval": "6:40-6:50",
+            "amount": 0.3381
+          },
+          {
+            "date": "2025-12-10",
+            "interval": "7:00-10:50",
+            "amount": 2565.7467
+          }
+        ],
+        "amount_error_count": 634,
+        "amount_error_samples": [
+          {
+            "date": "2025-02-01",
+            "interval": "06:00-09:10",
+            "actual": 1745.8774,
+            "expected_display": 1745.8772,
+            "full_precision": 1745.8772
+          },
+          {
+            "date": "2025-02-02",
+            "interval": "06:00-06:50",
+            "actual": 300.5089,
+            "expected_display": 300.5088,
+            "full_precision": 300.5088
+          },
+          {
+            "date": "2025-02-03",
+            "interval": "06:00-09:50",
+            "actual": 2610.5042,
+            "expected_display": 2610.5044,
+            "full_precision": 2610.5044
+          },
+          {
+            "date": "2025-02-04",
+            "interval": "06:00-07:50",
+            "actual": 1090.5506,
+            "expected_display": 1090.5507,
+            "full_precision": 1090.5507
+          },
+          {
+            "date": "2025-02-04",
+            "interval": "09:00-09:50",
+            "actual": 601.0485,
+            "expected_display": 601.0486,
+            "full_precision": 601.0486
+          },
+          {
+            "date": "2025-02-04",
+            "interval": "10:00-10:30",
+            "actual": 69.8565,
+            "expected_display": 69.8566,
+            "full_precision": 69.8566
+          },
+          {
+            "date": "2025-02-05",
+            "interval": "06:00-07:50",
+            "actual": 1018.6938,
+            "expected_display": 1018.6936,
+            "full_precision": 1018.6936
+          },
+          {
+            "date": "2025-02-05",
+            "interval": "08:00-09:50",
+            "actual": 1201.0617,
+            "expected_display": 1201.0616,
+            "full_precision": 1201.0616
+          },
+          {
+            "date": "2025-02-05",
+            "interval": "10:00-10:30",
+            "actual": 208.5968,
+            "expected_display": 208.5967,
+            "full_precision": 208.5967
+          },
+          {
+            "date": "2025-02-06",
+            "interval": "06:00-08:50",
+            "actual": 1891.2964,
+            "expected_display": 1891.2965,
+            "full_precision": 1891.2965
+          },
+          {
+            "date": "2025-02-06",
+            "interval": "09:00-09:50",
+            "actual": 422.2884,
+            "expected_display": 422.2883,
+            "full_precision": 422.2883
+          },
+          {
+            "date": "2025-02-06",
+            "interval": "12:00-13:00",
+            "actual": 250.6579,
+            "expected_display": 250.6578,
+            "full_precision": 250.6578
+          },
+          {
+            "date": "2025-02-07",
+            "interval": "06:00-06:50",
+            "actual": 331.3229,
+            "expected_display": 331.323,
+            "full_precision": 331.323
+          },
+          {
+            "date": "2025-02-07",
+            "interval": "07:00-07:50",
+            "actual": 665.3994,
+            "expected_display": 665.3995,
+            "full_precision": 665.3995
+          },
+          {
+            "date": "2025-02-07",
+            "interval": "09:00-09:50",
+            "actual": 612.2343,
+            "expected_display": 612.2342,
+            "full_precision": 612.2342
+          },
+          {
+            "date": "2025-02-08",
+            "interval": "06:00-08:40",
+            "actual": 1515.9639,
+            "expected_display": 1515.9636,
+            "full_precision": 1515.9636
+          },
+          {
+            "date": "2025-02-08",
+            "interval": "09:20-10:50",
+            "actual": 832.6974,
+            "expected_display": 832.6973,
+            "full_precision": 832.6973
+          },
+          {
+            "date": "2025-02-08",
+            "interval": "12:30-13:00",
+            "actual": 68.6024,
+            "expected_display": 68.6025,
+            "full_precision": 68.6025
+          },
+          {
+            "date": "2025-02-08",
+            "interval": "14:40-15:00",
+            "actual": 12.2015,
+            "expected_display": 12.2016,
+            "full_precision": 12.2016
+          },
+          {
+            "date": "2025-02-10",
+            "interval": "07:00-12:00",
+            "actual": 3476.6595,
+            "expected_display": 3476.6596,
+            "full_precision": 3476.6596
+          },
+          {
+            "date": "2025-02-11",
+            "interval": "06:00-12:00",
+            "actual": 3759.5281,
+            "expected_display": 3759.5278,
+            "full_precision": 3759.5278
+          },
+          {
+            "date": "2025-02-13",
+            "interval": "06:00-12:00",
+            "actual": 3862.0578,
+            "expected_display": 3862.0577,
+            "full_precision": 3862.0577
+          },
+          {
+            "date": "2025-02-14",
+            "interval": "06:00-07:50",
+            "actual": 1313.5845,
+            "expected_display": 1313.5844,
+            "full_precision": 1313.5844
+          },
+          {
+            "date": "2025-02-17",
+            "interval": "07:00-07:50",
+            "actual": 856.0789,
+            "expected_display": 856.079,
+            "full_precision": 856.079
+          },
+          {
+            "date": "2025-02-17",
+            "interval": "09:00-09:40",
+            "actual": 445.5287,
+            "expected_display": 445.5286,
+            "full_precision": 445.5286
+          },
+          {
+            "date": "2025-02-17",
+            "interval": "12:00-12:40",
+            "actual": 165.3661,
+            "expected_display": 165.366,
+            "full_precision": 165.366
+          },
+          {
+            "date": "2025-02-17",
+            "interval": "13:40-14:00",
+            "actual": 38.2382,
+            "expected_display": 38.2383,
+            "full_precision": 38.2383
+          },
+          {
+            "date": "2025-02-18",
+            "interval": "07:00-07:50",
+            "actual": 634.482,
+            "expected_display": 634.4818,
+            "full_precision": 634.4818
+          },
+          {
+            "date": "2025-02-18",
+            "interval": "08:00-08:50",
+            "actual": 557.0184,
+            "expected_display": 557.0185,
+            "full_precision": 557.0185
+          },
+          {
+            "date": "2025-02-18",
+            "interval": "09:00-09:40",
+            "actual": 406.6859,
+            "expected_display": 406.6858,
+            "full_precision": 406.6858
+          }
+        ],
+        "order_exact": false
+      },
+      "expected": "Every displayed segment exactly equals the contiguous non-display-zero full-precision records, in chronological order.",
+      "evidence": "<project_root>/../../../../Desktop/CUMCM2026Problems/result4-3.xlsx:紧急购电量",
+      "impact": "A total-only comparison can hide omitted or incorrectly split intervals."
+    }
+  ]
+}

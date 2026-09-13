@@ -10,8 +10,8 @@ import openpyxl
 from scipy.optimize import linprog
 ROOT=Path(__file__).resolve().parents[2]
 
-def run(workbooks=False):
-    cfg=json.loads((ROOT/'config/final.yaml').read_text());F=ROOT/cfg['output_root']/'frozen';O=F.parent/'audit';O.mkdir(parents=True,exist_ok=True);checks=[];metrics={}
+def run(workbooks=False, frozen_dir=None):
+    cfg=json.loads((ROOT/'config/final.yaml').read_text());F=Path(frozen_dir) if frozen_dir else ROOT/cfg['output_root']/'frozen';O=F.parent/'audit';O.mkdir(parents=True,exist_ok=True);checks=[];metrics={}
     def check(name,ok,actual):checks.append(dict(check=name,status='PASS' if bool(ok) else 'FAIL',actual=actual))
     P=Path(os.environ.get('CUMCM_SOURCE_ROOT',cfg['source_root']))/'C题/附件'
     def matrix(path,sheet):
@@ -137,4 +137,4 @@ def run(workbooks=False):
     return out
 
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('--workbooks',action='store_true');a=ap.parse_args();r=run(a.workbooks);raise SystemExit(0 if r['status']=='PASS' else 1)
+    ap=argparse.ArgumentParser();ap.add_argument('--workbooks',action='store_true');ap.add_argument('--frozen-dir');a=ap.parse_args();r=run(a.workbooks,a.frozen_dir);raise SystemExit(0 if r['status']=='PASS' else 1)

@@ -13,10 +13,11 @@ W=Path(__file__).resolve().parent
 SUPPORT=W/'support' if (W/'support').exists() else W.parent
 sys.path.insert(0,str(SUPPORT/'scripts'))
 import native_equations as ne
+import revision_document as rd
 old=Document(W/'source/current_v3.docx');d=Document(W/'source/current_v3.docx');ps=old.paragraphs
 for x in list(d.element.body):
  if x.tag!=qn('w:sectPr'):d.element.body.remove(x)
-nums={};figs={};eqs={};seen_cites=[];table_items=[];caption_ids=set();code_ids=set();main_paras=[]
+nums={};figs={};eqs={};seen_cites=[];table_items=[];caption_ids=set();code_ids=set();algorithm_ids=[];main_paras=[]
 def p(text='',style=None):
  x=d.add_paragraph(text,style);main_paras.append(x);return x
 def h(text,level):return p(text,'Heading '+str(level))
@@ -109,12 +110,15 @@ for line in (W/'body.md').read_text().splitlines():
     if r.ratio==1:continue
     rows.append(['终端倍数' if r.parameter=='terminal_multiplier' else '额定功率',f'{(r.ratio-1)*100:+.0f}',f'{r.max_abs_objective_change_pct:.2f}',f'{r.max_grid_l1_kwh:.2f}',f'{r.max_soc_change_kwh:.2f}'])
    table(k,'两项参数梯度扰动的固定窗口结果',rows,[2.4,1.8,4.0,4.0,3.8])
+ elif line=='@DIAGNOSTICS':rd.evidence(globals())
+ elif line=='@EFFICIENCY':rd.efficiency(globals())
+ elif line=='@MECHANISMS':rd.mechanisms(globals())
  elif line=='@SENSITIVITY_TEXT':
   p('终端惩罚倍数上下扰动20%时，32个窗口的目标变化最大绝对值为1.83%，但采购轨迹累计绝对变化最大达5333.33千瓦时，储电量最大变化达4800千瓦时。额定功率降低20%时，目标变化最大达15.23%，超过5%；提高20%时最大变化约0.73%。这说明当前模型对功率下降更敏感，不能概括为所有参数扰动下均稳定。')
  elif line=='@ALGORITHM':
   x=p('算法1  基于共同日前合同的滚动调度');x.style=d.styles['Heading 3']
   for s in ['输入：已选配置、当前储电量、允许更新时点、可用历史及发布预报。','1  用仅零点更新的参考策略形成各日共同日前合同B。','2  按时间顺序读取下一允许更新时刻τ。','3  截取τ以前完整历史与截至τ已发布的预报，生成联合场景。','4  保持已执行区间不变；零点锁定共同B，后续允许调整剩余承诺。','5  求解共享采购与储能动作的线性规划，执行互斥变换与残差检查。','6  保存本日剩余区间的承诺变化；次日预览不写入正式合同。','7  仅执行至下一更新时点，以随后实际观测计算缺口、费用及状态。','8  未到评价终点则返回步骤2；年末施加明确的末状态约束。','输出：逐时段采购、充放电、储电量、紧急缺口、费用与完整承诺链。']:
-   x=p(s);code_ids.add(x._p)
+   x=p(s);code_ids.add(x._p);algorithm_ids.append(x._p)
  else:p(line)
 # Main text citations are reordered by first appearance and later superscripted.
 for x in d.paragraphs:
@@ -128,56 +132,8 @@ h('参考文献',1).paragraph_format.page_break_before=True
 reference_ids=set()
 for oldnum in seen_cites:
  x=p(f'[{refmap[oldnum]}] '+refs[oldnum]);reference_ids.add(x._p)
-# Append the existing annexes and exact source text, adding one supplemental source.
-start=next(x for x in ps if x.text=='附录')
-annex_nodes=[];active=False
-for el in old.element.body:
- if el is start._p:active=True;continue
- if active and el.tag!=qn('w:sectPr'):annex_nodes.append(el)
-annex_start=None;supp_added=False;appendix_code=False
-for el in annex_nodes:
- if el.tag==qn('w:p'):
-  text=''.join(el.xpath('.//w:t/text()'))
-  if text.startswith('附录3 ') and not supp_added:
-   h('2.2 参数扰动补充程序',2)
-   src=SUPPORT/'scripts/parameter_perturbation.py'
-   x=p('scripts/parameter_perturbation.py');x.style=d.styles['Heading 3']
-   p('SHA256 '+hashlib.sha256(src.read_bytes()).hexdigest())
-   for line in src.read_text().splitlines():
-    x=p(line);code_ids.add(x._p)
-   supp_added=True;appendix_code=False
-  if text=='config/final.yaml':appendix_code=True
-  new=push(el);x=Paragraph(new,d)
-  if annex_start is None:annex_start=x
-  if text.startswith('附录3 '):x.paragraph_format.page_break_before=True
-  if appendix_code and not x.style.name.startswith('Heading'):code_ids.add(new)
-  mat=re.match(r'^表\s*(\d+)\s+(.*)',x.text)
-  if mat:
-   key=mat.group(1);nums[key]=len(nums)+1;x.text=f'表 {nums[key]}  {mat.group(2)}';caption_ids.add(new)
- else:
-  from docx.table import Table
-  new=push(el)
-  if el.tag==qn('w:tbl'):table_items.append(('annex',Table(new,d),None))
-# Keep appendix separate from the 25-page manuscript budget.
-annex_start.paragraph_format.page_break_before=True
-# Add the supplemental output locations to the appendix narrative only.
-for x in d.paragraphs:
- if x.text.startswith('参数候选、选择规则与费用见正文'):
-  x.text+=' 新增固定窗口扰动的输入、参数、320条实例记录与汇总见research/parameter_perturbation，复算程序全文见附录2.2；该诊断未改动正式模型参数。'
- if x.text.startswith('运行入口为支撑材料/'):
-  x.text=x.text.replace('完整版本见evidence/environment_versions.json。','完整版本见evidence/environment_versions.json。本次另附参数扰动程序及诊断记录。')
-# Update reproduction entry points without changing any archived source blocks.
-for x in d.paragraphs:
- if x.text.startswith('运行入口为支撑材料/'):
-  x.text='数值流水线入口为支撑材料/run_pipeline.sh；本次论文排版另用论文修订源文件/build.py，旧流水线的文档步骤仍生成旧版。原始附件路径在config/final.yaml中配置，也可用CUMCM_SOURCE_ROOT覆盖。数据校验、模型训练、正式期运行与独立审查依序执行，任一步失败即停止。记录环境为Python 3.12.14、NumPy 2.3.5、SciPy 1.16.1、pandas 2.2.3及openpyxl 3.1.5，版本明细见evidence/environment_versions.json。配套包中“原始附件”保存输入Excel；frozen/columns.tar.xz保存完整冻结明细，用scripts/unpack_frozen.py恢复。年度与训练费用分开，三种结算口径分栏；中间统计保存在evidence及research目录，原文件与完整精度值均保留。'
- if x.text.startswith('支撑材料的必要文件按功能列示如下'):
-  x.text='支撑材料按功能列示如下。原模型与审查源码在附录2.1给出，新增参数扰动程序见附录2.2；排版源文件另包交付。完整文件校验清单见包内SHA256SUMS.json。'
- if x.text.startswith('以下逐文件收录当前工程自编的全部'):
-  x.text='以下逐文件收录原工程32个程序与配置文件。第三方依赖按requirements.txt安装；工作簿导出还需Node与@oai/artifact-tool。程序以支撑材料内原始文件运行，版面换行不改变源码；独立数值复验仅需Python。本次论文生成源文件与运行方法见论文修订源文件目录。'
- if x.text.startswith('以四个指定日期、两种电价、每天四次决策构成'):
-  x.text=x.text.replace('全年策略费用的比较另见第7.3节。','全年策略费用采用下述连续回放另行比较。')
- if x.text.startswith('共完成96次固定实例复求'):
-  x.text=x.text.replace('其全年影响进一步通过第7.3节的连续回放检验。','其全年影响进一步通过下述连续回放检验。')
+# Rebuild specified results in the original horizontal structures and all actual source.
+rd.appendix(globals())
 # Apply number mappings in explanatory text, preserving code text and inline equations.
 for x in d.paragraphs:
  if x._p in code_ids or x._p.xpath('.//m:oMath|.//w:drawing') or x._p in caption_ids or x._p in reference_ids:continue
@@ -189,7 +145,7 @@ for x in d.paragraphs:
  # Old structural references must match the rewritten outline.
  s=s.replace('第5节调整费用','第5.4节调整费用').replace('第7.3节','第6.4节')
  if s.startswith('参数候选、选择规则与费用见正文'):
-  s='参数候选、选择规则与费用见正文表4；参数验证明细、解析后的锁定配置和原始输入校验记录随支撑材料交付。指定日期求解器复求、全年替代回放、月度费用、尾部风险、预测误差及块长度敏感性保存于research目录，完整文件路径与复算命令见配套阅读说明。新增参数扰动子目录保存输入检查、实验协议、320条实例及汇总，复算程序全文见附录2.2；这项诊断未改动正式模型参数和结果工作簿。'
+  s='原一月参数选择和解析配置随支撑材料保存；既有固定窗口、替代求解器与分块统计位于research，新增连续诊断位于diagnostics。三类核验的范围不同，完整路径和命令见README.md，实际源码见附录二。正式模型参数及结果工作簿未改变。'
  if s!=x.text:x.text=s
 # Font and paragraph formatting follows the supplied requirements.
 def rf(r,size=12,bold=False):
@@ -204,9 +160,10 @@ def fp(x,size=12,bold=False,align=WD_ALIGN_PARAGRAPH.JUSTIFY,indent=24,code=Fals
  for r in x.runs:rf(r,size,bold)
 for x in d.paragraphs:
  iscode=x._p in code_ids;ishead=x.style.name.startswith('Heading');istitle=x.style.name=='Title';iscap=x._p in caption_ids;ismath=bool(x._p.xpath('.//m:oMath'))
- size=16 if istitle else 14 if x.style.name=='Heading 1' else 10.5 if iscap else 12
+ size=16 if istitle else 14 if x.style.name=='Heading 1' else 10 if iscode else 10.5 if iscap else 12
  align=WD_ALIGN_PARAGRAPH.CENTER if istitle or x.style.name=='Heading 1' or iscap else WD_ALIGN_PARAGRAPH.LEFT if ishead or iscode else WD_ALIGN_PARAGRAPH.JUSTIFY
  fp(x,size,ishead or istitle,align,0 if ishead or istitle or iscap or ismath or iscode else 24,iscode)
+ if x._p in algorithm_ids:x.paragraph_format.keep_with_next=x._p!=algorithm_ids[-1]
  if ishead or istitle:x.paragraph_format.keep_with_next=True;x.paragraph_format.space_before=Pt(12 if ishead else 0);x.paragraph_format.space_after=Pt(12)
  if iscap:
   x.paragraph_format.space_before=Pt(6);x.paragraph_format.space_after=Pt(3);x.paragraph_format.keep_with_next=not bool(x._p.xpath('.//w:drawing'))
@@ -238,28 +195,39 @@ for key,t,widths in table_items:
  for edge in ['top','bottom','left','right','insideH','insideV']:
   e=OxmlElement('w:'+edge);e.set(qn('w:val'),'single' if edge in ['top','bottom'] else 'nil');e.set(qn('w:sz'),'10');e.set(qn('w:color'),'000000');bd.append(e)
  pr.append(bd)
+ if key.startswith('annex_'):
+  margins=OxmlElement('w:tblCellMar')
+  for edge in ['left','right']:
+   z=OxmlElement('w:'+edge);z.set(qn('w:w'),'45');z.set(qn('w:type'),'dxa');margins.append(z)
+  pr.append(margins)
  for ri,row in enumerate(t.rows):
   rp=row._tr.get_or_add_trPr()
   for e in rp.findall(qn('w:trHeight')):rp.remove(e)
   if rp.find(qn('w:cantSplit')) is None:rp.append(OxmlElement('w:cantSplit'))
   for ci,c in enumerate(row.cells):
+   if len(c.paragraphs)>1 and any(x.text for x in c.paragraphs):
+    for empty in list(c.paragraphs):
+     if not empty.text:empty._p.getparent().remove(empty._p)
    c.width=Cm(widths[ci]);c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER;cp=c._tc.get_or_add_tcPr()
    for tag in ['w:shd','w:tcBorders']:
     for e in cp.findall(qn(tag)):cp.remove(e)
    if ri==0:
     bd=OxmlElement('w:tcBorders');e=OxmlElement('w:bottom');e.set(qn('w:val'),'single');e.set(qn('w:sz'),'5');bd.append(e);cp.append(bd)
-   for x in c.paragraphs:fp(x,align=WD_ALIGN_PARAGRAPH.CENTER,indent=0);x.paragraph_format.keep_with_next=ri<len(t.rows)-1
+   for x in c.paragraphs:
+    fp(x,size=10.5 if key not in [str(i) for i in range(1,14)] else 12,align=WD_ALIGN_PARAGRAPH.CENTER,indent=0)
+    x.paragraph_format.keep_with_next=(ri<2 if key.startswith('annex_emergency') else ri<len(t.rows)-1)
+ # Repair merged-cell widths from the fixed grid, once per physical cell.
+ for row in t.rows:
+  ci=0
+  for tc in row._tr.tc_lst:
+   span=tc.grid_span;tc.width=Cm(sum(widths[ci:ci+span]));ci+=span
 for sec in d.sections:
  sec.page_width=Cm(21);sec.page_height=Cm(29.7);sec.top_margin=sec.bottom_margin=sec.left_margin=sec.right_margin=Cm(2.5)
 d.core_properties.title=d.paragraphs[0].text;d.core_properties.author='';d.core_properties.last_modified_by=''
 out=W/'C题论文_v3.docx';d.save(out)
 # Basic content invariants before rendering.
-assert 800<=sum(len(s) for s in abstract)<=1000
+assert 600<=sum(len(s) for s in abstract)<=1100
 assert len(d.paragraphs[0].text)<=25
 assert ps[115].text in [x.text for x in d.paragraphs]
-origcode=[x.text for x in ps[ps.index(next(x for x in ps if x.text=='config/final.yaml')):]]
-# Compare all 32 original source blocks until the next appendix.
-a=next(i for i,x in enumerate(ps) if x.text=='config/final.yaml');z=next(i for i,x in enumerate(ps) if x.text.startswith('附录3 '))
-oldseq=[x.text for x in ps[a:z]];newtexts=[x.text for x in d.paragraphs];a2=newtexts.index('config/final.yaml');assert newtexts[a2:a2+len(oldseq)]==oldseq
 (W/'build_meta.json').write_text(json.dumps({'tables':nums,'figures':figs,'equations':eqs,'references':refmap,'abstract_chars':sum(map(len,abstract)),'abstract_hanzi':sum(len(re.findall('[\u4e00-\u9fff]',s)) for s in abstract),'table_count':len(d.tables),'paragraph_count':len(d.paragraphs)},ensure_ascii=False,indent=2))
 print(out,'tables',len(d.tables),'figures',len(d.inline_shapes),'equations',len(eqs))

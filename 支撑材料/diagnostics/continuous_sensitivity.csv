@@ -1,0 +1,17 @@
+mode,variant,relative_parameter_change,relative_realized_cost_change,finite_difference_elasticity,caveat
+q2,count10_span10,-0.5,-0.009367058457604617,0.018734116915209233,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q2,count10_span20,-0.5,0.008321726416144905,-0.01664345283228981,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q2,count40_span40,1.0,0.009849111180997672,0.009849111180997672,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q2,terminal_0,-1.0,0.0009492007000331638,-0.0009492007000331638,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q2,terminal_05,-0.5,0.0009492007000331638,-0.0018984014000663276,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q2,terminal_15,0.5,0.0,0.0,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q3,horizon_12,-0.5,0.0005503189728916428,-0.0011006379457832857,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q3,horizon_18,-0.25,-0.00020492945094365028,0.0008197178037746011,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q4_2,count10_span10,-0.5,-0.010043496054873109,0.020086992109746217,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q4_2,count10_span20,-0.5,0.007360791687200388,-0.014721583374400776,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q4_2,count40_span40,1.0,0.010163329902445024,0.010163329902445024,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q4_2,terminal_0,-1.0,0.0004243681357965406,-0.0004243681357965406,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q4_2,terminal_05,-0.5,-0.0005485970125727454,0.0010971940251454908,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q4_2,terminal_15,0.5,0.0,0.0,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q4_3,horizon_12,-0.5,0.0006519921415463844,-0.0013039842830927688,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows
+q4_3,horizon_18,-0.25,2.0125789315138967e-05,-8.050315726055587e-05,count10_span10 and count40_span40 jointly change sample count and history coverage; horizons change only intraday windows

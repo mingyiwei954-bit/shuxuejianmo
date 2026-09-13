@@ -1,15 +1,11 @@
-# 当前论文排版重建
+# 当前论文构建源
 
-本目录对应正文与摘要、参考文献合计24页的修订版。原数值流水线中的文档生成器保留原样，不会生成本次新版；请使用本目录入口。
+当前入口在支撑材料根目录：`python reproduce.py paper`。它读取本目录的 body.md、abstract.txt、build.py，读取已冻结的正式结果和 diagnostics 本轮实验，再生成 publication 中的当前 DOCX/PDF。最终页数以 publication/structural_checks.json 为准，不沿用旧版页数记录。
 
-在支撑材料根目录安装原requirements.txt后执行：
+source/current_v3.docx 是保留原生公式、已核验结果表和图的构建底稿；不是最终论文。当前完整源码附录从实际项目文件逐行生成，哈希见 evidence/source_appendix_manifest_revision.json。旧 manifest 仅用于保留原源码文件清单，旧文档生成器不参与当前入口。
 
-```sh
-python 论文修订源文件/build.py
-```
+需要先执行 restore，并保留完成的 diagnostics 汇总、research 既有证据和 figures。只运行本目录 build.py 可以生成 DOCX，但不包含 PDF 渲染与交付门禁，故推荐根目录统一入口。
 
-输出在本目录：C题论文_v3.docx。该入口已从实际交付目录试跑，并核对解包后的Word XML与定稿一致。正文为body.md，摘要为abstract.txt；source/current_v3.docx仅作保留原公式、结果表和完整旧源码的构建底稿，不能误作本次定稿。新诊断数据从上一级research/parameter_perturbation读取，程序全文从上一级scripts读取。
+正文采用 A4、四边2.5厘米、宋体与 Times New Roman、正文12磅。PDF 渲染需要合法安装且可见的中文字体；本机入口会生成字体目录配置。可指定 FONTCONFIG_FILE；缺字时必须修复字体后重渲染。不同 Word/LibreOffice 环境可能改变分页，改动后应重新检查摘要专页、正文页数和表格。
 
-figures保存已核验的两张新增图的PNG与SVG。需要重画时，先安装宋体和Times New Roman；可用环境变量SIMSUN_FONT指定合法宋体文件，再运行python 论文修订源文件/make_figures.py。图表字体需人工核对，缺字体时不应直接用替代字体导出比赛稿。
-
-DOCX使用A4、四边2.5厘米、宋体与Times New Roman、单倍行距、正文12磅。定稿PDF是在安装相应字体的LibreOffice环境渲染并逐页检查的版本。其他Word/LibreOffice版本的字体度量可能改变分页；改动后请重新导出并确认附录仍从第25页开始。桌面顶层同名PDF是本次已核验的阅读版本。本目录提供可重建DOCX的全部输入，不承诺不同排版软件逐像素相同。
+figures 中包含保留的绘图源与图片。实际采用的插图由 build_meta.json 列示；没有采用的旧图只是构建资源，不代表新增实验。

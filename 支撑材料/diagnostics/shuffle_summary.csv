@@ -1,0 +1,3 @@
+mode,repetitions,joint_saving_mean_yuan,minimum,maximum,sd,interpretation
+q2,5,19959.919670784475,15946.863868119195,24482.370310550556,4161.058934773021,finite five-seed randomization distribution; not a confidence interval over years
+q4_2,5,36806.860510379076,27889.95002920367,40606.310608409345,5143.603327119552,finite five-seed randomization distribution; not a confidence interval over years

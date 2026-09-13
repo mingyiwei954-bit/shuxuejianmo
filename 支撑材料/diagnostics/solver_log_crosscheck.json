@@ -1,0 +1,389 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "run": "runs/formal/q2__count10_span10",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__count10_span20",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__count40_span40",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__raw_history",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__reference",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__shuffle_20260913",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__shuffle_20260914",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__shuffle_20260915",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__shuffle_20260916",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__shuffle_20260917",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__terminal_0",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__terminal_05",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q2__terminal_15",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q3__horizon_12",
+      "solves": 1336,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q3__horizon_18",
+      "solves": 1336,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q3__horizon_24",
+      "solves": 1336,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__count10_span10",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__count10_span20",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__count40_span40",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__raw_history",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__reference",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__shuffle_20260913",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__shuffle_20260914",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__shuffle_20260915",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__shuffle_20260916",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__shuffle_20260917",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__terminal_0",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__terminal_05",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_2__terminal_15",
+      "solves": 334,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_3__horizon_12",
+      "solves": 1336,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_3__horizon_18",
+      "solves": 1336,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/formal/q4_3__horizon_24",
+      "solves": 1336,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__count10_span10",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__count10_span20",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__count40_span40",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__raw_history",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__reference",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__shuffle_20260913",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__shuffle_20260914",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__shuffle_20260915",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__shuffle_20260916",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__shuffle_20260917",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__terminal_0",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__terminal_05",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q2__terminal_15",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q3__horizon_12",
+      "solves": 96,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q3__horizon_18",
+      "solves": 96,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q3__horizon_24",
+      "solves": 96,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__count10_span10",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__count10_span20",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__count40_span40",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__raw_history",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__reference",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__shuffle_20260913",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__shuffle_20260914",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__shuffle_20260915",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__shuffle_20260916",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__shuffle_20260917",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__terminal_0",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__terminal_05",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_2__terminal_15",
+      "solves": 24,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_3__horizon_12",
+      "solves": 96,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_3__horizon_18",
+      "solves": 96,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    },
+    {
+      "run": "runs/validation/q4_3__horizon_24",
+      "solves": 96,
+      "latest_information_within_cutoff": true,
+      "all_status_zero": true
+    }
+  ]
+}

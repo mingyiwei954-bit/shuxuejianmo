@@ -1,0 +1,24 @@
+<LOCAL_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/xml/etree/ElementTree.py:1284: ResourceWarning: unclosed file <_io.BufferedReader name='<LOCAL_HOME>/Downloads/C题/附件/附件2.xlsx'>
+  self._parser.feed(data)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+<LOCAL_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/xml/etree/ElementTree.py:1284: ResourceWarning: unclosed file <_io.BufferedReader name='<LOCAL_HOME>/Downloads/C题/附件/附件4.xlsx'>
+  self._parser.feed(data)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_charge_limit_and_year_end (test_closed_loop.ClosedLoopTests.test_charge_limit_and_year_end) ... ok
+test_future_observations_cannot_change_decision (test_closed_loop.ClosedLoopTests.test_future_observations_cannot_change_decision) ... ok
+test_later_forecasts_not_visible (test_closed_loop.ClosedLoopTests.test_later_forecasts_not_visible) ... ok
+test_no_future_cold_start (test_closed_loop.ClosedLoopTests.test_no_future_cold_start) ... ok
+test_nonanticipativity_and_formal_ledger (test_closed_loop.ClosedLoopTests.test_nonanticipativity_and_formal_ledger) ... ok
+test_partition_does_not_impose_terminal_reset (test_closed_loop.ClosedLoopTests.test_partition_does_not_impose_terminal_reset) ... ok
+test_separate_charge_discharge_efficiencies (test_closed_loop.ClosedLoopTests.test_separate_charge_discharge_efficiencies) ... ok
+<LOCAL_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/xml/etree/ElementTree.py:1284: ResourceWarning: unclosed file <_io.BufferedReader name='<LOCAL_HOME>/Downloads/C题/附件/附件3.xlsx'>
+  self._parser.feed(data)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_count_changes_do_not_admit_unfinished_histories (test_diagnostics.DiagnosticTests.test_count_changes_do_not_admit_unfinished_histories) ... ok
+test_shuffle_preserves_whole_trajectory_marginals (test_diagnostics.DiagnosticTests.test_shuffle_preserves_whole_trajectory_marginals) ... ok
+test_unobserved_future_does_not_change_scenarios_or_action (test_diagnostics.DiagnosticTests.test_unobserved_future_does_not_change_scenarios_or_action) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 8.166s
+
+OK

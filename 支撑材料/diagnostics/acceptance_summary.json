@@ -1,0 +1,39 @@
+{
+  "continuous_validation_runs": 32,
+  "continuous_formal_runs": 32,
+  "total_solves": 17900,
+  "solver_seconds": 879.8799166479112,
+  "failures": 0,
+  "validation_common_plan_preparation_solves": 48,
+  "preparation_timing": "48 preliminary S0 solves are outside per-scheme timing; not separately measured",
+  "max_lp_residual": 3.637978807091713e-12,
+  "max_physical_residual": 3.637978807091713e-12,
+  "formal_algorithm_changed": false,
+  "formal_workbooks_changed": false,
+  "baseline_equivalence": [
+    {
+      "mode": "q2",
+      "new_cost": 14794949.723302985,
+      "frozen_cost": 14794949.723302891,
+      "difference": 9.313225746154785e-08
+    },
+    {
+      "mode": "q4_2",
+      "new_cost": 15623134.832286313,
+      "frozen_cost": 15623134.83228626,
+      "difference": 5.4016709327697754e-08
+    },
+    {
+      "mode": "q3",
+      "new_cost": 15632485.47660346,
+      "frozen_cost": 15632485.47660342,
+      "difference": 3.91155481338501e-08
+    },
+    {
+      "mode": "q4_3",
+      "new_cost": 16455780.595434045,
+      "frozen_cost": 16455780.595433896,
+      "difference": 1.4901161193847656e-07
+    }
+  ]
+}

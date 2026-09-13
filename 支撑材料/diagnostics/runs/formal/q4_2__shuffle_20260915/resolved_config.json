@@ -1,0 +1,110 @@
+{
+  "base": {
+    "schema_version": "3.1-closed-loop",
+    "source_root": "input",
+    "output_root": "outputs/c_final_v1",
+    "study": {
+      "year": 2025,
+      "training_start": "2025-01-01",
+      "training_end": "2025-01-31",
+      "official_start": "2025-02-01",
+      "official_end": "2025-12-31",
+      "initial_soc_kwh": 6000.0,
+      "carry_soc_from_january": true,
+      "terminal_soc_kwh": 6000.0,
+      "startup_policy": "January_idle_battery_empirical_procurement"
+    },
+    "storage": {
+      "capacity_kwh": 12000.0,
+      "soc_min_kwh": 1200.0,
+      "soc_max_kwh": 10800.0,
+      "power_kw": 5000.0,
+      "charge_efficiency": 0.9,
+      "discharge_efficiency": 0.9,
+      "interval_minutes": 10
+    },
+    "forecast": {
+      "scenario_count": 20,
+      "scenario_history": "latest_completed_24h_trajectories",
+      "pv_hour_mapping": "right_endpoint_zero_order_hold",
+      "scenario_model_candidates": [
+        "raw_history",
+        "causal_residual"
+      ],
+      "scenario_model": "causal_residual"
+    },
+    "rolling": {
+      "horizon_hours": 24,
+      "settlement": "final_relative_to_common_00_plan",
+      "sequential_sensitivity": "same_formal_commitment_chain",
+      "soft_penalty_multipliers": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "selected_soft_penalty_multiplier": 1.0,
+      "selection_method": "minimum combined January 8-31 holdout cost across four modes; equal 6000 endpoints",
+      "terminal_rule": "soft_absolute_deviation; forced only at explicit evaluation endpoint"
+    },
+    "cost": {
+      "down_adjustment_multiplier": 0.5,
+      "up_adjustment_multiplier": 1.5,
+      "emergency_multiplier": 5.0,
+      "throughput_tiebreak_yuan_per_kwh": 1e-07
+    },
+    "audit": {
+      "numeric_tolerance": 1e-07,
+      "feasibility_tolerance": 1e-08,
+      "display_decimals": 4,
+      "emergency_display_omit_threshold_kwh": 5e-05
+    },
+    "experiments": {
+      "official_arm": "joint_empirical",
+      "official_scenario": "S3",
+      "schedules": {
+        "S0": [
+          0
+        ],
+        "S1": [
+          0,
+          6
+        ],
+        "S2": [
+          0,
+          6,
+          12
+        ],
+        "S3": [
+          0,
+          6,
+          12,
+          18
+        ]
+      },
+      "controls": [
+        "mean_forecast",
+        "no_storage"
+      ],
+      "solver_methods": [
+        "highs",
+        "highs-ds",
+        "highs-ipm"
+      ],
+      "representative_dates": [
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ]
+    }
+  },
+  "variant": {
+    "id": "shuffle_20260915",
+    "shuffle_seed": 20260915
+  },
+  "phase": "formal",
+  "period": [
+    "2025-02-01",
+    "2025-12-31"
+  ]
+}

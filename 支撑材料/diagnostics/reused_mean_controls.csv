@@ -1,0 +1,3 @@
+mode,total_cost_yuan,emergency_kwh,emergency_cost_share,unused_surplus_kwh,throughput_kwh,evidence
+q2,16457210.178009618,1084623.2193395728,0.2573318595876861,2013083.6898031023,12228432.42082023,"existing frozen continuous trajectory, reaudited this revision; not rerun"
+q4_2,17291874.897115458,1084623.2193395726,0.2530162404993346,2013083.6898031023,12264570.430647576,"existing frozen continuous trajectory, reaudited this revision; not rerun"

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "exact_interval_keys": true,
+  "soc_recursion": 9.094947017729282e-13,
+  "continuity": 0.0,
+  "soc_bounds": 0.0,
+  "power_bounds": 0.0,
+  "grid_nonnegative": 0.0,
+  "mutual_exclusion": 0.0,
+  "emergency": 0.0,
+  "surplus": 3.410605131648481e-13,
+  "bill": 0.0,
+  "endpoints": 0.0,
+  "chain_final": 0.0,
+  "chain_bill": 0.0,
+  "common_contract": 0.0
+}

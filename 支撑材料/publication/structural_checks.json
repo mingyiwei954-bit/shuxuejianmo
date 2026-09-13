@@ -1,0 +1,17 @@
+{
+  "pdf_pages": 115,
+  "abstract_page": 1,
+  "reference_page": 23,
+  "appendix_starts_page": 24,
+  "main_including_abstract_references": 23,
+  "body_excluding_abstract": 22,
+  "docx_bytes": 1608822,
+  "pdf_bytes": 3580988,
+  "source_blocks": 41,
+  "specified_horizontal_tables": 46,
+  "table_count": 65,
+  "docx_sha256": "b21c3cd56e82121c1ba63aae6a9e7c7eabfdb44890dc825fe28e06057be3ea0d",
+  "pdf_sha256": "1ec339b959e5204c1807789132be3ba269a942566a761ba27549a0e94e20c17d",
+  "structural_and_numeric": "PASS",
+  "visual_review": "separate gate; this script does not certify visual quality"
+}

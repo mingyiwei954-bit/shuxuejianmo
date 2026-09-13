@@ -1,0 +1,104 @@
+{
+  "version": "v4-diagnostic-1",
+  "fixed_at": "2026-09-13T15:28:25.022757+08:00",
+  "role": "post_hoc_diagnostics_no_official_reselection",
+  "selected_official_config": "frozen/resolved_config.json",
+  "phases": {
+    "validation": [
+      "2025-01-08",
+      "2025-01-31"
+    ],
+    "formal": [
+      "2025-02-01",
+      "2025-12-31"
+    ]
+  },
+  "validation_design": "Jan 1-7 warm-up; Jan 8-31 prequential validation, same as original split. No candidate selected from formal results. Early validation has fewer available complete trajectories, actual counts logged.",
+  "dayahead_modes": [
+    "q2",
+    "q4_2"
+  ],
+  "variants": [
+    {
+      "id": "reference"
+    },
+    {
+      "id": "raw_history",
+      "scenario_model": "raw_history"
+    },
+    {
+      "id": "terminal_0",
+      "penalty": 0
+    },
+    {
+      "id": "terminal_05",
+      "penalty": 0.5
+    },
+    {
+      "id": "terminal_15",
+      "penalty": 1.5
+    },
+    {
+      "id": "count10_span20",
+      "count": 10,
+      "span": 20,
+      "thin": true
+    },
+    {
+      "id": "count10_span10",
+      "count": 10,
+      "span": 10
+    },
+    {
+      "id": "count40_span40",
+      "count": 40,
+      "span": 40
+    },
+    {
+      "id": "shuffle_20260913",
+      "shuffle_seed": 20260913
+    },
+    {
+      "id": "shuffle_20260914",
+      "shuffle_seed": 20260914
+    },
+    {
+      "id": "shuffle_20260915",
+      "shuffle_seed": 20260915
+    },
+    {
+      "id": "shuffle_20260916",
+      "shuffle_seed": 20260916
+    },
+    {
+      "id": "shuffle_20260917",
+      "shuffle_seed": 20260917
+    }
+  ],
+  "rolling_modes": [
+    "q3",
+    "q4_3"
+  ],
+  "horizon_candidates": [
+    24,
+    18,
+    12
+  ],
+  "horizon_definition": "00:00 always full 24h to provide complete required day plan; at 06/12/18 use candidate horizon, capped at evaluation end. Old commitments beyond a shorter window remain unchanged. All share the original S0 day-ahead contracts. No forecasts beyond 24h are requested.",
+  "shuffle_definition": "Keep full within-variable temporal trajectories intact. Anchor load; independently permute PV and (only for q4_2) price scenario rows per decision using deterministic SeedSequence(seed,date ordinal,issue,mode). Preserve marginal empirical distributions, weights and completed-history pool exactly. Five seeds fixed before runs; report range and SD as finite randomization diagnostics, not a population confidence interval.",
+  "candidate_rationale": "Counts 10 and 40 bracket 20 by half/double; 10 evenly spaced donors among latest 20 separates count from nominal history span. Latest 10 vs subsampled 20 separates donor coverage conditional on count. 40 changes both number and coverage, explicitly confounded. Penalties 0,.5,1,1.5 include no soft terminal value and original training grid. Horizons 12/18/24 remain inside official forecast coverage and never shorter than 6h execution block.",
+  "initial_final_soc": 6000,
+  "startup": "Reuse identical frozen January startup ledger for all formal branches; validation is a separate offline experiment with common 6000 endpoints.",
+  "primary_metric": "realized procurement + net adjustment + 5x emergency costs, excludes soft terminal objective and 1e-7 throughput regularization",
+  "outputs": [
+    "cost",
+    "emergency_kwh",
+    "emergency_cost_share",
+    "unused_surplus_kwh",
+    "throughput_kwh",
+    "physical_and_causal_residuals",
+    "solver_status",
+    "runtime_distribution"
+  ],
+  "limits": "Conditional one-factor effects need not add. Different day-ahead modules may change contracts: total strategy effect. Horizon tests hold common contracts. Formal scenario, capacity and solver tie-break remain unchanged."
+}

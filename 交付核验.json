@@ -107,8 +107,27 @@
   },
   "support_archive": {
     "status": "PASS",
-    "entries_verified": 466,
-    "bytes": 18859994,
-    "sha256": "06b2ef3ee1ba439ab5b646a438bc01e1cc63440c6c66133d89854a5d3f6ffbc6"
+    "entries_verified": 458,
+    "bytes": 18488045,
+    "sha256": "1a0589e34b383bb844b18d99b4d8e58a0eba3facbaff78bc0da22a4734204dde"
+  },
+  "superseded_artifact_cleanup": {
+    "checked_at": "2026-09-13T17:07:20.990345+08:00",
+    "removed_superseded_artifacts": {
+      "charts/cumulative_difference.png": "论文修订源文件/figures/cumulative.png",
+      "charts/representative_dispatch.png": "论文修订源文件/figures/dispatch.png",
+      "charts/monthly_risk.png": "论文修订源文件/figures/monthly.png",
+      "charts/schedule_comparison.png": "论文修订源文件/figures/frequency.png",
+      "paper/main.md": "论文修订源文件/body.md",
+      "publication/previous_chart_revision_render_timing.json": "publication/render_timing.json",
+      "publication/previous_chart_revision_structural_checks.json": "publication/structural_checks.json",
+      "publication/previous_chart_revision_unpacked_delivery_check.json": "publication/unpacked_delivery_check.json",
+      "publication/previous_chart_revision_visual_review.json": "publication/visual_review.json"
+    },
+    "source_appendix_hashes_verified": 42,
+    "rebuilt_docx_parts_identical": 29,
+    "formal_results_and_published_docx_pdf_unchanged": true,
+    "scope": "Cleaned copy actually rebuilds identical DOCX contents using previously restored frozen inputs; no new optimizer run or PDF rendering",
+    "status": "PASS"
   }
 }

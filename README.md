@@ -22,7 +22,7 @@
 python3 恢复完整诊断.py
 ```
 
-Windows也可使用 `python 恢复完整诊断.py`。脚本先验证三个分卷，再恢复与桌面逐字节相同的ZIP，并核验桌面交付清单中的全部480个文件。已存在且相同的ZIP可重复校验；已有不同文件不会被覆盖。完整ZIP是研究复核明细，不是受20MB限制的比赛支撑上传包。
+Windows也可使用 `python 恢复完整诊断.py`。脚本先验证三个分卷，再恢复与桌面逐字节相同的ZIP，并核验桌面交付清单中的全部473个文件。已存在且相同的ZIP可重复校验；已有不同文件不会被覆盖。完整ZIP是研究复核明细，不是受20MB限制的比赛支撑上传包。
 
 如需使用完整逐时轨迹，将恢复出的ZIP解压到 `支撑材料` 内，使ZIP中的 `diagnostics` 与已有同名目录合并。原始题目和Excel附件另从比赛原材料提供。
 
@@ -40,3 +40,7 @@ python reproduce.py audit --source-root '<原始输入父目录>'
 本次已更新5张核心图、当前论文和绘图复现源码。图表数值从当前冻结结果绘制；本次未重新求解全年模型。图表修订说明见[图表替换说明](图表替换说明.md)。历史审计仅适用于其明确记录的文件与范围；当前论文核验见交付核验。文件与桌面最新版保持相同字节。桌面绝对路径应按自己的环境调整。
 
 两个仓库：[GitHub](https://github.com/mingyiwei954-bit/shuxuejianmo) · [Gitee](https://gitee.com/ming-yiwei/muzhi)。文件限制依据：[GitHub官方说明](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)。
+
+## 当前成果取舍
+
+已删除4张被新版替代的旧图、旧正文草稿及4份旧排版记录。现行正式工作簿、冻结数值、仍被使用的实验和构建依赖保留；详见[当前成果取舍说明](当前成果取舍说明.md)。较早生成不等于过期，已被替代的产物不再出现在当前交付中。

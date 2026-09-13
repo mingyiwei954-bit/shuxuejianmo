@@ -7,8 +7,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5482,
-      "sha256": "755fb34b3c0a87a682bb7aae458b45fb07aca39137c6a499c8a8825462c9aae0"
+      "bytes": 5593,
+      "sha256": "f5f1e6c941259b162145cfaf56a5c21d49c13a23b78d7b430f77aac842e90180"
     },
     {
       "path": "audit/independent_validation.json",
@@ -24,26 +24,6 @@
       "path": "charts/cost_components.png",
       "bytes": 24391,
       "sha256": "e0a6c4d2bf45b18b2943c24c96f759b4c87e0e68e375a0e714523b2af432acbc"
-    },
-    {
-      "path": "charts/cumulative_difference.png",
-      "bytes": 79213,
-      "sha256": "d18c2f7ca44bd0408273366347ec673c8fc9ccbb4a8a5d75f48021f22b73b281"
-    },
-    {
-      "path": "charts/monthly_risk.png",
-      "bytes": 152750,
-      "sha256": "09ac6cbd57d489ee1b9fbc18308e56dbc8b39a9896073b36db481daa3c79020a"
-    },
-    {
-      "path": "charts/representative_dispatch.png",
-      "bytes": 81088,
-      "sha256": "012525afccb2b072ed29983f2b29baff1a454645d1a7a308b5bff300ffa2113a"
-    },
-    {
-      "path": "charts/schedule_comparison.png",
-      "bytes": 55254,
-      "sha256": "0e6abb087233464c226b0bbac28ba91054e89f35152ad6ea0e7ca4e3c31dc620"
     },
     {
       "path": "config/final.yaml",
@@ -1857,13 +1837,8 @@
     },
     {
       "path": "paper/README.md",
-      "bytes": 316,
-      "sha256": "a0dcff34d5af7dcdf19bef8e4f164b199e195171c5eb209688686fd62df14e64"
-    },
-    {
-      "path": "paper/main.md",
-      "bytes": 18832,
-      "sha256": "6fb628397b638270076c36737fff1b419223e1a5bec154a2a19df37d72b795e9"
+      "bytes": 310,
+      "sha256": "70e6deaa5eddc601b3b4b1d535fb56882e6dbaa7352b1e75de6898ef1b1f22f0"
     },
     {
       "path": "publication/chart_adoption.json",
@@ -1876,29 +1851,14 @@
       "sha256": "e0c2b1452cb279d744311e48ecef6f0752a8b34b1610c8abd049525b44e6c3fd"
     },
     {
+      "path": "publication/current_artifacts_check.json",
+      "bytes": 1203,
+      "sha256": "3aee41059b1eb19c2cbec2f26f66a61f4294370d21f1aed3dd6d919e25f15e04"
+    },
+    {
       "path": "publication/previous_chart_revision_delivery.json",
       "bytes": 4223,
       "sha256": "d610a757e9f69d829ec6ca3fbf952cf122234f32de893fd6259e09b06bd5b5e4"
-    },
-    {
-      "path": "publication/previous_chart_revision_render_timing.json",
-      "bytes": 46,
-      "sha256": "ab016397811e43602e149eb6c669cc18245423e9ecaeb7b2076bb8fc261bcc54"
-    },
-    {
-      "path": "publication/previous_chart_revision_structural_checks.json",
-      "bytes": 591,
-      "sha256": "5961e6f39985186ea4bf275911ffb6c739b7536b0673ffe68b4b407aca3d279a"
-    },
-    {
-      "path": "publication/previous_chart_revision_unpacked_delivery_check.json",
-      "bytes": 3682,
-      "sha256": "8f116e035866548d050a1a39041e2b7ee3af206cff62500d0c62e43622b58f73"
-    },
-    {
-      "path": "publication/previous_chart_revision_visual_review.json",
-      "bytes": 17021,
-      "sha256": "2d706c99382100cb61d26be4a89a81928036acab4d08a629cde8e6f020ef6456"
     },
     {
       "path": "publication/render_timing.json",
@@ -2167,8 +2127,8 @@
     },
     {
       "path": "src/model/README.md",
-      "bytes": 1054,
-      "sha256": "a40ebc81eff0d8e168c900063f854dad7cbf9d0ae1566dad478b8addefd3c0a5"
+      "bytes": 1055,
+      "sha256": "fd8a517c963e152bd8f2897d694c6e07969eefca17341ed23e36c5ed4d1307f6"
     },
     {
       "path": "src/model/__init__.py",

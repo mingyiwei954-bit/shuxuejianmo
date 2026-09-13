@@ -1,1 +1,1 @@
-此目录的 main.md 是原数值流水线保留的历史文稿来源，不是本轮论文。当前正文、摘要及构建入口在“论文修订源文件”；使用根目录 `python reproduce.py paper` 生成当前论文。旧文档生成器源码为完整附录而保留，run_pipeline.sh 已不会调用它。
+旧正文 main.md 已由当前正文替代并移出交付包。当前正文及摘要见“论文修订源文件/body.md”和abstract.txt，完整定稿为交付根目录DOCX/PDF。请使用根目录 python reproduce.py paper；原文档生成器代码为完整源码追溯保留，不是当前生成入口。

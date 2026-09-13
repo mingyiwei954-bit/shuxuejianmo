@@ -42,8 +42,8 @@
     },
     {
       "path": "交付核验.json",
-      "bytes": 5147,
-      "sha256": "381acc4ee857e397f56649c45ff5345a1727aa10d6188846271172edd88d7c74"
+      "bytes": 6421,
+      "sha256": "a0d16161228ce556f0e292e6ac94c976ece1b68e408219e3ce510399a9305091"
     },
     {
       "path": "交付说明.md",
@@ -52,8 +52,13 @@
     },
     {
       "path": "图表替换说明.md",
-      "bytes": 1773,
-      "sha256": "645cf85f17b8b8e27bcdc6f5de0ba54e01778e7671573e4583a46d0c9bb77618"
+      "bytes": 1817,
+      "sha256": "b597b81d3f3f6420fac0f5182580da85c4fb88c8be1d7f476e06d228d18c6669"
+    },
+    {
+      "path": "当前成果取舍说明.md",
+      "bytes": 2454,
+      "sha256": "f9628d19d2c626e584dbffca707417b051fdd72983c5f94594e06a8f293c2d82"
     },
     {
       "path": "支撑材料/AI工具使用详情.pdf",
@@ -62,13 +67,13 @@
     },
     {
       "path": "支撑材料/README.md",
-      "bytes": 5482,
-      "sha256": "755fb34b3c0a87a682bb7aae458b45fb07aca39137c6a499c8a8825462c9aae0"
+      "bytes": 5593,
+      "sha256": "f5f1e6c941259b162145cfaf56a5c21d49c13a23b78d7b430f77aac842e90180"
     },
     {
       "path": "支撑材料/SHA256SUMS.json",
-      "bytes": 85519,
-      "sha256": "13c0e903ece7e1c851881d744d28e8db8be1b0c5fe30addf1e033f2b28b4e12a"
+      "bytes": 84113,
+      "sha256": "746809b93ddfa3a7a83b3f52aea4b4e0be3632cbc1a74f6d32ecac1ba0f373d4"
     },
     {
       "path": "支撑材料/audit/independent_validation.json",
@@ -84,26 +89,6 @@
       "path": "支撑材料/charts/cost_components.png",
       "bytes": 24391,
       "sha256": "e0a6c4d2bf45b18b2943c24c96f759b4c87e0e68e375a0e714523b2af432acbc"
-    },
-    {
-      "path": "支撑材料/charts/cumulative_difference.png",
-      "bytes": 79213,
-      "sha256": "d18c2f7ca44bd0408273366347ec673c8fc9ccbb4a8a5d75f48021f22b73b281"
-    },
-    {
-      "path": "支撑材料/charts/monthly_risk.png",
-      "bytes": 152750,
-      "sha256": "09ac6cbd57d489ee1b9fbc18308e56dbc8b39a9896073b36db481daa3c79020a"
-    },
-    {
-      "path": "支撑材料/charts/representative_dispatch.png",
-      "bytes": 81088,
-      "sha256": "012525afccb2b072ed29983f2b29baff1a454645d1a7a308b5bff300ffa2113a"
-    },
-    {
-      "path": "支撑材料/charts/schedule_comparison.png",
-      "bytes": 55254,
-      "sha256": "0e6abb087233464c226b0bbac28ba91054e89f35152ad6ea0e7ca4e3c31dc620"
     },
     {
       "path": "支撑材料/config/final.yaml",
@@ -1917,13 +1902,8 @@
     },
     {
       "path": "支撑材料/paper/README.md",
-      "bytes": 316,
-      "sha256": "a0dcff34d5af7dcdf19bef8e4f164b199e195171c5eb209688686fd62df14e64"
-    },
-    {
-      "path": "支撑材料/paper/main.md",
-      "bytes": 18832,
-      "sha256": "6fb628397b638270076c36737fff1b419223e1a5bec154a2a19df37d72b795e9"
+      "bytes": 310,
+      "sha256": "70e6deaa5eddc601b3b4b1d535fb56882e6dbaa7352b1e75de6898ef1b1f22f0"
     },
     {
       "path": "支撑材料/publication/chart_adoption.json",
@@ -1936,29 +1916,14 @@
       "sha256": "e0c2b1452cb279d744311e48ecef6f0752a8b34b1610c8abd049525b44e6c3fd"
     },
     {
+      "path": "支撑材料/publication/current_artifacts_check.json",
+      "bytes": 1203,
+      "sha256": "3aee41059b1eb19c2cbec2f26f66a61f4294370d21f1aed3dd6d919e25f15e04"
+    },
+    {
       "path": "支撑材料/publication/previous_chart_revision_delivery.json",
       "bytes": 4223,
       "sha256": "d610a757e9f69d829ec6ca3fbf952cf122234f32de893fd6259e09b06bd5b5e4"
-    },
-    {
-      "path": "支撑材料/publication/previous_chart_revision_render_timing.json",
-      "bytes": 46,
-      "sha256": "ab016397811e43602e149eb6c669cc18245423e9ecaeb7b2076bb8fc261bcc54"
-    },
-    {
-      "path": "支撑材料/publication/previous_chart_revision_structural_checks.json",
-      "bytes": 591,
-      "sha256": "5961e6f39985186ea4bf275911ffb6c739b7536b0673ffe68b4b407aca3d279a"
-    },
-    {
-      "path": "支撑材料/publication/previous_chart_revision_unpacked_delivery_check.json",
-      "bytes": 3682,
-      "sha256": "8f116e035866548d050a1a39041e2b7ee3af206cff62500d0c62e43622b58f73"
-    },
-    {
-      "path": "支撑材料/publication/previous_chart_revision_visual_review.json",
-      "bytes": 17021,
-      "sha256": "2d706c99382100cb61d26be4a89a81928036acab4d08a629cde8e6f020ef6456"
     },
     {
       "path": "支撑材料/publication/render_timing.json",
@@ -2227,8 +2192,8 @@
     },
     {
       "path": "支撑材料/src/model/README.md",
-      "bytes": 1054,
-      "sha256": "a40ebc81eff0d8e168c900063f854dad7cbf9d0ae1566dad478b8addefd3c0a5"
+      "bytes": 1055,
+      "sha256": "fd8a517c963e152bd8f2897d694c6e07969eefca17341ed23e36c5ed4d1307f6"
     },
     {
       "path": "支撑材料/src/model/__init__.py",
@@ -2387,8 +2352,8 @@
     },
     {
       "path": "支撑材料.zip",
-      "bytes": 18859994,
-      "sha256": "06b2ef3ee1ba439ab5b646a438bc01e1cc63440c6c66133d89854a5d3f6ffbc6"
+      "bytes": 18488045,
+      "sha256": "1a0589e34b383bb844b18d99b4d8e58a0eba3facbaff78bc0da22a4734204dde"
     },
     {
       "path": "改进前后对照报告.md",

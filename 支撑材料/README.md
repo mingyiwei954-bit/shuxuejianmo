@@ -58,4 +58,4 @@ AI详细使用说明和现有声明原样保留，本轮不重新评价。队员
 
 本次采用5张核心图，摘要至参考文献24页，PDF119页，完整源码42块。`scripts/publication_charts.py` 从冻结记录重建4张数值图，路线图为用户提供的PNG；`publication/chart_checks.json` 保存金额、单位和输入/输出哈希。绘图需要中文字体：可用环境变量 `CHART_FONT` 指向本机可用的中文TTF/OTF文件；本机使用Excel自带SimHei，其他机器须自行提供字体。本包不分发字体。无合适字体时会报错，避免静默生成中文乱码。
 
-`publication/previous_chart_revision_*` 是替换前论文的历史检查；当前文件以 `structural_checks.json`、`visual_review.json`、`unpacked_delivery_check.json` 为准。本次仅重新生成图表和论文；已有数值实验、审计与五工作簿原样保留。
+替换前的排版检查已移出交付；仅保留仍用于证明继承数值实验的 `publication/previous_chart_revision_delivery.json`，其中旧论文信息不验证当前定稿。当前文件以 `structural_checks.json`、`visual_review.json`、`unpacked_delivery_check.json` 为准。本次仅重新生成图表和论文；已有数值实验、审计与五工作簿原样保留。

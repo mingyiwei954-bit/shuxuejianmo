@@ -123,8 +123,9 @@ for x in d.paragraphs:
   if k in refs and k not in seen_cites:seen_cites.append(k)
 assert len(seen_cites)==9,seen_cites
 refmap={k:i+1 for i,k in enumerate(seen_cites)}
-h('AI工具使用声明',1);p(ps[115].text)
-h('参考文献',1).paragraph_format.page_break_before=True
+ai_statement=(W/'ai_statement.txt').read_text().strip()
+h('AI工具使用声明',1);p(ai_statement)
+h('参考文献',1)
 reference_ids=set()
 for oldnum in seen_cites:
  x=p(f'[{refmap[oldnum]}] '+refs[oldnum]);reference_ids.add(x._p)
@@ -179,7 +180,7 @@ for x in d.paragraphs:
    if re.fullmatch(r'\[\d+\]',s):
     k=int(s[1:-1]);r=x.add_run('['+str(refmap.get(k,k))+']');rf(r);r.font.superscript=True
    else:rf(x.add_run(s))
-# All table bodies use 12pt and three horizontal rules, preserving original numeric strings.
+# Main tables use 12pt; compact original-structure appendix tables use 10.5pt. All use three rules.
 for key,t,widths in table_items:
  t.autofit=False;t.alignment=WD_TABLE_ALIGNMENT.CENTER;t.style=d.styles['Normal Table'];pr=t._tbl.tblPr
  if widths:
@@ -210,8 +211,8 @@ for key,t,widths in table_items:
    if ri==0:
     bd=OxmlElement('w:tcBorders');e=OxmlElement('w:bottom');e.set(qn('w:val'),'single');e.set(qn('w:sz'),'5');bd.append(e);cp.append(bd)
    for x in c.paragraphs:
-    fp(x,size=10.5 if key not in [str(i) for i in range(1,14)] else 12,align=WD_ALIGN_PARAGRAPH.CENTER,indent=0)
-    x.paragraph_format.keep_with_next=(ri<2 if key.startswith('annex_emergency') else ri<len(t.rows)-1)
+    fp(x,size=10.5 if key.startswith('annex_') else 12,align=WD_ALIGN_PARAGRAPH.CENTER,indent=0)
+    x.paragraph_format.keep_with_next=(ri<len(t.rows)-1)
  # Repair merged-cell widths from the fixed grid, once per physical cell.
  for row in t.rows:
   ci=0
@@ -224,6 +225,6 @@ out=W/'C题论文_v3.docx';d.save(out)
 # Basic content invariants before rendering.
 assert 600<=sum(len(s) for s in abstract)<=1100
 assert len(d.paragraphs[0].text)<=25
-assert ps[115].text in [x.text for x in d.paragraphs]
+assert ai_statement in [x.text for x in d.paragraphs]
 (W/'build_meta.json').write_text(json.dumps({'tables':nums,'figures':figs,'equations':eqs,'references':refmap,'abstract_chars':sum(map(len,abstract)),'abstract_hanzi':sum(len(re.findall('[\u4e00-\u9fff]',s)) for s in abstract),'table_count':len(d.tables),'paragraph_count':len(d.paragraphs)},ensure_ascii=False,indent=2))
 print(out,'tables',len(d.tables),'figures',len(d.inline_shapes),'equations',len(eqs))

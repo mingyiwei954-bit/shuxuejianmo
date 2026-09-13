@@ -76,9 +76,11 @@ def main():
                     expected=float(z[z.position==hour*6+1][col].iloc[0])
                     assert abs(val-expected)<=.0000501,(key,hour,val,expected)
         checks.append(key)
-    ai=Document(ROOT/'论文修订源文件/source/current_v3.docx')
-    statement=next(p.text for p in ai.paragraphs if p.text.startswith('本轮使用OpenAI Codex'))
-    assert statement in ps,'AI statement changed'
+    statement=(ROOT/'论文修订源文件/ai_statement.txt').read_text().strip()
+    assert statement in ps,'AI statement differs from current source'
+    assert ps.index('AI工具使用声明')<ps.index('参考文献')
+    listed=json.loads((ROOT/'evidence/support_file_list.json').read_text())['files']
+    assert all(path in ps for path in listed),'Incomplete supporting-file appendix'
     report=dict(pdf_pages=len(reader.pages),abstract_page=1,reference_page=ref,appendix_starts_page=appendix,
         main_including_abstract_references=appendix-1,body_excluding_abstract=appendix-2,
         docx_bytes=paper.stat().st_size,pdf_bytes=pdf.stat().st_size,source_blocks=len(records),

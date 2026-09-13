@@ -92,7 +92,8 @@ def efficiency(g):
 def appendix(g):
     p,h,table=g['p'],g['h'],g['table'];root=g['SUPPORT'];f=root/'outputs/c_final_v1/frozen'
     h('附录',1).paragraph_format.page_break_before=True
-    h('附录一 题目规定结构的结果表',2)
+    h('附录一 数据及题目规定结构的结果表',2)
+    p('原始数据为题目附件1至5，按原文件只读使用；支撑包不重复收录题目原始数据。预处理与单位转换程序见src/model/data.py，完整正式轨迹压缩保存于frozen，可用reproduce.py restore无损恢复；中间汇总和五份正式工作簿随包提供。下列指定日期表由同一冻结轨迹生成。')
     p('以下按题面第一至第三张表的横向结构给出结果。区间购电栏区分零点计划B与最终承诺A，紧急量Q单独列出；实际总购电量为A与Q之和。计划费用仅计pB，全天总费用另含合同调整及紧急费用。单位为千瓦时和元，四位小数只用于展示。')
     for mode,label in [('q1','问题一'),('q2','问题二'),('q3','问题三'),('q4_2','问题四日前'),('q4_3','问题四滚动')]:
         d=pd.read_csv(f/f'{mode}_dispatch.csv',float_precision='round_trip')
@@ -140,10 +141,10 @@ def appendix(g):
             for row in t.rows[:2]:row._tr.get_or_add_trPr().append(OxmlElement('w:tblHeader'))
     h('附录二 支撑文件与完整源码',2).paragraph_format.page_break_before=True
     p('数值重算入口为reproduce.py numeric，原始冻结结果恢复为restore，审计为audit，新增实验为diagnostics，工作簿为workbooks，当前论文为paper；run_pipeline.sh统一转交该入口。数值重算写入独立目录，不覆盖正式冻结答案。具体依赖、环境及命令见README.md。')
-    p('正式数据在frozen中无损保存；新增实验方案、配置、逐次求解状态、逐日费用和统计位于diagnostics。完整运行轨迹另存诊断明细包，支撑包提供汇总、日志和可重算源码。现有AI声明及文件保留，真实人工审阅仍为提交前待办。')
+    p('正式数据在frozen中无损保存；新增实验方案、配置、逐次求解状态、逐日费用和统计位于diagnostics。完整运行轨迹另存诊断明细包，支撑包提供汇总、日志和可重算源码。AI工具使用详情.pdf记录实际用途和人工核验的待补内容。')
     manifest=json.loads((root/'evidence/source_appendix_manifest.json').read_text())
     paths=[x['path'] for x in manifest]
-    paths += ['scripts/publication_charts.py','scripts/parameter_perturbation.py','scripts/contribution_experiments.py','scripts/summarize_revision.py','scripts/revision_document.py','scripts/check_revision_delivery.py','tests/test_diagnostics.py','reproduce.py','论文修订源文件/build.py','diagnostics/protocol.json']
+    paths += ['scripts/publication_charts.py','scripts/parameter_perturbation.py','scripts/contribution_experiments.py','scripts/summarize_revision.py','scripts/revision_document.py','scripts/check_revision_delivery.py','tests/test_diagnostics.py','reproduce.py','论文修订源文件/build.py','diagnostics/protocol.json','scripts/build_ai_usage.py']
     actual=[]
     for path in dict.fromkeys(paths):
         src=root/path
@@ -152,3 +153,12 @@ def appendix(g):
         h(path,3);p('SHA256 '+digest)
         for line in src.read_text().splitlines():g['code_ids'].add(p(line)._p)
     (root/'evidence/source_appendix_manifest_revision.json').write_text(json.dumps(actual,ensure_ascii=False,indent=2))
+
+    h('附录三 补充实验与计算记录',2).paragraph_format.page_break_before=True
+    p('连续消融、参数诊断和效率统计见diagnostics，协议为diagnostics/protocol.json；参数按一月顺序验证后锁定，正式期新增回放用于事后诊断。既有固定窗口功率探索位于research/parameter_perturbation，不能据其替换题给设备或宣称全年稳定。正文给出的线性模型、状态递推和约束已包含本作品采用的主要推导，没有另造未使用的复杂公式。')
+    p('逐方案目录保留配置、日费用、求解状态、汇总及真实运行日志。详细逐时诊断轨迹另存完整明细包用于研究复核，比赛支撑包在文件大小限制内提供汇总和可重算源码；正式结果的完整冻结轨迹在比赛支撑包内。')
+    h('附录四 AI使用说明与支撑文件清单',2)
+    p((g['W']/'ai_statement.txt').read_text().strip())
+    p('工具、用途、提示方式、采用情况和人工核验记录见支撑材料中的AI工具使用详情.pdf；其可复现文字源为evidence/ai_usage.json。以下逐项列出比赛支撑压缩包内文件，路径均相对包根目录。正式提交不另附身份页于该压缩包。')
+    inventory=json.loads((root/'evidence/support_file_list.json').read_text())['files']
+    for name in inventory:g['code_ids'].add(p(name)._p)

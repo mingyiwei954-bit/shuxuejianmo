@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-09-13T16:55:13.718080+08:00",
-  "scope": "Clean support ZIP extraction, frozen restore, deterministic chart rebuild, document source rebuild and structural checks; no annual optimization or ledger re-audit",
+  "checked_at": "2026-09-13T17:25:06.162201+08:00",
   "status": "PASS",
+  "scope": "Clean archive extraction, lossless frozen restore, chart and current paper/AI-text rebuild, 43 source blocks and 46 result-table comparison; no optimization or new ledger audit",
+  "archive_entries": 463,
   "frozen_restore": "PASS",
   "chart_hashes_rebuilt_identical": 5,
   "docx_all_uncompressed_parts_identical": 29,
-  "current_source_blocks": 42,
+  "ai_docx_parts_identical": true,
   "structural_checks": "PASS",
-  "visual_review": "Uses final reviewed PDF; rebuilt DOCX package parts identical to reviewed input",
-  "reused_pdf_sha256": "7bfbfc397946b523b8078fbc17b8a923448be38be9912a17dd26e18bf5bd9fd6"
+  "reviewed_pdf_reused_sha256": "d666a857280301fe3311ff355a890050cf05b4ead28ea31ad663f36f564e0c57"
 }

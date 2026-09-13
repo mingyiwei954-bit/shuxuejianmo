@@ -1,618 +1,139 @@
 {
-  "reviewer": "AI assistant; not team human sign-off",
-  "reviewed_at": "2026-09-13T16:52:36.463582+08:00",
+  "checked_at": "2026-09-13T17:28:57.435588+08:00",
+  "reviewer": "AI visual inspection; not team human sign-off",
   "status": "PASS",
-  "method": "All 119 final rendered pages inspected sequentially in numbered six-page contact sheets for layout; figure pages 3,10,11,15,20 additionally viewed individually at full-page size. Figure source PNGs inspected. Source text completeness checked by structural script, not manual code certification.",
-  "unresolved_visual_issues": [],
-  "notes": [
-    "Page 34 ends result tables before source appendix begins on page 35.",
-    "Page 119 contains natural final protocol lines.",
-    "Code visually wraps; runnable source files remain authoritative."
-  ],
-  "docx_sha256": "d6865dafdb5cb2a4f0e3af50f16c32210208c294e62420d87fada7ecaee8a6da",
-  "pdf_sha256": "7bfbfc397946b523b8078fbc17b8a923448be38be9912a17dd26e18bf5bd9fd6",
-  "individual_detail_pages": [
+  "paper_pages_reviewed": [
+    1,
+    2,
     3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
     10,
     11,
+    12,
+    13,
+    14,
     15,
-    20
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127
   ],
-  "pages": [
-    {
-      "page": 1,
-      "png_sha256": "04ec6bbe578ce073d5a92c99117221c67cb090a5e339f6ff956683202274bbb4",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 2,
-      "png_sha256": "87f4c9d050911603d00d101fb07c8365d9776b8ad13770ae3b8933c4fc3e87a4",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 3,
-      "png_sha256": "f3a8c0507327380149b25f9498d40603f83d465d456070db53cc660350f85197",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 4,
-      "png_sha256": "0f8bd780a0783e8189e8a0e69ffb540f807faaab5e0d66edff8c9f771e42243f",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 5,
-      "png_sha256": "6a923a67d6ec744a08ad8b6ee9ccda44abd179860085f4dcaba6efacaf22c835",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 6,
-      "png_sha256": "8b9431ec285bce3ea9c42d970a89d370828df0b750991c6be2960445a20dfed5",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 7,
-      "png_sha256": "8d47b6c5c706dd3812c23edf77fdf4956155a44dbf13c57429c9e138c133d640",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 8,
-      "png_sha256": "52f0c5d6462d9da21b3e19e13f29b0ee9fc154b57fdefc299bd6e2e5723aff35",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 9,
-      "png_sha256": "b9517857c3288f0a424a8346782eba9c66a55ccd9130b35abf35b90e5d044655",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 10,
-      "png_sha256": "7c1b00d45fe68e4992701233ec40f62caf2cc94f9a1b3c9467636744cad58189",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 11,
-      "png_sha256": "7b0919d3b48ca9450e8afb0a795bc2d6b48b2f79033c0cab25f00dba04a5c7ed",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 12,
-      "png_sha256": "b4019c3807cfa4d679a678b9fb01cbc55e0ab7db17be66645818780a917c7bf7",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 13,
-      "png_sha256": "2a1eee05f8771346a0d3b31902393b22a5439a2ed042b4c11584b3f09f24101c",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 14,
-      "png_sha256": "facfe73b09479b333c2f26e571ef02907b688ff0814f4f00b6446157925d24b6",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 15,
-      "png_sha256": "50b820cef7bc42f49db584838ff2c847a9ccd6c1d74bd8bd0d4bc90a19b23799",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 16,
-      "png_sha256": "2745ff1e481d7f316ea0e4a6bba5151cbf8162535bfda7cca98e9f9c960e27bf",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 17,
-      "png_sha256": "1af4074c8ee041e9e73027fccd2a2473b46b37403e793a8ffbad4e68d6d407d1",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 18,
-      "png_sha256": "752ed809ac3a7141d7f291064afeafbc6543ddde9ac5c5139231a612d1730d3d",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 19,
-      "png_sha256": "6db19c211bb15cb8efd5e19bbba00f95376795b95327391ac7529c8dc9671dd1",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 20,
-      "png_sha256": "7e4da0b61dd089c3b6909f5483f1c32493c666fc1152f713b9b21dfbce29bb15",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 21,
-      "png_sha256": "334ec6f34d1aeea3c6e60ff3cdf295103f2b450bffad0be649440764bd0c28fa",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 22,
-      "png_sha256": "f93dd21f94a276f84ee78471e796043668572d209870e840f908472bb525a15c",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 23,
-      "png_sha256": "b72ca3450a68a48ee385975ff65d3a63c9a151a571d4be2b621e0d6e272e54fd",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 24,
-      "png_sha256": "24be8043879e02bafa0e2a6ae1f2579eda8cd9ad186b8a5a63f649ca9b9fa567",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 25,
-      "png_sha256": "4f6b57c776262f57231b7117dbd98db14388e5fb033a888c3ba2e149726861a5",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 26,
-      "png_sha256": "259e2f33b4da44e5984a1199745d29eb1f9343e07d983846bf48a67f48df4e13",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 27,
-      "png_sha256": "15d16d5f36fa6b95d70d82815d03b73ccfd066edcc86f9f1ed3f7c4d612275a5",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 28,
-      "png_sha256": "a3d32dcecdd3328e24bd4931dd6f1339bea85593eb4b89404406ec51554be576",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 29,
-      "png_sha256": "93ccca80a8b591ec58014f2d2d5c4bd96b990716230b8c6eba0067272c39b55e",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 30,
-      "png_sha256": "62413e214387201849c7e7cf763eb27705c167f6cd20dcedc49a1bd03c8865d5",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 31,
-      "png_sha256": "af842897a8ae0ae48ee8b8127571b5b6abc3101093d6e73209f3a793bfe9056b",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 32,
-      "png_sha256": "cd65cd3dff86a95a131d47a5fa88273c566c907ae2a8cb1c9657652de2451c2f",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 33,
-      "png_sha256": "d576fd5050e17de13a7c6f1ea71f97cd9476a60d38ce7735dae00c31545b725a",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 34,
-      "png_sha256": "affee17f9a41a03088dba065bff5c397a6b8c8b2204a1befaec3310eece1ae74",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 35,
-      "png_sha256": "455a7c016b6a7a5c88cdf112742484ea201bd95cb7ccb4363a7b2e366a78c5a8",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 36,
-      "png_sha256": "ec27717a980333eb0f695b59af757a99a668ac8c4759643e7854f90285e9d9de",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 37,
-      "png_sha256": "07cbc16d98ae5eb06b9b54270724449ba476d058d35e685312af5802e35f4837",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 38,
-      "png_sha256": "ca427b9c2cdcd6660297e76432f8a307dfca3f2db929ffb9f461a95caaecb435",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 39,
-      "png_sha256": "d10e46d0896ed0f028dbb3a204a7875cd4e624b10634f1fcd3b9b272f0807b50",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 40,
-      "png_sha256": "5adc51d1b1ea009300b6e0e9dbab45922c42671ffbac9a452f19f634419ac4b3",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 41,
-      "png_sha256": "8ff9432d1adde77b94275cf8a56f6d5749ab51fe96b5e395813e952cb7b06f4b",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 42,
-      "png_sha256": "c349e94ed97ac43aeb3d037286cfd1b2acb54286bc55865c222fe986c9ca3c36",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 43,
-      "png_sha256": "ffb0988562f2bb0a813f718a6c97d10a23ee9f2099f1a14366279191efb63b31",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 44,
-      "png_sha256": "e7ea6984a5296c19c865e8e6b5c362b2be7069219c6e0ee6136546772e0e4f0c",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 45,
-      "png_sha256": "8c941a5a9de04b720dd5a771b71dca991a601a4305a4bc5a8e25ed010d4eae34",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 46,
-      "png_sha256": "f9ce6e681e01b917c5cf91646c11bc65aa475c9fcbef598ccc3ab93484bb4c2e",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 47,
-      "png_sha256": "cc0c4b5a06a2f340bc3558aff265c6edf69554240053613f1b1a8ed6bc4d448e",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 48,
-      "png_sha256": "72a0f0c0ab1d02d7beb256e12c5258e8874b70f4be411ecbe9103e434edd4539",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 49,
-      "png_sha256": "e694265ab0ed7b558821ec69052bc67268b6294528e27108eaa8e5c1cd6d98c3",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 50,
-      "png_sha256": "8e5ecb18758a801b9df152dc55ca617628642fc5826506b32b81e5dca9ac1f16",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 51,
-      "png_sha256": "85bce6449f156c850bb9d2def7d54126139bf1b56a401523b7fee2a472c2472d",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 52,
-      "png_sha256": "393286286e11639af9e805dd045450ea4ea2e14d4db3f4bb92b8f5da3db01162",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 53,
-      "png_sha256": "aa8c1cf97618c1990d35b248462c3ac742bb21af58a06ff0d396aba31b53264e",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 54,
-      "png_sha256": "45173b77d2f43378a31c1e56cb871716f809bce77bfed0b5e0a5dfb20ce516e9",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 55,
-      "png_sha256": "4d10ac93a8f7e43358b71a99acb0a9ec2b8cdf9c8d63dd4321c2f55051537bac",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 56,
-      "png_sha256": "f775897b62eabdfbdaabc65a342c48e131c6a3376626586f56b4cf12f6786c5d",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 57,
-      "png_sha256": "cb120040122115b3b24aba40d269813ecf1b567fde00123f52eff6e564f18bb5",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 58,
-      "png_sha256": "39b8a0556ac8cfd9e9464f889475eaa39b4a91dd0db6c746c44144564821579e",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 59,
-      "png_sha256": "cc85e359eb5ec4cd8004c78786c9936059000de331908a92db65be0b50e87e65",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 60,
-      "png_sha256": "512049259c55042c565bda57d55f355d71ba4b7cacbff7756087216082b15495",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 61,
-      "png_sha256": "f6918484565f9c610af8bb7602a71e2113ae2b81c41c93126605f64692368725",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 62,
-      "png_sha256": "3567cd2555c693e6e7148eb077aae332cdb46958c118d9b55e36f88dfeae5958",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 63,
-      "png_sha256": "3a2f46307f805e272ca7870298ce65bc8177a6787f83f4d8194f6258ed57678b",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 64,
-      "png_sha256": "abb2538d1bfb3e50a7916447cd03c46b6c443199eba20ed2e6cc6218f97c8c85",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 65,
-      "png_sha256": "f510eb1041717a023c62bdb21d8f6188c9b98a5874666211ec92fa7da4c0b916",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 66,
-      "png_sha256": "273025990029a0e6781e9a0d37d9218624b1bd0337be9ee2d65d695ffdcbf2d6",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 67,
-      "png_sha256": "a3aaf773072cea96ee3ae4bc93a8ffb3285522656b836caaf5e7ad78fd50fa45",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 68,
-      "png_sha256": "e954da68b3718ca7f4443a08edd86685a070ffa8f6cad5ac84f1e566ee8c2a2a",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 69,
-      "png_sha256": "d1cb320c7da6b32616c71503b6cc8c7c09d6f10d4da313021c9f87b4834f263c",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 70,
-      "png_sha256": "0835a65990e92c0b2f78c144e87fc0ac6fec76ae1928283a9587cf65047fffd8",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 71,
-      "png_sha256": "5c9ed53229bdb7cbe6e8d220f323cf215050c6734a1c09cca6dc0ccb78500c86",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 72,
-      "png_sha256": "ce39ca941d45ae6e0ec6cefd0089a55392b1a9fc2a4c1d1aa2131b4d4ce993a6",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 73,
-      "png_sha256": "f869054659d96002b409c4dbf6b7c0235f72fbfb4725e872d3493c05222fb727",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 74,
-      "png_sha256": "8c311fba9a199e1bec067dee34e8f7ee56c30ae064b989fcd4ba2ced967dc9bf",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 75,
-      "png_sha256": "c8eb6200cda6068f61c087f55c4d56740470882f545b151b9d2ebbbbebb5b383",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 76,
-      "png_sha256": "12baebde444052c81bb508d96590bf83dcc4d133749ab1a041c7991b5f354c12",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 77,
-      "png_sha256": "8f80b3763d37b5ac78ff9556c98453b85ece7915e669e7709f036debfe6ec72c",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 78,
-      "png_sha256": "43e8918c21ae15bf9e3645520690762e0ae2d0c9c19461ae3cf3cb75010e6f35",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 79,
-      "png_sha256": "3dd6f9a1073af8792422223c0aedd0161497c081ea6e5a65dbf72df6d57a3abd",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 80,
-      "png_sha256": "638d530e5d1ce364f68a059ee4615fdd1c66572901da63f33e083b41618da3fd",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 81,
-      "png_sha256": "0479513f5d5ee2604eedeea2da6949c0f1be562da357cb398c07276fc9d39a60",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 82,
-      "png_sha256": "45170c1b6d94cd4ced4d4c0b39e3d3c307c0e521548b710cdd51b0102d9b2659",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 83,
-      "png_sha256": "52de1503f5e1c3bb9fe2b53cb49bc7aeb4e4fa59e9e6cbd2768c5dd7f59b4010",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 84,
-      "png_sha256": "6b15f5417794e9a729d4f59bf5f5defa23b91ab5ea0fa90ee2a3d94799c543db",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 85,
-      "png_sha256": "d564bb56e67e64d65f4fac42c324fe68464e89ef31b6559e3f8b6377bf73af6d",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 86,
-      "png_sha256": "1b59bafc4e76bf2ecaf7a1ec6fe6000f8ceece1b63b74d2512bd09cfc65cbb5d",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 87,
-      "png_sha256": "7175ed941bb7460d003a733d08f508503eaf8ee0a89af52dd257ebcfd148e792",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 88,
-      "png_sha256": "6f1964e19b0171bd6fafd4a3ab8f259988572a5ec8d7a56eb96a95d6f10edd7e",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 89,
-      "png_sha256": "e08da182e026e24788cc7c441157b01658cbe280ae2cc624506a98e95dc64138",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 90,
-      "png_sha256": "d684a755838d180577d59a02f3bc950f93e2ed1f8da1b9dbf5ad3c661317f34c",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 91,
-      "png_sha256": "2480ff457c33bf6d4f8841494b154454631e0527885d34181081cc9f32b78653",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 92,
-      "png_sha256": "4817e18857ecd03248a8b41917979e228084a4fe697209b7936ef1e91918d42d",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 93,
-      "png_sha256": "ea8fa2f6b2c181a0e5b8005653baab6e1bf4c35bceeaca4ea47bb0bfba3adfa1",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 94,
-      "png_sha256": "6cc99495eabb4f81048f96c516441b3513a0cb312c5657298b74ee74cb75a2d3",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 95,
-      "png_sha256": "fe05561d6bb2a3884f20cdbf0021b790f0fff5f89293aa870cff55efb79aae9a",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 96,
-      "png_sha256": "eb3a506844617afe06187fa10a2ed42c58df087cbd5ae9b2cddf102fb58e42be",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 97,
-      "png_sha256": "2a5defda8879caa8dc5e37924d1eb54ee133308a35c1915b915a79637f6d588b",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 98,
-      "png_sha256": "40bc237b508f1b723d6dc0f0c559532590f627160e9062724bd2ce8237c17e80",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 99,
-      "png_sha256": "c60a421285898b763c2eb07b2b43700c7f7a1c46b9c2faccb3552b2482eb972b",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 100,
-      "png_sha256": "32c50693a8f9ab0270894e20d05d68b45062ea2b5a189c0c3d629aafd63b5192",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 101,
-      "png_sha256": "4a29f35ba463a9d20409064aa87481a161ef5e3dfc9926aa1361e70e207738f9",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 102,
-      "png_sha256": "4aaa7d9813b6b082206184bad4d5abdf3fd1f15c20b8d93c1e0c436c81db7bbd",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 103,
-      "png_sha256": "1b9f7f1792bd8d04270df5d8cf64b2abd9b5d1597e5d0893ca196dcefefcab5a",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 104,
-      "png_sha256": "87c11619e99842dddee240105ebaecc41e61143e1c59400cee8e9ccc684c64f6",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 105,
-      "png_sha256": "e89ff8daa658025d99253c7de6958334e574dcca9dcffe43c0fd002b1ad589e4",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 106,
-      "png_sha256": "c7215986368d7be6dcdfea715a585c777a1b480e04c2b3fbc7ab9675c60f07f7",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 107,
-      "png_sha256": "b61d66203b5c0408156182f252d114aba188230a35107f57022eecb04373da1b",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 108,
-      "png_sha256": "015dbbfe812a3631a58face64534e576925f1eddc7d7958d23ede40edc43307b",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 109,
-      "png_sha256": "c9e3fd3c6ef4c6b26d1db3dd1fe15b351dd8543852a8693ec2897b80cc2b29b3",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 110,
-      "png_sha256": "987bac75f900da3e5b9c7363aaf2ee03b0c9f5459bd7c7cdfc90bc245773a828",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 111,
-      "png_sha256": "f29ab25d1c4db11f09fb720c4883fc0a955939953fdf37fe03fda91aec77f381",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 112,
-      "png_sha256": "60ae5169957c4c5c7b975d5f51d161d68af55c28bbef88137fa103b3acda72f1",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 113,
-      "png_sha256": "0d3f72d421c2d0a27011fc17fad4bc2f014c6515d962001e458606e3b8b477d8",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 114,
-      "png_sha256": "c37cb31ecbd56db8816de73dd18702ee06ca880e41054e5a1abba358d6568221",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 115,
-      "png_sha256": "275f09a058ab60baad5d617d1fffb8a4c9dcf081c5b2baad12639df4f2e7bf19",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 116,
-      "png_sha256": "eb713e2fa7977dccd9cb2821611b56b33134e462c8ec62ddf5e765d555de9917",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 117,
-      "png_sha256": "fcdd173bfbc0c2478149ac82e855dba99c9a1221cc05c264d35df1717ba8a5e7",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 118,
-      "png_sha256": "7fa693f6f803a45dfdd1ab7b7c5c92968e7e322378ffcfac6f7c37490da64149",
-      "layout_status": "PASS"
-    },
-    {
-      "page": 119,
-      "png_sha256": "a016d5104ea079091ada6ce7b8904d39210fe8b5379455a62e2a90ce0ecb6027",
-      "layout_status": "PASS"
-    }
-  ]
+  "method": "Rendered page images inspected in four-page contact sheets; pages 1–31 additionally matched SHA256 of previously reviewed images. AI disclosure inspected as a full single page.",
+  "pdf_sha256": "d666a857280301fe3311ff355a890050cf05b4ead28ea31ad663f36f564e0c57",
+  "ai_pdf_sha256": "0caf08c9d84499e94c347d5a40edd399196fcd9a8354315891d50531dc067f4b",
+  "observations": "No clipped text, garbled characters or split result tables observed. Final emergency table kept together on page 33. Full source and file list retained.",
+  "human_review": "pending"
 }

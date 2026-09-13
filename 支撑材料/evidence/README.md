@@ -1,1 +1,1 @@
-source_provenance.json、source_appendix_manifest.json 为继承的历史来源记录，后者也为构建器提供原文件路径列表；其中历史源码哈希不验证本轮修改。当前42块源码以 source_appendix_manifest_revision.json 为准；原始输入以 original_inputs_verified.json 为准。AI说明原样保留。
+source_provenance.json、source_appendix_manifest.json 为继承的历史来源记录，后者也为构建器提供原文件路径列表；其中历史源码哈希不验证本轮修改。当前43块源码以 source_appendix_manifest_revision.json 为准；原始输入以 original_inputs_verified.json 为准。AI说明由ai_usage.json生成；ai_statement.txt为正文声明源。逐项人工核验记录仍待队员补齐。

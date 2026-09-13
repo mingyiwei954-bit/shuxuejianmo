@@ -18,13 +18,13 @@ def sha(path):
 
 def main():
     font = os.environ.get('CHART_FONT')
-    mac = Path('/Applications/Microsoft Excel.app/Contents/Resources/DFonts/SimHei.ttf')
+    mac = Path('/Applications/Microsoft Excel.app/Contents/Resources/DFonts/Simsun.ttc')
     if not font and mac.exists(): font = str(mac)
     if font:
         fm.fontManager.addfont(font)
         family = fm.FontProperties(fname=font).get_name()
     else:
-        path = fm.findfont('SimHei', fallback_to_default=False)
+        path = fm.findfont('SimSun', fallback_to_default=False)
         family = fm.FontProperties(fname=path).get_name()
     plt.rcParams.update({'font.family':family,'font.size':13,'axes.unicode_minus':False,
         'axes.spines.top':False,'axes.spines.right':False,'figure.dpi':160,

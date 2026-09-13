@@ -35,12 +35,12 @@
     "outputs/c_final_v1/frozen/q4_3_S3_daily.csv": "7fd7ac067bf654197049c485b0fd9a9c817b1bd045af629caff78470289445ab"
   },
   "output_hashes": {
-    "cumulative.png": "2b8f3ee90e7e2bd9e804e328aa43aa40b940a683f3de27d5110f04fce4675313",
-    "dispatch.png": "85a2facd4a3f71562ca04f6fd1ea742a35eea7b8b388eb73b72c5f641bd4d9d4",
-    "monthly.png": "568d25f93d83ee66a933cbcc79c09410dad95975d2d03042d578eb86cf5fa4e8",
-    "frequency.png": "88338f9f52e8de050a7a9ce8d8edffbc5de6c36fbeb125a326d59a052d307409",
+    "cumulative.png": "d208c6510fbd584e95977a94389fb31b2e8d1d2ef8a8a242146dae66fd745929",
+    "dispatch.png": "f5d9d41c8c16aa96ad6bebbd3083ceb13a5ae6734638c92b61103411ea5d283b",
+    "monthly.png": "3bedffaaf61a11b3e8ff327fa5337b3ea686ea37e8eb64b2faae79aa42ab962b",
+    "frequency.png": "da18c243890fb369328ddc4d99500c0210d0847553c6ee73ed18b98d35f29cb0",
     "route.png": "737a12d493089ed155ccb402f89a214afe367052836d5765e90b0a854e60092f"
   },
-  "font_family": "SimHei",
+  "font_family": "SimSun",
   "status": "PASS"
 }

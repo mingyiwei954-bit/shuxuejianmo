@@ -67,6 +67,9 @@ def main():
             content+='<alias><family>serif</family><prefer><family>Times New Roman</family><family>SimSun</family></prefer></alias><alias><family>宋体</family><prefer><family>SimSun</family></prefer></alias></fontconfig>'
             (cache/'fonts.conf').write_text(content)
             os.environ['FONTCONFIG_FILE']=str(cache/'fonts.conf')
+        run([sys.executable,'scripts/build_ai_usage.py'])
+        run([sys.executable,a.renderer,ROOT/'work/ai_usage/AI工具使用详情.docx','--output_dir',ROOT/'qa/ai_usage','--emit_pdf'])
+        shutil.copy2(ROOT/'qa/ai_usage/AI工具使用详情.pdf',ROOT/'AI工具使用详情.pdf')
         began=time.perf_counter()
         run([sys.executable,a.renderer,publication/'C题论文_实质改进版.docx','--output_dir',ROOT/'qa/current_render','--emit_pdf'])
         shutil.copy2(ROOT/'qa/current_render/C题论文_实质改进版.pdf',publication/'C题论文_实质改进版.pdf')

@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-09-13T17:28:57.435588+08:00",
+  "format_and_reproduction": "PASS",
+  "submission_ready": false,
+  "structure": {
+    "pdf_pages": 127,
+    "abstract_page": 1,
+    "reference_page": 23,
+    "appendix_starts_page": 24,
+    "main_including_abstract_references": 23,
+    "body_excluding_abstract": 22,
+    "docx_bytes": 2493095,
+    "pdf_bytes": 3828896,
+    "source_blocks": 43,
+    "specified_horizontal_tables": 46,
+    "table_count": 65,
+    "docx_sha256": "9ee1220275bb7182ea53af8e66381ef19e0f4f0a7ca8a43f129c6ed86421440d",
+    "pdf_sha256": "d666a857280301fe3311ff355a890050cf05b4ead28ea31ad663f36f564e0c57",
+    "structural_and_numeric": "PASS",
+    "visual_review": "separate gate; this script does not certify visual quality"
+  },
+  "ai_detail_pages": 1,
+  "support_file_list_count": 463,
+  "known_identity_scan": "PASS; known markers only, not human sign-off",
+  "formal_algorithm_changed": false,
+  "optimization_runs_this_format_revision": 0,
+  "protected_numeric_files_byte_identical": 381,
+  "pending": [
+    "Actual team manual verification and other AI tools/models to be completed truthfully",
+    "WinRAR repack before final MD5: current archive uses Python ZIP_DEFLATED",
+    "Final team submission and signed commitment via prescribed process"
+  ],
+  "visual_review": "publication/visual_review.json",
+  "reproduction": "publication/unpacked_delivery_check.json"
+}

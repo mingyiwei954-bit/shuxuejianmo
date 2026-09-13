@@ -1,5 +1,6 @@
 {
-  "checked_at": "2026-09-13T17:07:20.990345+08:00",
+  "checked_at": "2026-09-13T17:28:57.435588+08:00",
+  "status": "PASS",
   "removed_superseded_artifacts": {
     "charts/cumulative_difference.png": "论文修订源文件/figures/cumulative.png",
     "charts/representative_dispatch.png": "论文修订源文件/figures/dispatch.png",
@@ -11,9 +12,10 @@
     "publication/previous_chart_revision_unpacked_delivery_check.json": "publication/unpacked_delivery_check.json",
     "publication/previous_chart_revision_visual_review.json": "publication/visual_review.json"
   },
-  "source_appendix_hashes_verified": 42,
+  "source_appendix_hashes_verified": 43,
   "rebuilt_docx_parts_identical": 29,
-  "formal_results_and_published_docx_pdf_unchanged": true,
-  "scope": "Cleaned copy actually rebuilds identical DOCX contents using previously restored frozen inputs; no new optimizer run or PDF rendering",
-  "status": "PASS"
+  "formal_results_unchanged": true,
+  "paper_and_ai_disclosure_updated": true,
+  "protected_numeric_files_byte_identical": 381,
+  "scope": "Clean archive extraction, lossless frozen restore, chart and current paper/AI-text rebuild, 43 source blocks and 46 result-table comparison; no optimization or new ledger audit"
 }

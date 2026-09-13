@@ -161,7 +161,7 @@
   },
   {
     "path": "scripts/publication_charts.py",
-    "sha256": "d3f0280106183ab97c7e72e5db120023f71a7fe7a5b48af5d28434290f8205bd",
+    "sha256": "2bba57c11b0767d046fa8278b3788c5fb53c0082dd6381bc6badb4a7ca17a048",
     "lines": 112
   },
   {
@@ -181,13 +181,13 @@
   },
   {
     "path": "scripts/revision_document.py",
-    "sha256": "1b13728fc71d2c4a5767d6e046511e7532b0b75b89081cbaad1b77ac97363c0f",
-    "lines": 154
+    "sha256": "20ac81e5d85656074515e4d79d8ef564cc28c6ed39affac6f88319c0944cfc7e",
+    "lines": 164
   },
   {
     "path": "scripts/check_revision_delivery.py",
-    "sha256": "bd11956c1927bea46fbe02455fa789caf17037adab18b9cd526e7fc9338dd077",
-    "lines": 92
+    "sha256": "01955d7012bde24cfae8412695a56f35e61dc5a256724ecc669fbba484665163",
+    "lines": 94
   },
   {
     "path": "tests/test_diagnostics.py",
@@ -196,17 +196,22 @@
   },
   {
     "path": "reproduce.py",
-    "sha256": "3704cf091d05889c84e0d6fe406b31e86d854721f72d67ea4d055a197a69c557",
-    "lines": 77
+    "sha256": "923bce869f30ea04949dc7788ccb53eb37be0ea76fc58e0a0e7328009d465fc5",
+    "lines": 80
   },
   {
     "path": "论文修订源文件/build.py",
-    "sha256": "632c9d544bb80192a2d5a9b598866f30525c34cc7d078286f2c6510de659c7f6",
-    "lines": 229
+    "sha256": "9b55248abf543feb138976357b6a5e09cb98f92d7cbf536ff37eaf7f6a452dfa",
+    "lines": 230
   },
   {
     "path": "diagnostics/protocol.json",
     "sha256": "e99c05a06e73ab60adba542585a38d68805ff27320b5ef49929924aa2d2f1c34",
     "lines": 104
+  },
+  {
+    "path": "scripts/build_ai_usage.py",
+    "sha256": "a6d8fd3bbc8a7b2a8df4ddf6be5048a7edbedc029f78398dbad1f522f01cea49",
+    "lines": 44
   }
 ]

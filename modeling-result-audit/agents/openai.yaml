@@ -1,4 +1,0 @@
-interface:
-  display_name: "建模结果独立复核与讨论"
-  short_description: "独立检查建模结果、费用账本和证据链，区分实质错误与施工中的版本差异"
-  default_prompt: "使用 $modeling-result-audit 独立复核当前建模项目，重建数据到结论的证据链，并按影响讨论问题与修复顺序。"

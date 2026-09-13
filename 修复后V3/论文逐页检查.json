@@ -1,309 +1,1065 @@
 {
-  "pages": 113,
-  "tables": 99,
-  "figures": 5,
-  "native_equations": 12,
-  "table_caption_numbers": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31,
-    32,
-    33,
-    34,
-    35,
-    36,
-    37,
-    38,
-    39,
-    40,
-    41,
-    42,
-    43,
-    44,
-    45,
-    46,
-    47,
-    48,
-    49,
-    50,
-    51,
-    52,
-    53,
-    54,
-    55,
-    56,
-    57,
-    58,
-    59,
-    60,
-    61,
-    62,
-    63,
-    64,
-    65,
-    66,
-    67,
-    68,
-    69,
-    70,
-    71,
-    72,
-    73,
-    74,
-    75,
-    76,
-    77,
-    78,
-    79,
-    80,
-    81,
-    82,
-    83,
-    84,
-    85,
-    86,
-    87,
-    88,
-    89,
-    90,
-    91,
-    92,
-    93,
-    94,
-    95,
-    96,
-    97,
-    98,
-    99
+  "total_pages": 126,
+  "main_including_abstract_references_pages": 24,
+  "appendix_start": 25,
+  "unchanged_original_tables": 98,
+  "old_main_png_matches": {
+    "page-46.png": "page-36.png",
+    "page-47.png": "page-37.png",
+    "page-48.png": "page-38.png",
+    "page-49.png": "page-39.png",
+    "page-50.png": "page-40.png",
+    "page-51.png": "page-41.png",
+    "page-52.png": "page-42.png",
+    "page-53.png": "page-43.png",
+    "page-54.png": "page-44.png",
+    "page-55.png": "page-45.png",
+    "page-56.png": "page-46.png",
+    "page-57.png": "page-47.png",
+    "page-58.png": "page-48.png",
+    "page-59.png": "page-49.png",
+    "page-60.png": "page-50.png",
+    "page-61.png": "page-51.png",
+    "page-62.png": "page-52.png",
+    "page-63.png": "page-53.png",
+    "page-64.png": "page-54.png",
+    "page-65.png": "page-55.png",
+    "page-66.png": "page-56.png",
+    "page-67.png": "page-57.png",
+    "page-68.png": "page-58.png",
+    "page-69.png": "page-59.png",
+    "page-70.png": "page-60.png",
+    "page-71.png": "page-61.png",
+    "page-72.png": "page-62.png",
+    "page-73.png": "page-63.png",
+    "page-74.png": "page-64.png",
+    "page-75.png": "page-65.png",
+    "page-76.png": "page-66.png",
+    "page-77.png": "page-67.png",
+    "page-78.png": "page-68.png",
+    "page-79.png": "page-69.png",
+    "page-80.png": "page-70.png",
+    "page-81.png": "page-71.png",
+    "page-82.png": "page-72.png",
+    "page-83.png": "page-73.png",
+    "page-84.png": "page-74.png",
+    "page-85.png": "page-75.png",
+    "page-86.png": "page-76.png",
+    "page-87.png": "page-77.png",
+    "page-88.png": "page-78.png",
+    "page-89.png": "page-79.png",
+    "page-90.png": "page-80.png",
+    "page-91.png": "page-81.png",
+    "page-92.png": "page-82.png",
+    "page-93.png": "page-83.png",
+    "page-94.png": "page-84.png",
+    "page-95.png": "page-85.png",
+    "page-96.png": "page-86.png",
+    "page-97.png": "page-87.png",
+    "page-98.png": "page-88.png",
+    "page-99.png": "page-89.png",
+    "page-100.png": "page-90.png",
+    "page-101.png": "page-91.png",
+    "page-102.png": "page-92.png",
+    "page-103.png": "page-93.png",
+    "page-104.png": "page-94.png",
+    "page-105.png": "page-95.png",
+    "page-106.png": "page-96.png",
+    "page-107.png": "page-97.png",
+    "page-108.png": "page-98.png",
+    "page-109.png": "page-99.png",
+    "page-110.png": "page-100.png",
+    "page-111.png": "page-101.png",
+    "page-112.png": "page-102.png",
+    "page-113.png": "page-103.png",
+    "page-114.png": "page-104.png",
+    "page-115.png": "page-105.png",
+    "page-116.png": "page-106.png",
+    "page-117.png": "page-107.png",
+    "page-118.png": "page-108.png",
+    "page-119.png": "page-109.png",
+    "page-120.png": "page-110.png",
+    "page-121.png": "page-111.png",
+    "page-122.png": "page-112.png"
+  },
+  "new_or_changed_pages": [
+    "page-1.png",
+    "page-2.png",
+    "page-3.png",
+    "page-4.png",
+    "page-5.png",
+    "page-6.png",
+    "page-7.png",
+    "page-8.png",
+    "page-9.png",
+    "page-10.png",
+    "page-11.png",
+    "page-12.png",
+    "page-13.png",
+    "page-14.png",
+    "page-15.png",
+    "page-16.png",
+    "page-17.png",
+    "page-18.png",
+    "page-19.png",
+    "page-20.png",
+    "page-21.png",
+    "page-22.png",
+    "page-23.png",
+    "page-24.png",
+    "page-25.png",
+    "page-26.png",
+    "page-27.png",
+    "page-28.png",
+    "page-29.png",
+    "page-30.png",
+    "page-31.png",
+    "page-32.png",
+    "page-33.png",
+    "page-34.png",
+    "page-35.png",
+    "page-36.png",
+    "page-37.png",
+    "page-38.png",
+    "page-39.png",
+    "page-40.png",
+    "page-41.png",
+    "page-42.png",
+    "page-43.png",
+    "page-44.png",
+    "page-45.png",
+    "page-123.png",
+    "page-124.png",
+    "page-125.png",
+    "page-126.png"
   ],
-  "continuous_table_numbers": true,
-  "figure_caption_numbers": [
-    1,
-    2,
-    3,
-    4,
-    5
-  ],
-  "continuous_figure_numbers": true,
-  "numeric_cells_missing_from_pdf": [],
-  "tables_without_exact_single_page_text_match": [],
-  "a4_all_pages": true,
-  "margins_cm": [
+  "table_page_checks": [
     {
-      "top": 2.499,
-      "bottom": 2.499,
-      "left": 2.499,
-      "right": 2.499
+      "table": 1,
+      "candidate_pages": []
+    },
+    {
+      "table": 2,
+      "candidate_pages": [
+        5
+      ]
+    },
+    {
+      "table": 3,
+      "candidate_pages": [
+        6
+      ]
+    },
+    {
+      "table": 4,
+      "candidate_pages": [
+        8
+      ]
+    },
+    {
+      "table": 5,
+      "candidate_pages": [
+        9
+      ]
+    },
+    {
+      "table": 6,
+      "candidate_pages": [
+        12
+      ]
+    },
+    {
+      "table": 7,
+      "candidate_pages": [
+        13
+      ]
+    },
+    {
+      "table": 8,
+      "candidate_pages": [
+        13
+      ]
+    },
+    {
+      "table": 9,
+      "candidate_pages": [
+        14
+      ]
+    },
+    {
+      "table": 10,
+      "candidate_pages": [
+        15
+      ]
+    },
+    {
+      "table": 11,
+      "candidate_pages": [
+        16
+      ]
+    },
+    {
+      "table": 12,
+      "candidate_pages": [
+        18
+      ]
+    },
+    {
+      "table": 13,
+      "candidate_pages": [
+        19
+      ]
+    },
+    {
+      "table": 14,
+      "candidate_pages": [
+        19
+      ]
+    },
+    {
+      "table": 15,
+      "candidate_pages": [
+        20
+      ]
+    },
+    {
+      "table": 16,
+      "candidate_pages": [
+        21
+      ]
+    },
+    {
+      "table": 17,
+      "candidate_pages": [
+        25
+      ]
+    },
+    {
+      "table": 18,
+      "candidate_pages": [
+        25
+      ]
+    },
+    {
+      "table": 19,
+      "candidate_pages": [
+        25
+      ]
+    },
+    {
+      "table": 20,
+      "candidate_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "table": 21,
+      "candidate_pages": [
+        26,
+        35
+      ]
+    },
+    {
+      "table": 22,
+      "candidate_pages": [
+        26
+      ]
+    },
+    {
+      "table": 23,
+      "candidate_pages": [
+        26
+      ]
+    },
+    {
+      "table": 24,
+      "candidate_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "table": 25,
+      "candidate_pages": [
+        26
+      ]
+    },
+    {
+      "table": 26,
+      "candidate_pages": [
+        27,
+        36
+      ]
+    },
+    {
+      "table": 27,
+      "candidate_pages": [
+        27
+      ]
+    },
+    {
+      "table": 28,
+      "candidate_pages": [
+        27
+      ]
+    },
+    {
+      "table": 29,
+      "candidate_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "table": 30,
+      "candidate_pages": [
+        27,
+        36
+      ]
+    },
+    {
+      "table": 31,
+      "candidate_pages": [
+        27
+      ]
+    },
+    {
+      "table": 32,
+      "candidate_pages": [
+        28
+      ]
+    },
+    {
+      "table": 33,
+      "candidate_pages": [
+        28
+      ]
+    },
+    {
+      "table": 34,
+      "candidate_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "table": 35,
+      "candidate_pages": [
+        28
+      ]
+    },
+    {
+      "table": 36,
+      "candidate_pages": [
+        29,
+        38
+      ]
+    },
+    {
+      "table": 37,
+      "candidate_pages": [
+        29
+      ]
+    },
+    {
+      "table": 38,
+      "candidate_pages": [
+        29
+      ]
+    },
+    {
+      "table": 39,
+      "candidate_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "table": 40,
+      "candidate_pages": [
+        29,
+        38
+      ]
+    },
+    {
+      "table": 41,
+      "candidate_pages": [
+        30
+      ]
+    },
+    {
+      "table": 42,
+      "candidate_pages": [
+        30
+      ]
+    },
+    {
+      "table": 43,
+      "candidate_pages": [
+        30
+      ]
+    },
+    {
+      "table": 44,
+      "candidate_pages": [
+        30
+      ]
+    },
+    {
+      "table": 45,
+      "candidate_pages": [
+        31
+      ]
+    },
+    {
+      "table": 46,
+      "candidate_pages": [
+        31,
+        40
+      ]
+    },
+    {
+      "table": 47,
+      "candidate_pages": [
+        31
+      ]
+    },
+    {
+      "table": 48,
+      "candidate_pages": [
+        32
+      ]
+    },
+    {
+      "table": 49,
+      "candidate_pages": [
+        32
+      ]
+    },
+    {
+      "table": 50,
+      "candidate_pages": [
+        32,
+        41
+      ]
+    },
+    {
+      "table": 51,
+      "candidate_pages": [
+        32
+      ]
+    },
+    {
+      "table": 52,
+      "candidate_pages": [
+        32
+      ]
+    },
+    {
+      "table": 53,
+      "candidate_pages": [
+        33
+      ]
+    },
+    {
+      "table": 54,
+      "candidate_pages": [
+        33
+      ]
+    },
+    {
+      "table": 55,
+      "candidate_pages": [
+        33
+      ]
+    },
+    {
+      "table": 56,
+      "candidate_pages": [
+        34,
+        43
+      ]
+    },
+    {
+      "table": 57,
+      "candidate_pages": [
+        34
+      ]
+    },
+    {
+      "table": 58,
+      "candidate_pages": [
+        34
+      ]
+    },
+    {
+      "table": 59,
+      "candidate_pages": [
+        34
+      ]
+    },
+    {
+      "table": 60,
+      "candidate_pages": [
+        34
+      ]
+    },
+    {
+      "table": 61,
+      "candidate_pages": [
+        26,
+        35
+      ]
+    },
+    {
+      "table": 62,
+      "candidate_pages": [
+        35
+      ]
+    },
+    {
+      "table": 63,
+      "candidate_pages": [
+        35
+      ]
+    },
+    {
+      "table": 64,
+      "candidate_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "table": 65,
+      "candidate_pages": [
+        35
+      ]
+    },
+    {
+      "table": 66,
+      "candidate_pages": [
+        36
+      ]
+    },
+    {
+      "table": 67,
+      "candidate_pages": [
+        36
+      ]
+    },
+    {
+      "table": 68,
+      "candidate_pages": [
+        36
+      ]
+    },
+    {
+      "table": 69,
+      "candidate_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "table": 70,
+      "candidate_pages": [
+        27,
+        36
+      ]
+    },
+    {
+      "table": 71,
+      "candidate_pages": [
+        27,
+        36
+      ]
+    },
+    {
+      "table": 72,
+      "candidate_pages": [
+        37
+      ]
+    },
+    {
+      "table": 73,
+      "candidate_pages": [
+        37
+      ]
+    },
+    {
+      "table": 74,
+      "candidate_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "table": 75,
+      "candidate_pages": [
+        37
+      ]
+    },
+    {
+      "table": 76,
+      "candidate_pages": [
+        29,
+        38
+      ]
+    },
+    {
+      "table": 77,
+      "candidate_pages": [
+        38
+      ]
+    },
+    {
+      "table": 78,
+      "candidate_pages": [
+        38
+      ]
+    },
+    {
+      "table": 79,
+      "candidate_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "table": 80,
+      "candidate_pages": [
+        29,
+        38
+      ]
+    },
+    {
+      "table": 81,
+      "candidate_pages": [
+        39
+      ]
+    },
+    {
+      "table": 82,
+      "candidate_pages": [
+        39
+      ]
+    },
+    {
+      "table": 83,
+      "candidate_pages": [
+        39
+      ]
+    },
+    {
+      "table": 84,
+      "candidate_pages": [
+        39
+      ]
+    },
+    {
+      "table": 85,
+      "candidate_pages": [
+        40
+      ]
+    },
+    {
+      "table": 86,
+      "candidate_pages": [
+        40
+      ]
+    },
+    {
+      "table": 87,
+      "candidate_pages": [
+        40
+      ]
+    },
+    {
+      "table": 88,
+      "candidate_pages": [
+        41
+      ]
+    },
+    {
+      "table": 89,
+      "candidate_pages": [
+        41
+      ]
+    },
+    {
+      "table": 90,
+      "candidate_pages": [
+        32,
+        41
+      ]
+    },
+    {
+      "table": 91,
+      "candidate_pages": [
+        41
+      ]
+    },
+    {
+      "table": 92,
+      "candidate_pages": [
+        41
+      ]
+    },
+    {
+      "table": 93,
+      "candidate_pages": [
+        42
+      ]
+    },
+    {
+      "table": 94,
+      "candidate_pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42
+      ]
+    },
+    {
+      "table": 95,
+      "candidate_pages": [
+        42
+      ]
+    },
+    {
+      "table": 96,
+      "candidate_pages": [
+        34,
+        43
+      ]
+    },
+    {
+      "table": 97,
+      "candidate_pages": [
+        43
+      ]
+    },
+    {
+      "table": 98,
+      "candidate_pages": [
+        43
+      ]
+    },
+    {
+      "table": 99,
+      "candidate_pages": [
+        43
+      ]
+    },
+    {
+      "table": 100,
+      "candidate_pages": [
+        43
+      ]
+    },
+    {
+      "table": 101,
+      "candidate_pages": [
+        44,
+        78
+      ]
+    },
+    {
+      "table": 102,
+      "candidate_pages": [
+        44,
+        85
+      ]
     }
   ],
-  "blank_pages": [],
-  "anonymity_text_hits": [],
-  "author_metadata_blank": true,
-  "ai_statement_unchanged": true,
-  "source_files": [
-    {
-      "file": "config/final.yaml",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "requirements.txt",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "run_pipeline.sh",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/analyze_results.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/build_documents.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/build_workbooks.mjs",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/competition_checks.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/final_quality.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/freeze_codec.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/make_charts.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/native_equations.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/package_final.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/paper_content.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/rebuild_control_details.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/research_content.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/run_model.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/strengthen_evidence.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/unpack_frozen.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/write_improvement_report.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "scripts/write_repair_report.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "src/audit/__init__.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "src/audit/audit_final.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "src/model/__init__.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "src/model/cli.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "src/model/config.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "src/model/data.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "src/model/experiments.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "src/model/forecast.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "src/model/lp.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "src/model/risk.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "src/model/rolling.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    },
-    {
-      "file": "tests/test_closed_loop.py",
-      "exists": true,
-      "hash_matches_original_paper": true
-    }
-  ],
-  "sha256_docx": "84d954711cbd63e82f8e963e74fecd518469648c20c3a35709e7283c79603e83",
-  "sha256_pdf": "998eb469306a108781e63bcfe570ea689321c2589894038cd09bbb228b2cf3ea",
-  "generated_at": "2026-09-13T13:21:00.526148+08:00",
-  "paper_pages_reviewed": 113,
-  "method": "逐页查看全部113页；附录标题最终调整后复查第14、34、113页，其余110页图像SHA256与已检查页一致。",
-  "scope": "格式、可读性和文本数值保留检查；未重新运行年度模型；AI说明暂缓。",
-  "artifacts": [
-    {
-      "path": "C题论文_v3.docx",
-      "sha256": "84d954711cbd63e82f8e963e74fecd518469648c20c3a35709e7283c79603e83"
-    },
-    {
-      "path": "C题论文_v3.pdf",
-      "sha256": "998eb469306a108781e63bcfe570ea689321c2589894038cd09bbb228b2cf3ea"
-    }
-  ]
+  "generated_at": "2026-09-13T14:12:18.166723+08:00",
+  "structural_checks": {
+    "title_chars": 17,
+    "abstract_paragraphs": 3,
+    "abstract_chars_by_paragraph": [
+      194,
+      541,
+      241
+    ],
+    "abstract_total_chars": 976,
+    "abstract_hanzi": 804,
+    "restatement_chars": 226,
+    "keywords": [
+      "场景随机规划",
+      "HiGHS算法",
+      "微网购电",
+      "滚动优化",
+      "参数扰动检验"
+    ],
+    "assumptions": 5,
+    "tables": 102,
+    "figures": 7,
+    "equations": 15,
+    "original_result_index_tables_unchanged": 98,
+    "references": 9,
+    "citations_superscript_in_first_appearance_order": true,
+    "paper": "A4; four margins 2.5cm",
+    "docx_fonts_and_sizes": true,
+    "blank_author_metadata": true,
+    "original_source_files_hash_unchanged": 32,
+    "supplemental_source_exact_in_appendix": true,
+    "parameter_records_independent_summary_validation": true,
+    "parameter_solve_count": 288,
+    "parameter_records": 320,
+    "parameter_balance_residual_max": 2.160049916710705e-12,
+    "parameter_soc_residual_max": 1.0231815394945445e-12,
+    "AI_details_deferred_and_existing_file_unchanged": true,
+    "five_workbooks_unchanged": true
+  },
+  "visual_review": {
+    "total_pages": 126,
+    "new_or_changed_pages_reviewed_individually": 49,
+    "unchanged_pages_verified_by_content_pixel_hash": 77,
+    "pixel_comparison_excludes": "footer band (lower 8%); page numbering checked separately",
+    "review_result": "no visible clipping, missing glyphs, split result tables or isolated final reference",
+    "symbol_table_extraction_note": "Unicode subscripts differ in PDF extraction; page4 reviewed visually"
+  },
+  "files": {
+    "C题论文_v3.docx": "25b414a80fc0289fe8ae83ba70d7acb9391943e54404bfb3be861f8dc8ae126f",
+    "C题论文_v3.pdf": "5ca23cadd0718ad08eb10c88857fb53f75828f9ff451bfb878bea97c8501025a"
+  },
+  "rendered_page_sha256": {
+    "page-1.png": "a1248b5973d57e1e6b1870bbd5193156af96cff8f86394221ae1ea5b4b8ed624",
+    "page-2.png": "4ce1e21fe31586e3e64f24e022f058562a580fc1f8ebdad067ab72b77b592cdc",
+    "page-3.png": "4097cf415cf7d4000a4b88ed4c8bd6bca65e3912b596d84f486cb9072192f020",
+    "page-4.png": "085f90c95188b874c017448eee38544388ac12ff4256efd1142373daa3291a4b",
+    "page-5.png": "5670805823cd6946776781bde325cbf67857dddee20c243de69b801cff4d4a86",
+    "page-6.png": "6b3c1fa53edd714f52c361900dc96bbf18efde6c110507e57edf9eb076665ab9",
+    "page-7.png": "7e3a34547d8e269b1db4edaefc894b4c1eeb394d97375028347b130806e18e6b",
+    "page-8.png": "0310104bf6358df76cbe8c4233fd1da5d8e7019f72183347818b42bf176df525",
+    "page-9.png": "b75d7f558433851bd5243ff629743c025a788c4f40b4e9c5060cc69bc454e2c7",
+    "page-10.png": "32a03d06399c8e5844d2a8b98b32da2a93f8641392b396edb55956ccdc5ac3f9",
+    "page-11.png": "d46fe94f0d5d8ba08f14cf9e17e516cc52c0938decb44e21861763ed8684a8c1",
+    "page-12.png": "18edc9a5a087e09f8857ff1e7daa434a8e5e0ffc1562ad03cad9d115a59e794a",
+    "page-13.png": "e22e1984a88174417ea9ea604fc36e0fbf57aa97795488ce36a94f90b5fa89df",
+    "page-14.png": "27e8fa0590641591bebc66d5abf5f3d70a07f0dc8b8f46cfa0aa961ce9a48237",
+    "page-15.png": "07743dc23dd619415dc7af4b050fc0151c90559873211acafa7fb8b73d60734d",
+    "page-16.png": "67388e2141e3699fb30276cd419aa81a7fc2529d88959569b184a1a9542a2301",
+    "page-17.png": "4872056d08013604068a8f2a1194a9575429122877ab38b46d3f1050409be489",
+    "page-18.png": "6bbe2109fe20a309908a699f9272842925af504e4d94777ecdaaa6104cea1130",
+    "page-19.png": "bde233d25934cfd425994d96a51f2ceb71d36a2e1a5f069107a24abaab27ff7d",
+    "page-20.png": "51b2d7e235c4633b06209395cd4469f84593f0dcc5c381f76af3bc9e42b3ca44",
+    "page-21.png": "f877ab9bc10bd73ab61e55ac61308f7213ff5df3fcaa4378d6b9cca7e88a24eb",
+    "page-22.png": "db377372a0fa55dc8f753336435feca6874e62581ee39304b56dded413d40ec8",
+    "page-23.png": "e9cf577f6ad7a1104e7e18cca3f25b009027bcb5a909041a1015dcbd4e3b060d",
+    "page-24.png": "13999782cf6a1d49038a82ef356641fbb0b9c146f927056e20e99c0582a9c8dd",
+    "page-25.png": "0653f2fd73492267c5943295b1df80d087fcf20b685c84418b898b384e10b3d1",
+    "page-26.png": "9d63e3d180e14a8cd60f22f367390953be6595f980c545a18dff40f2a58ad49e",
+    "page-27.png": "9b9a88a641cc221e52f4e49c882b68b74bfe0864fe2b94ff6a7496b4f235a334",
+    "page-28.png": "b8fcb7f42d1954989985144153e839f0ba7587c662776c835c4744ebbcb2bd3e",
+    "page-29.png": "c18651d3f91b6b1f28764d6fb52208fbcefe233c5c96d821e5ad8946f4e5a723",
+    "page-30.png": "acf5afa66bf6310e617e5aa3d9a51430c226123c6720cf5fcebbef496648aa00",
+    "page-31.png": "f023351f9ebf278c39884837f52a57bfead0dceb2f2e3db641194d6428c75c43",
+    "page-32.png": "c02ef12f06b6ee1f2f75f3895b4d2cb9802cdf3375c0ef8bd9865fb562ead789",
+    "page-33.png": "49a89367f6e57da0411f6c2a856d9d40501bef1929567f3380e2f1b018eb5aaf",
+    "page-34.png": "841f0e482dda377ffc0d174a9e07644625c238f917b0136e5640e3c318f4b333",
+    "page-35.png": "af167c358957a5f655f30679206a6756fc30fe351d3c3551afd0b426562f9d36",
+    "page-36.png": "b1dd81308583a0a51463b354e6b40cba84ac0e2ce9e204aca920facb5cc531c3",
+    "page-37.png": "4e371239920443d591ceed1109f46fc5f65314d21dab59121f1e3309a7000bd5",
+    "page-38.png": "9f23ede237a75d9234b5fdcdaefff0227729c13a4e5024ed8f8d34ddb601513f",
+    "page-39.png": "dd9ad15f2b58905dc0591fac617696da318e69111de9ce3646fb46f09902cf4e",
+    "page-40.png": "a0e5a80bb616b1729bb6ef92df12eec9a5c82bd1fddb9478aca4759cda8e5cf4",
+    "page-41.png": "8276567c1f3e1bbedbd0e318e8c05eed5970d9a324fc6c77aa4a5a251615a47d",
+    "page-42.png": "7b4c1655ebe37b50f7eec5bd21d6fbebe51b58eebc409b999dcf2b5bfaf70088",
+    "page-43.png": "e51367d268d92b4a7f88fb0985d1ac8ab9d79d2661403799af22b531bad933a9",
+    "page-44.png": "7a5f05f2ae671907f9dec0b61cd63df580de6360d34b79abf6913786fa7c481c",
+    "page-45.png": "7faf4cc0b13e9ffdb3e9b3c8e2de0ea0e1e3842d9bcd6dcc8779648c9f847e5f",
+    "page-46.png": "30d67de1c227e5120fbe5ec07966fef4901fb710ee56cfe625df3b1bec385a48",
+    "page-47.png": "9c7bb4348758d9b254f908a97c51234bc4450bfa84ebeaa1108137010c4b4dd9",
+    "page-48.png": "90b0dd976f24d24d12705e055d50b7bc72e1c80ea30ef014d590802d266f1106",
+    "page-49.png": "9309e3d09aa560ba68a195e6eefc1f4f20d9d3a355bd8ee8f400d310f1645cea",
+    "page-50.png": "6629f59de9a649d21fef243c7306c091fdb334a51deff7b61a3abaa081fb6cb0",
+    "page-51.png": "b59079df3566c47a41c1336774b47ebcf653831f46bde3224c23edeea57723e0",
+    "page-52.png": "881604c4dc00080009aab591c1778c41188f3691d126fa0db04b4e164e14eee3",
+    "page-53.png": "185e1f458455309b2846328aafdc33a16b002d83957da9b267a3c71a7fc477eb",
+    "page-54.png": "9433fc498b64cd22afbe93e63198defb50bfc8f161cb675d62003b57f2b6b683",
+    "page-55.png": "a0428c599f5b9aac916258049de1280e4e2e694fd5540ddef03415186de5a402",
+    "page-56.png": "6c085ae92e9d2999bcad16b6b423fa6a99a93f886b528dcdc9c64bfe99bed258",
+    "page-57.png": "085f785348615e0c64ce919eb62deca4ffd50cf57a8064448c489fa7de051f12",
+    "page-58.png": "1a63aadeb1b1ebffba88f1dffd92400fc2aaf17a761e9c24c3ac32f562cf8be8",
+    "page-59.png": "a503fd7b7c382bc37ee9b87d34ab8783dfc9e8242199c2fca4aebecca418e41a",
+    "page-60.png": "b1cd3494454a683227963ea663c0a2f3a0d655e3d950d5ec0ca50470805b3e0c",
+    "page-61.png": "9c5af7e083a2c814ebe63fbe6dfe0a5b74af22df1ab9499d1e8490aca1c21694",
+    "page-62.png": "520dcb23956ea87b8718d1d065db0b933b62cb8c95c68f70390b93e2f10fce5c",
+    "page-63.png": "9b09b2bebfc47926607f0486ab449470c2d4392ab056b6df0e3d69d4503c8bcc",
+    "page-64.png": "eed09ef10fbc0bf121eda9e5be6e102624acf5c68f4bd49c36af9eb17aef9a00",
+    "page-65.png": "e116aafb8987af6b4027f83619a338a5f31a8ef5c69c97bcf6b75f2f5842775e",
+    "page-66.png": "b3131f6a9e2a6fbd60fa4bf5c085ac84599ece859e5edc9d84d5285ff426a483",
+    "page-67.png": "d4ff9e8ae9ab0c2a813c6033c845ddf4df2f47e3481afc848d03858ae0453af4",
+    "page-68.png": "45d4fa3714b55bb1d82c3571fd6d87afcf26105207c26efd143bb748b4ae13f6",
+    "page-69.png": "8b8430eebb93ae87074c9022db96f91a168fa20ec71a26f2b5e501e9333934d8",
+    "page-70.png": "9f7403635830c8e348fd0e4027a71ae9f7d13a69b6cf3aa01fb64e602449efac",
+    "page-71.png": "7eedc5f97ad9392844640f66c9771183380f6816f4c592562238305dbc1fac70",
+    "page-72.png": "7526404c50b89688107f3214e75a1ebdf9b0fbe89233da3e2034e47cd01f84fa",
+    "page-73.png": "89182b78b2c6db71498352e83007c284944f6f7293d87ffd730827a5a882b3c8",
+    "page-74.png": "a1f3011e05fd9685a85f8ad210c980b585f47c2b42681344786a23b31d952fc7",
+    "page-75.png": "10da6c3d37e71cd0dca8eff5f78a0f20dd94755ae49354cb1600934fcd353015",
+    "page-76.png": "724c35bbef475271b9821ddba82985646a35d9b8016c86fef2b37d495c1a81fb",
+    "page-77.png": "10b788bb1d426e0827071a1c2c35ade2673ab162e117322792169220884b0f4b",
+    "page-78.png": "1014c970096740d838dd61f6dc8d68f42fa2363fe5745d0b8fdd896357c22368",
+    "page-79.png": "ebeb141d414e4c64dd91671be9f1af3206852dc4d78e9d526c2a5ee7595c29bb",
+    "page-80.png": "29e1a0cb51d5fec5684979a8b92e9c993802a8e17ac9e6df530d08af7c4bf54b",
+    "page-81.png": "1b10a34665712e47b6b05aa0cb61b1502dcdd87f7180ebca7868d07e74c2c201",
+    "page-82.png": "bffbcb4f4ec945bcbfa47f9e343b20aa761527c3e42f140fb29c1e2046d57a2c",
+    "page-83.png": "d8e086edb5ecaa986631f8d24bbcd73e2602883f33ce1b6b818cc71f1287c50c",
+    "page-84.png": "1c76051a476dad98450fbcb6b36f39b1361db06a60325b4f3dcb89d799c07145",
+    "page-85.png": "5d8f0acc2bf28629c7252af3667de9e17c2c2c3961f5856414e55f936485e5a5",
+    "page-86.png": "e0345b58592229aad41a600c013469a00688ae5542193e19a6ab17114b5cb76f",
+    "page-87.png": "2f52558007a59932cdc365a8c4324b6b1ac76e959b55e65dcaaf607d7b506aa3",
+    "page-88.png": "f43812b25b77eb009c9453b0e4965f50ff64b51ef4c645b9893b39abacf1fb50",
+    "page-89.png": "b74e8d97e983d8f0b85f40ebcda0b746c616733e1b2b0ecd0cb564ec275f3019",
+    "page-90.png": "cb448a532da73450784cd24d272b95320644ff0ff14199b1d5a3906d11ce6711",
+    "page-91.png": "e2efbf92f8fffaba24ded97d250633910f039764f12bb39cb1e0644a4c83b4c8",
+    "page-92.png": "14877c321e86b6e8cf76bb1b677acfa9ef548c41dae1ca60212f34ba17776140",
+    "page-93.png": "99d05238e0912b81a6878cdd438f19efdbcaec5471f9b6082d1b884a72655ae4",
+    "page-94.png": "2f22a9667ce93af6745ad0533c6294078a36089b7e4a2b4f2dc0def684b462b3",
+    "page-95.png": "673a16d7e1662f7aa4d4728bafb2d7ad65dad57fb9c5d4c856766b03336d2698",
+    "page-96.png": "2723512a9b727c0c8c0045801235b00d24ce2a5d7fd351cf468e477862b0480b",
+    "page-97.png": "b4743f6e5438284efa1cfa71d1ee17cdb5a04b007057f0bf13eca8b7e2a1820c",
+    "page-98.png": "4533332d84bd63c05451f0e8cae8ad5a9c6609bcdcd0e4ed3187ed41c271b62f",
+    "page-99.png": "22c046e1ee3be789b8190b68890c74c9478957288ba292dc22d624db7d1f9255",
+    "page-100.png": "6882dcc7a76d5218f454b51c6d6e78a022fddb3cbb95c16163425b2c1e641dc5",
+    "page-101.png": "efb38e4007cfa5efce6c8fd621ca619e0b311ae10c8be91febd3cf9ad12a87df",
+    "page-102.png": "be137bf914007843b9ba858136384ce3a9f4aedb7931434ca31e690d51e75946",
+    "page-103.png": "9b002d5dcc2ccedb071d56d0a67b2e678f110898b8bd010a46c48879d6ee240b",
+    "page-104.png": "7d5d4c6f81445f4a8a52eb9e49869318f1bb4547e37f8354f631e5770fd04030",
+    "page-105.png": "966e52fd4ef0c40794626fbc0e71592ef920fd96b5ff327c2c75b7830dadf6fc",
+    "page-106.png": "31799af266cc371c777ebed48f146b62e663bdcce890ded0c39a2801d445a3ed",
+    "page-107.png": "96eeba2edf635b857b00fd2a4ee2615eccdff9831aec8a20de12a4f125136ad1",
+    "page-108.png": "0d1d28cc1ac8ac119dc23ae2189e7d38b77f5e80d0280f0f2f27d3b2a626bfaf",
+    "page-109.png": "8cb15526556539c403fde4178bee65c32c9093b6e2a19bc9c57faf05c96bf98a",
+    "page-110.png": "a1acf45a3ff497745b46962a3a84c091f3748c27167a7144b9fabd7fa66f91bc",
+    "page-111.png": "b09827bc27837e502313b61b87a22ff6b76f939ea50a5d21e9b63f96c6dc427f",
+    "page-112.png": "6082536ef4d183cde9978988a9405e154fbcc476de2c64c1eb5c967db55c68b2",
+    "page-113.png": "0a683ba3d3cfc5d86f89a63713c83f8bf22252cf79a307249bc43e2a77e59b44",
+    "page-114.png": "f0dfbce051fc1651b82b5940ce40c2fa75d93597712aef43b011c0bc9504fe32",
+    "page-115.png": "18ad1478c41e62afc167fe303c7b3d392f474a889e9d303f3841840c3f5386b9",
+    "page-116.png": "493e104360486482f373513070778e1c714486d121ba828a4d3aa36d8afdbea4",
+    "page-117.png": "1f8ea16022065a14bbc41b7f4f695a248865cf94d8645662aa0b58f49da324db",
+    "page-118.png": "c4fc69405c9ce8f920c1add40525c64ac036a9c7545a18e4a115a1f198b75a71",
+    "page-119.png": "659359ef8a077a87237fc76948ce1b92f0108a955de7ba886943e6aace16bf15",
+    "page-120.png": "e478c53ab59a9a190f0ab6dbe87bc94920650bc1b4484e7a0c48823fb6717ec2",
+    "page-121.png": "2ecf48fbc47e609a2fb99fbd6c03c949148fbeb5cef15b29aaf54553dafef0a5",
+    "page-122.png": "db1682f05f3825754b15a73e26bf3c8bc05848df02d50aed22883ff0189e10b1",
+    "page-123.png": "e9694d509eb419ebe26419779924a222067ad54b67486d1fccb2bb40360b2b9e",
+    "page-124.png": "b61c1e62c1e02a3f065819ca4eb96596b42012ffc448f9c40f851bf60e21db73",
+    "page-125.png": "bb3212804ed17e92354740fcac17d77e36b792446f62a65ee2fab3b16af77011",
+    "page-126.png": "06b4762853c0c7befca19ad1cff201fc8328c1ad3b2231b39bda79fe82a1d79e"
+  },
+  "page_numbers_continuous_1_to_126": true
 }

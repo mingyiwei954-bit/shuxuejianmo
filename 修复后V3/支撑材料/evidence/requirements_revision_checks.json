@@ -1,0 +1,38 @@
+{
+  "title_chars": 17,
+  "abstract_paragraphs": 3,
+  "abstract_chars_by_paragraph": [
+    194,
+    541,
+    241
+  ],
+  "abstract_total_chars": 976,
+  "abstract_hanzi": 804,
+  "restatement_chars": 226,
+  "keywords": [
+    "场景随机规划",
+    "HiGHS算法",
+    "微网购电",
+    "滚动优化",
+    "参数扰动检验"
+  ],
+  "assumptions": 5,
+  "tables": 102,
+  "figures": 7,
+  "equations": 15,
+  "original_result_index_tables_unchanged": 98,
+  "references": 9,
+  "citations_superscript_in_first_appearance_order": true,
+  "paper": "A4; four margins 2.5cm",
+  "docx_fonts_and_sizes": true,
+  "blank_author_metadata": true,
+  "original_source_files_hash_unchanged": 32,
+  "supplemental_source_exact_in_appendix": true,
+  "parameter_records_independent_summary_validation": true,
+  "parameter_solve_count": 288,
+  "parameter_records": 320,
+  "parameter_balance_residual_max": 2.160049916710705e-12,
+  "parameter_soc_residual_max": 1.0231815394945445e-12,
+  "AI_details_deferred_and_existing_file_unchanged": true,
+  "five_workbooks_unchanged": true
+}

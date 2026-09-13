@@ -143,7 +143,7 @@ def appendix(g):
     p('正式数据在frozen中无损保存；新增实验方案、配置、逐次求解状态、逐日费用和统计位于diagnostics。完整运行轨迹另存诊断明细包，支撑包提供汇总、日志和可重算源码。现有AI声明及文件保留，真实人工审阅仍为提交前待办。')
     manifest=json.loads((root/'evidence/source_appendix_manifest.json').read_text())
     paths=[x['path'] for x in manifest]
-    paths += ['scripts/parameter_perturbation.py','scripts/contribution_experiments.py','scripts/summarize_revision.py','scripts/revision_document.py','scripts/check_revision_delivery.py','tests/test_diagnostics.py','reproduce.py','论文修订源文件/build.py','diagnostics/protocol.json']
+    paths += ['scripts/publication_charts.py','scripts/parameter_perturbation.py','scripts/contribution_experiments.py','scripts/summarize_revision.py','scripts/revision_document.py','scripts/check_revision_delivery.py','tests/test_diagnostics.py','reproduce.py','论文修订源文件/build.py','diagnostics/protocol.json']
     actual=[]
     for path in dict.fromkeys(paths):
         src=root/path

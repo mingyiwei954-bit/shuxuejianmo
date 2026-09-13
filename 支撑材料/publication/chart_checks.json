@@ -1,0 +1,46 @@
+{
+  "role": "publication-only; no new numerical experiment",
+  "fee_unit": "万元 = yuan / 10000",
+  "frequency": {
+    "q3": {
+      "S3_minus_S2_yuan": 206.51018263027072,
+      "costs_yuan": [
+        15755992.086490287,
+        15719285.748136725,
+        15632278.966420788,
+        15632485.476603419
+      ]
+    },
+    "q4_3": {
+      "S3_minus_S2_yuan": 11.746183682233095,
+      "costs_yuan": [
+        16611123.323670994,
+        16551767.481859809,
+        16455768.849250214,
+        16455780.595433896
+      ]
+    }
+  },
+  "cumulative_final_yuan": {
+    "q3": -123506.6098868909,
+    "q4_3": -155342.7282370577
+  },
+  "input_hashes": {
+    "outputs/c_final_v1/frozen/experiment_summary.csv": "2d17185148f6ca315ce65519f027939417b5999524c8d4227a1fa48b7e925d5b",
+    "outputs/c_final_v1/frozen/q3_dispatch.csv": "de751184395dea1637dd1d308deda85b7f2cfd332fef250c730e03aef123743b",
+    "research/monthly_mechanisms.csv": "897d5864eddca7d026b0db89d3230f5a12056e78b777158fc6bc86831e60e371",
+    "outputs/c_final_v1/frozen/q3_S0_daily.csv": "ff72d519db84885b183ae8270e9fd064a2c59a0872b87d1815d7f5386eccb62d",
+    "outputs/c_final_v1/frozen/q3_S3_daily.csv": "1b45d99caf3f5caa59261c8e617a2c5a65cccc753f9cdc44cef44aa671a7ea41",
+    "outputs/c_final_v1/frozen/q4_3_S0_daily.csv": "8c779cb317041bf0a1b66f600d9e7d71cb1522657b6243c417941db55848032a",
+    "outputs/c_final_v1/frozen/q4_3_S3_daily.csv": "7fd7ac067bf654197049c485b0fd9a9c817b1bd045af629caff78470289445ab"
+  },
+  "output_hashes": {
+    "cumulative.png": "2b8f3ee90e7e2bd9e804e328aa43aa40b940a683f3de27d5110f04fce4675313",
+    "dispatch.png": "85a2facd4a3f71562ca04f6fd1ea742a35eea7b8b388eb73b72c5f641bd4d9d4",
+    "monthly.png": "568d25f93d83ee66a933cbcc79c09410dad95975d2d03042d578eb86cf5fa4e8",
+    "frequency.png": "88338f9f52e8de050a7a9ce8d8edffbc5de6c36fbeb125a326d59a052d307409",
+    "route.png": "737a12d493089ed155ccb402f89a214afe367052836d5765e90b0a854e60092f"
+  },
+  "font_family": "SimHei",
+  "status": "PASS"
+}

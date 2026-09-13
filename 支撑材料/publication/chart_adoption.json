@@ -1,0 +1,54 @@
+{
+  "scope": "Chart adoption/redraw only; original image files read-only; no numerical optimization performed in this revision",
+  "input_png_sha256": {
+    "图6_参数扰动灵敏度.png": "fb80d66b6a86b2e7dadd499ae6091e535520a124c8fca8850f428d3c91500098",
+    "图10_四策略雷达.png": "741ff0837100e18c8df352fefc694a07eee2b629e768f481e409ca5349102482",
+    "图11_累计费用时间线.png": "1686501bfab5bde78e059726cb9234a4227842930c6f99bcfe4d2ba8c8a022de",
+    "图5_月度费用与紧急占比.png": "bf476d0567d9b55feefa235a36830586613ab57338295fddbf2ee2703afec11e",
+    "图3_费用构成.png": "ee5c56aa8078e464a1bc782f7b2999c8a322e41a65db4487530e5e272a986808",
+    "图9_PV负荷电价对齐.png": "9de30451e3098a3ed96970395a5aec5ec00e7fac5d07b18ffe30aa6b5fec1db6",
+    "图8_全年费用分解.png": "812bb05cdcacde23128a71d2c5c0250e48f5d749711d72660da61afccff16a9a",
+    "图7_累计费用差.png": "bdd7bf57a2caf179191f527ea99ef0ca9b82d242181f7a444bf3f42067cac629",
+    "图2_典型日调度轨迹.png": "a3ed5fb1101d931639739e44f03e749e1586d3bc91c8930ebb1e2ba70052ae2d",
+    "图4_更新频次对照.png": "3e8c25d13e46509a8dee36ce6dc00211cfe210b98a31805cff4665d65389d432",
+    "图12_灵敏度双面板.png": "015cc63ae7ae7b7c6000ced9a47ec7782f12d01d9e1c6910850d4f8eb2d867f5",
+    "图13_决策机制四面板.png": "77781dcf066c5883beffa755785eaa4e94e9e79646e25b4c5f433a3b34a12eab",
+    "图1_技术路线.png": "737a12d493089ed155ccb402f89a214afe367052836d5765e90b0a854e60092f"
+  },
+  "figure_mapping": [
+    {
+      "paper_figure": 1,
+      "provided": 1,
+      "action": "adopt original route PNG"
+    },
+    {
+      "paper_figure": 2,
+      "provided": 2,
+      "action": "redraw frozen dispatch with 24:00 actual state"
+    },
+    {
+      "paper_figure": 4,
+      "provided": 5,
+      "action": "redraw frozen monthly costs; correct yuan/10000 units"
+    },
+    {
+      "paper_figure": 3,
+      "provided": 4,
+      "action": "add frozen S0-S3 comparison; nonzero axis disclosed; S3-S2 differences in yuan"
+    },
+    {
+      "paper_figure": 5,
+      "provided": 7,
+      "action": "redraw daily cumulative S3-S0; verify annual endpoint"
+    }
+  ],
+  "not_adopted": {
+    "3": "Unit/negative cost component presentation requires correction; no additional distinct core claim",
+    "6": "Existing fixed-window sensitivity must not be presented as annual policy stability",
+    "8,10,11": "Legacy amounts or unsupported ranking inconsistent with current frozen results",
+    "9": "Additional figure not yet independently traced to current data; omitted to keep main pages near 25",
+    "12": "Experiment provenance not verified against current revision",
+    "13": "Four-hour update conflicts with actual six-hour schedule; emergency intervals refer to specified days"
+  },
+  "team_human_signoff": false
+}

@@ -69,8 +69,9 @@
   "figures": {
     "route": 1,
     "4": 2,
-    "5": 3,
-    "3": 4
+    "frequency": 3,
+    "5": 4,
+    "3": 5
   },
   "equations": {
     "1": 1,
@@ -103,5 +104,5 @@
   "abstract_chars": 845,
   "abstract_hanzi": 671,
   "table_count": 65,
-  "paragraph_count": 4175
+  "paragraph_count": 4289
 }

@@ -49,6 +49,7 @@ def main():
         run([sys.executable,'src/audit/audit_final.py','--workbooks'])
     if phase in ('paper','all'):
         run([sys.executable,'scripts/summarize_revision.py'])
+        run([sys.executable,'scripts/publication_charts.py'])
         run([sys.executable,'论文修订源文件/build.py'])
         source=ROOT/'论文修订源文件/C题论文_v3.docx'
         publication=ROOT/'publication';publication.mkdir(exist_ok=True)

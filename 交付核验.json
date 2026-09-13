@@ -1,86 +1,83 @@
 {
-  "checked_at": "2026-09-13T16:20:37.183973+08:00",
-  "original_work_files_unchanged": 166,
-  "original_problem_and_attachment_hashes_pass": 10,
-  "current_source_hashes_pass": 41,
-  "formal_workbooks_byte_identical": 5,
-  "existing_ai_pdf_byte_identical": true,
-  "unpacked_restore": "PASS",
-  "unpacked_tests": {
-    "passed": 10,
-    "failed": 0,
-    "warning": "openpyxl-related unclosed-reader ResourceWarnings retained in original log; no test failure"
-  },
-  "unpacked_ledger_physics_workbook_audit": {
-    "passed": 237,
-    "failed": 0,
-    "generated_at": "2026-09-13T16:18:51.508304+08:00",
-    "scope": "Ledger/physical/workbook audit, including independent Q1 LP, not all annual controls re-solved"
-  },
-  "unpacked_document_structure": {
-    "pdf_pages": 115,
+  "checked_at": "2026-09-13T16:55:39.727959+08:00",
+  "scope": "Publication chart revision; no new optimization",
+  "current_document_structure": {
+    "pdf_pages": 119,
     "abstract_page": 1,
-    "reference_page": 23,
-    "appendix_starts_page": 24,
-    "main_including_abstract_references": 23,
-    "body_excluding_abstract": 22,
-    "docx_bytes": 1608822,
-    "pdf_bytes": 3580988,
-    "source_blocks": 41,
+    "reference_page": 24,
+    "appendix_starts_page": 25,
+    "main_including_abstract_references": 24,
+    "body_excluding_abstract": 23,
+    "docx_bytes": 2481703,
+    "pdf_bytes": 3743073,
+    "source_blocks": 42,
     "specified_horizontal_tables": 46,
     "table_count": 65,
-    "docx_sha256": "b21c3cd56e82121c1ba63aae6a9e7c7eabfdb44890dc825fe28e06057be3ea0d",
-    "pdf_sha256": "1ec339b959e5204c1807789132be3ba269a942566a761ba27549a0e94e20c17d",
+    "docx_sha256": "d6865dafdb5cb2a4f0e3af50f16c32210208c294e62420d87fada7ecaee8a6da",
+    "pdf_sha256": "7bfbfc397946b523b8078fbc17b8a923448be38be9912a17dd26e18bf5bd9fd6",
     "structural_and_numeric": "PASS",
     "visual_review": "separate gate; this script does not certify visual quality"
   },
-  "visual_review": "All 115 final page images viewed by AI; not human team sign-off",
-  "new_experiments": {
+  "current_source_hashes_pass": 42,
+  "formal_workbooks_byte_identical": 5,
+  "existing_ai_pdf_byte_identical": true,
+  "protected_numeric_and_input_files_byte_identical": 392,
+  "formal_algorithm_changed": false,
+  "numerical_experiments_rerun_this_chart_revision": false,
+  "chart_checks": {
+    "role": "publication-only; no new numerical experiment",
+    "fee_unit": "万元 = yuan / 10000",
+    "frequency": {
+      "q3": {
+        "S3_minus_S2_yuan": 206.51018263027072,
+        "costs_yuan": [
+          15755992.086490287,
+          15719285.748136725,
+          15632278.966420788,
+          15632485.476603419
+        ]
+      },
+      "q4_3": {
+        "S3_minus_S2_yuan": 11.746183682233095,
+        "costs_yuan": [
+          16611123.323670994,
+          16551767.481859809,
+          16455768.849250214,
+          16455780.595433896
+        ]
+      }
+    },
+    "cumulative_final_yuan": {
+      "q3": -123506.6098868909,
+      "q4_3": -155342.7282370577
+    },
+    "input_hashes": {
+      "outputs/c_final_v1/frozen/experiment_summary.csv": "2d17185148f6ca315ce65519f027939417b5999524c8d4227a1fa48b7e925d5b",
+      "outputs/c_final_v1/frozen/q3_dispatch.csv": "de751184395dea1637dd1d308deda85b7f2cfd332fef250c730e03aef123743b",
+      "research/monthly_mechanisms.csv": "897d5864eddca7d026b0db89d3230f5a12056e78b777158fc6bc86831e60e371",
+      "outputs/c_final_v1/frozen/q3_S0_daily.csv": "ff72d519db84885b183ae8270e9fd064a2c59a0872b87d1815d7f5386eccb62d",
+      "outputs/c_final_v1/frozen/q3_S3_daily.csv": "1b45d99caf3f5caa59261c8e617a2c5a65cccc753f9cdc44cef44aa671a7ea41",
+      "outputs/c_final_v1/frozen/q4_3_S0_daily.csv": "8c779cb317041bf0a1b66f600d9e7d71cb1522657b6243c417941db55848032a",
+      "outputs/c_final_v1/frozen/q4_3_S3_daily.csv": "7fd7ac067bf654197049c485b0fd9a9c817b1bd045af629caff78470289445ab"
+    },
+    "output_hashes": {
+      "cumulative.png": "2b8f3ee90e7e2bd9e804e328aa43aa40b940a683f3de27d5110f04fce4675313",
+      "dispatch.png": "85a2facd4a3f71562ca04f6fd1ea742a35eea7b8b388eb73b72c5f641bd4d9d4",
+      "monthly.png": "568d25f93d83ee66a933cbcc79c09410dad95975d2d03042d578eb86cf5fa4e8",
+      "frequency.png": "88338f9f52e8de050a7a9ce8d8edffbc5de6c36fbeb125a326d59a052d307409",
+      "route.png": "737a12d493089ed155ccb402f89a214afe367052836d5765e90b0a854e60092f"
+    },
+    "font_family": "SimHei",
+    "status": "PASS"
+  },
+  "visual_review": "All 119 final pages inspected by AI in numbered contact sheets; chart pages also viewed at full size; not team human sign-off",
+  "inherited_numeric_evidence": {
+    "source": "支撑材料/publication/previous_chart_revision_delivery.json",
+    "ledger_physics_workbook_audit_passed": 237,
+    "tests_passed": 10,
     "continuous_validation_runs": 32,
     "continuous_formal_runs": 32,
-    "total_solves": 17900,
-    "solver_seconds": 879.8799166479112,
-    "failures": 0,
-    "validation_common_plan_preparation_solves": 48,
-    "preparation_timing": "48 preliminary S0 solves are outside per-scheme timing; not separately measured",
-    "max_lp_residual": 3.637978807091713e-12,
-    "max_physical_residual": 3.637978807091713e-12,
-    "formal_algorithm_changed": false,
-    "formal_workbooks_changed": false,
-    "baseline_equivalence": [
-      {
-        "mode": "q2",
-        "new_cost": 14794949.723302985,
-        "frozen_cost": 14794949.723302891,
-        "difference": 9.313225746154785e-08
-      },
-      {
-        "mode": "q4_2",
-        "new_cost": 15623134.832286313,
-        "frozen_cost": 15623134.83228626,
-        "difference": 5.4016709327697754e-08
-      },
-      {
-        "mode": "q3",
-        "new_cost": 15632485.47660346,
-        "frozen_cost": 15632485.47660342,
-        "difference": 3.91155481338501e-08
-      },
-      {
-        "mode": "q4_3",
-        "new_cost": 16455780.595434045,
-        "frozen_cost": 16455780.595433896,
-        "difference": 1.4901161193847656e-07
-      }
-    ]
-  },
-  "entry_execution_boundaries": {
-    "restore": "executed in original project and clean ZIP extraction",
-    "audit": "executed in original project and clean ZIP extraction",
-    "diagnostics": "64 continuous runs completed in original project",
-    "paper": "current build/render/check executed in original project; delivered document checked against extracted source",
-    "numeric": "provided, full legacy official/control suite not executed through this entry this round",
-    "workbooks": "builder provided, not rerun; frozen five workbooks independently audited"
+    "scope": "Inherited results from unchanged inputs, algorithm/config, trajectories and workbooks; not rerun in chart revision"
   },
   "remaining": [
     "Team human numerical and submission review",
@@ -90,18 +87,28 @@
     "Alternative settlement-specific reoptimization",
     "Reliable memory measurement and isolated-host timing benchmark"
   ],
-  "archives": {
-    "support": {
-      "status": "PASS",
-      "entries_verified": 452,
-      "bytes": 18010707,
-      "sha256": "d2c765390276977fbea7680541bbaa87fad8f366989f0ec0219707b82e5950a5"
-    },
-    "full_diagnostics": {
-      "status": "PASS",
-      "entries_verified": 469,
-      "bytes": 115504865,
-      "sha256": "85509c30df878f49a4f1a7c3ed8190d168098a7209b2260e4672ecb945f337db"
-    }
+  "full_diagnostics": {
+    "status": "PASS",
+    "entries_verified": 469,
+    "bytes": 115504865,
+    "sha256": "85509c30df878f49a4f1a7c3ed8190d168098a7209b2260e4672ecb945f337db"
+  },
+  "clean_package_reproduction": {
+    "checked_at": "2026-09-13T16:55:13.718080+08:00",
+    "scope": "Clean support ZIP extraction, frozen restore, deterministic chart rebuild, document source rebuild and structural checks; no annual optimization or ledger re-audit",
+    "status": "PASS",
+    "frozen_restore": "PASS",
+    "chart_hashes_rebuilt_identical": 5,
+    "docx_all_uncompressed_parts_identical": 29,
+    "current_source_blocks": 42,
+    "structural_checks": "PASS",
+    "visual_review": "Uses final reviewed PDF; rebuilt DOCX package parts identical to reviewed input",
+    "reused_pdf_sha256": "7bfbfc397946b523b8078fbc17b8a923448be38be9912a17dd26e18bf5bd9fd6"
+  },
+  "support_archive": {
+    "status": "PASS",
+    "entries_verified": 466,
+    "bytes": 18859994,
+    "sha256": "06b2ef3ee1ba439ab5b646a438bc01e1cc63440c6c66133d89854a5d3f6ffbc6"
   }
 }

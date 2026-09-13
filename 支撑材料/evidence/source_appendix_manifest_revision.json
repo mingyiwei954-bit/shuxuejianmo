@@ -160,6 +160,11 @@
     "lines": 70
   },
   {
+    "path": "scripts/publication_charts.py",
+    "sha256": "d3f0280106183ab97c7e72e5db120023f71a7fe7a5b48af5d28434290f8205bd",
+    "lines": 112
+  },
+  {
     "path": "scripts/parameter_perturbation.py",
     "sha256": "7d7c18ec4d6cb8703931d2e78ad2b00406d1d8800c2a31ae9d9b39df4cba3f13",
     "lines": 112
@@ -176,13 +181,13 @@
   },
   {
     "path": "scripts/revision_document.py",
-    "sha256": "0c2f6cecda66cfff010bbf6c8419be09e1550b50bf6b530ba5601caa6a4a6bf8",
+    "sha256": "1b13728fc71d2c4a5767d6e046511e7532b0b75b89081cbaad1b77ac97363c0f",
     "lines": 154
   },
   {
     "path": "scripts/check_revision_delivery.py",
-    "sha256": "c8396190b166d5308a8c334747b85bc265a2433cb0d6b836b6196cda0e13cbd1",
-    "lines": 91
+    "sha256": "bd11956c1927bea46fbe02455fa789caf17037adab18b9cd526e7fc9338dd077",
+    "lines": 92
   },
   {
     "path": "tests/test_diagnostics.py",
@@ -191,13 +196,13 @@
   },
   {
     "path": "reproduce.py",
-    "sha256": "b89a3c37e5c5e66b342859becbe0ec9efb6cbcaf1d956203715f0bbddf8a1f86",
-    "lines": 76
+    "sha256": "3704cf091d05889c84e0d6fe406b31e86d854721f72d67ea4d055a197a69c557",
+    "lines": 77
   },
   {
     "path": "论文修订源文件/build.py",
-    "sha256": "137fd71372a5d71f3ec085d1c5c2fb9b0abc7a86842269fcfd511956ce467ffd",
-    "lines": 233
+    "sha256": "632c9d544bb80192a2d5a9b598866f30525c34cc7d078286f2c6510de659c7f6",
+    "lines": 229
   },
   {
     "path": "diagnostics/protocol.json",

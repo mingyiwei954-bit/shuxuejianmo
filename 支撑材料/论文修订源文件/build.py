@@ -43,13 +43,9 @@ def table(key,title=None,rows=None,widths=None):
 oldfig={int(re.search(r'图\s*(\d+)',x.text).group(1)):x for x in ps if x._p.xpath('.//w:drawing')}
 def fig(key):
  n=len(figs)+1;figs[str(key)]=n
- if isinstance(key,int):
-  el=push(oldfig[key]._p);x=Paragraph(el,d)
-  for r in x.runs:
-   if re.search(r'图\s*\d+',r.text):r.text=re.sub(r'图\s*\d+',f'图 {n}',r.text)
- else:
-  title={'route':'微网购电调度与检验技术路线','sensitivity':'固定窗口对终端惩罚与功率参数的响应'}[key]
-  x=p();x.add_run().add_picture(str(W/'figures'/f'{key}.png'),width=Cm(15.8));x.add_run(f'\n图 {n}  {title}')
+ titles={'route':'微网购电调度与检验技术路线',4:'六月二十一日问题三的调度轨迹与储电量',5:'正式期月度费用与紧急采购占比',3:'两种电价下S3相对S0累计费用差','frequency':'共同日前合同下的更新频次费用比较'}
+ assets={'route':'route',4:'dispatch',5:'monthly',3:'cumulative','frequency':'frequency'}
+ x=p();x.add_run().add_picture(str(W/'figures'/f'{assets[key]}.png'),width=Cm(15.8));x.add_run(f'\n图 {n}  {titles[key]}')
  caption_ids.add(x._p);return x
 oldmath={int(re.search(r'\((\d+)\)',x.text).group(1)):x for x in ps if x._p.xpath('.//m:oMath')}
 def equation(key):

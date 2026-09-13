@@ -17,6 +17,7 @@ def main():
     assert '针对问题一' in texts[0] and '针对问题四' in texts[0] and '关键词' in texts[0]
     assert '问题重述' not in texts[0]
     assert appendix-2<=30,'Official main-body page limit exceeded'
+    assert appendix-1<=25,'User requested at most 25 pages including abstract and references'
     assert all(abs(float(p.mediabox.width)-595.3)<1 and abs(float(p.mediabox.height)-841.9)<1 for p in reader.pages)
     for s in doc.sections:
         assert min(s.top_margin.cm,s.bottom_margin.cm,s.left_margin.cm,s.right_margin.cm)>=2.49

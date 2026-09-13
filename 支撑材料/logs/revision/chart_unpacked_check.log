@@ -1,0 +1,10 @@
+RUN ['reproduce.py', 'restore']
+RUN <LOCAL_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/unpack_frozen.py
+Frozen CSVs restored
+RUN ['scripts/publication_charts.py']
+Four Chinese data-derived charts rebuilt; totals and unit conversions PASS
+RUN ['论文修订源文件/build.py']
+<UNPACKED_PROJECT>/论文修订源文件/C题论文_v3.docx tables 65 figures 5 equations 15
+RUN ['scripts/check_revision_delivery.py']
+{"pdf_pages": 119, "abstract_page": 1, "reference_page": 24, "appendix_starts_page": 25, "main_including_abstract_references": 24, "body_excluding_abstract": 23, "docx_bytes": 2481703, "pdf_bytes": 3743073, "source_blocks": 42, "specified_horizontal_tables": 46, "table_count": 65, "docx_sha256": "6968cb62f9664d00d4fa68d6f1508310a6d18bb0579911df162db0619a198770", "pdf_sha256": "7bfbfc397946b523b8078fbc17b8a923448be38be9912a17dd26e18bf5bd9fd6", "structural_and_numeric": "PASS", "visual_review": "separate gate; this script does not certify visual quality"}
+{"checked_at": "2026-09-13T16:55:13.718080+08:00", "scope": "Clean support ZIP extraction, frozen restore, deterministic chart rebuild, document source rebuild and structural checks; no annual optimization or ledger re-audit", "status": "PASS", "frozen_restore": "PASS", "chart_hashes_rebuilt_identical": 5, "docx_all_uncompressed_parts_identical": 29, "current_source_blocks": 42, "structural_checks": "PASS", "visual_review": "Uses final reviewed PDF; rebuilt DOCX package parts identical to reviewed input", "reused_pdf_sha256": "7bfbfc397946b523b8078fbc17b8a923448be38be9912a17dd26e18bf5bd9fd6"}

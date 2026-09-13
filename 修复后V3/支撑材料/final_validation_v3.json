@@ -1,0 +1,231 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-09-12T23:26:32.527372+08:00",
+  "scope": "current_run_numeric_document_and_export_checks",
+  "checks": [
+    {
+      "check": "independent_model_and_workbooks",
+      "status": "PASS",
+      "actual": "PASS"
+    },
+    {
+      "check": "no_unresolved_placeholders",
+      "status": "PASS",
+      "actual": 0
+    },
+    {
+      "check": "A4_pages",
+      "status": "PASS",
+      "actual": 100
+    },
+    {
+      "check": "PDF_under_20MB",
+      "status": "PASS",
+      "actual": 3144201
+    },
+    {
+      "check": "all_17_specified_date_groups",
+      "status": "PASS",
+      "actual": {
+        "groups": 17,
+        "missing": []
+      }
+    },
+    {
+      "check": "paper_numbers_independently_reconciled",
+      "status": "PASS",
+      "actual": []
+    },
+    {
+      "check": "all_table_numeric_strings_survive_PDF",
+      "status": "PASS",
+      "actual": []
+    },
+    {
+      "check": "PDF_corrected_physical_value_480.4125",
+      "status": "PASS",
+      "actual": "480.4125"
+    },
+    {
+      "check": "five_workbooks",
+      "status": "PASS",
+      "actual": 5
+    },
+    {
+      "check": "AI_details_nonempty",
+      "status": "PASS",
+      "actual": 2
+    },
+    {
+      "check": "charts_present",
+      "status": "PASS",
+      "actual": 5
+    },
+    {
+      "check": "abstract_dedicated_first_page",
+      "status": "PASS",
+      "actual": {
+        "first_page_has_keywords": true
+      }
+    },
+    {
+      "check": "body_explicit_new_page",
+      "status": "PASS",
+      "actual": "True"
+    },
+    {
+      "check": "main_body_not_over_30_pages",
+      "status": "PASS",
+      "actual": {
+        "appendix_start_pdf_page": 16,
+        "body_pages": 14
+      }
+    },
+    {
+      "check": "all_margins_at_least_2_5cm",
+      "status": "PASS",
+      "actual": 1
+    },
+    {
+      "check": "complete_source_appendix_exact_line_match",
+      "status": "PASS",
+      "actual": {
+        "expected_files": 32,
+        "actual_files": 32,
+        "mismatch": []
+      }
+    },
+    {
+      "check": "blank_author_metadata",
+      "status": "PASS",
+      "actual": {
+        "author": ""
+      }
+    },
+    {
+      "check": "four_full_year_independent_replays",
+      "status": "PASS",
+      "actual": [
+        {
+          "mode": "q3",
+          "scenario": "S2",
+          "status": "PASS",
+          "rows": 48096,
+          "cost_max_error": 1.1652900866465643e-12,
+          "emergency_max_error": 2.3092638912203256e-13,
+          "soc_residual": 4.547473508864641e-12,
+          "continuity_residual": 0.0,
+          "soc_min": 1199.9999999999986,
+          "soc_max": 10800.000000000002,
+          "power_max": 833.3333333333343,
+          "simultaneous_max": 0.0,
+          "start_soc": 6000.0,
+          "end_soc": 6000.0
+        },
+        {
+          "mode": "q3",
+          "scenario": "S3",
+          "status": "PASS",
+          "rows": 48096,
+          "cost_max_error": 1.2505552149377763e-12,
+          "emergency_max_error": 2.5579538487363607e-13,
+          "soc_residual": 4.547473508864641e-12,
+          "continuity_residual": 0.0,
+          "soc_min": 1199.9999999999986,
+          "soc_max": 10800.0,
+          "power_max": 833.3333333333355,
+          "simultaneous_max": 0.0,
+          "start_soc": 6000.0,
+          "end_soc": 6000.0
+        },
+        {
+          "mode": "q4_3",
+          "scenario": "S2",
+          "status": "PASS",
+          "rows": 48096,
+          "cost_max_error": 1.5916157281026244e-12,
+          "emergency_max_error": 2.5579538487363607e-13,
+          "soc_residual": 4.547473508864641e-12,
+          "continuity_residual": 0.0,
+          "soc_min": 1199.9999999999966,
+          "soc_max": 10800.000000000002,
+          "power_max": 833.3333333333336,
+          "simultaneous_max": 0.0,
+          "start_soc": 6000.0,
+          "end_soc": 6000.0
+        },
+        {
+          "mode": "q4_3",
+          "scenario": "S3",
+          "status": "PASS",
+          "rows": 48096,
+          "cost_max_error": 1.5916157281026244e-12,
+          "emergency_max_error": 2.275957200481571e-13,
+          "soc_residual": 4.547473508864641e-12,
+          "continuity_residual": 0.0,
+          "soc_min": 1199.9999999999982,
+          "soc_max": 10800.000000000002,
+          "power_max": 833.3333333333336,
+          "simultaneous_max": 0.0,
+          "start_soc": 6000.0,
+          "end_soc": 6000.0
+        }
+      ]
+    },
+    {
+      "check": "seven_references_and_body_citations",
+      "status": "PASS",
+      "actual": 7
+    }
+  ],
+  "metrics": {
+    "pdf_pages": 100,
+    "docx_tables": 99,
+    "specified_date_groups": 17
+  },
+  "limitations": [
+    "Finite historical scenarios and one-year replays do not guarantee future tail-risk coverage.",
+    "Refund and delivery-time pricing remain declared interpretations.",
+    "Annual alternative-solver checks cover S2 and S3 with a fixed common reference contract; no test-period policy selection.",
+    "Team authorship and manual review are pending; this PASS is not a submission eligibility certificate."
+  ],
+  "submission_readiness": "PENDING_TEAM_MANUAL_REVIEW_AND_RULES_CONFIRMATION",
+  "artifact_hashes": [
+    {
+      "path": "paper/C题论文.docx",
+      "sha256": "3c83515864ce774eff67ede8eb64248b24e8250e5a01885aaf89a4b7bb3911d0"
+    },
+    {
+      "path": "paper/AI工具使用详情.docx",
+      "sha256": "d393448a749a4218ccdbdb062923b7447b6646b543a1c8d66a4d2d78fba5f6a0"
+    },
+    {
+      "path": "paper/C题论文.pdf",
+      "sha256": "ecff358ac0ceba706300ff746e4c95f03bc0f60f89834923b6af238e8f160248"
+    },
+    {
+      "path": "paper/AI工具使用详情.pdf",
+      "sha256": "6bc3ac18ae7675b8a6dba811eacbf25d8406120eb8a9c0cd4341a601a1687850"
+    },
+    {
+      "path": "workbooks/result4-2.xlsx",
+      "sha256": "210c5065ef83c8ac61d3778f47f6a6dbfec4929f21bead781c5315557a2578d8"
+    },
+    {
+      "path": "workbooks/result4-3.xlsx",
+      "sha256": "cb790c50fa5c2d2e5f5f31755479f86c3e4a24f0e1a1668c634eefd17b237f98"
+    },
+    {
+      "path": "workbooks/result2.xlsx",
+      "sha256": "2db29466a1874d6137c0607e6763cfcaabb60bf265049014a60dd0d3dc807262"
+    },
+    {
+      "path": "workbooks/result3.xlsx",
+      "sha256": "be6be4a3c026978e137bb83f25936e043b2540d05edacf2526c88510acbd0093"
+    },
+    {
+      "path": "workbooks/result1.xlsx",
+      "sha256": "540a296e27824b74b617ed3cca2606b19ad1c2220790e5227c3022b4d7e177b6"
+    }
+  ]
+}

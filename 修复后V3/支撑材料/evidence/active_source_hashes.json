@@ -1,0 +1,134 @@
+[
+  {
+    "path": "src/audit/__init__.py",
+    "sha256": "0e5daf34a6792487bce8e142d9f81487b6c2edb4b3ceba6019ce985674182432"
+  },
+  {
+    "path": "src/audit/README.md",
+    "sha256": "6e6bd09ec50835f822a4f083fb345cb727c6f34327d90331029189f373140871"
+  },
+  {
+    "path": "src/audit/audit_final.py",
+    "sha256": "6318fce7aa9336723fb22e8fc194df9b26e970a10c02f0b9e71e3c42b5cf4367"
+  },
+  {
+    "path": "src/model/forecast.py",
+    "sha256": "c148e88935f278fea55cd8aceb86b86781bc37bb2c6e770ae28a01d80cf764bb"
+  },
+  {
+    "path": "src/model/config.py",
+    "sha256": "8f9800ac73bb699fa1d65cd5eea8ea4ac1d8949812fed19f930288b8ad171776"
+  },
+  {
+    "path": "src/model/__init__.py",
+    "sha256": "5cb253a6bf42d59171e8d2a280901387c14f4942303ddd19a8b4b46f3c634cfe"
+  },
+  {
+    "path": "src/model/rolling.py",
+    "sha256": "eab5712bae13320e2c960f9c9c07e55fd6814911ba2899992d56bf06cec3668e"
+  },
+  {
+    "path": "src/model/README.md",
+    "sha256": "c8de3ab41d02b9a2232b39b9f135945b1935a7987286f905d3bb65ec0435c10f"
+  },
+  {
+    "path": "src/model/lp.py",
+    "sha256": "9d84289c658d300124ce3c862359880a407f7a3154db01a65c146581d8d4c6e7"
+  },
+  {
+    "path": "src/model/experiments.py",
+    "sha256": "16629a5fbfac9794b8f5d6a742d636fb988efd59aa8f9229dde00e47e2bb5a05"
+  },
+  {
+    "path": "src/model/cli.py",
+    "sha256": "44f9863d234037e56260c544ac3637b85f5274d451fb9afb65bb968820b6bebf"
+  },
+  {
+    "path": "src/model/risk.py",
+    "sha256": "93a7bf5c1a8572ee99e4098d67ba03fac164fdea33f9ea8198eab654fff0591a"
+  },
+  {
+    "path": "src/model/data.py",
+    "sha256": "192c71b4505cf89305ddda219a898304c607445f32f0a559925ca4496ed24e6c"
+  },
+  {
+    "path": "scripts/analyze_results.py",
+    "sha256": "40e3144113b35b4c7ad68969b78af1beac6d619ec616af748b7e5b15feaeefc1"
+  },
+  {
+    "path": "scripts/write_repair_report.py",
+    "sha256": "c3be81844147eab5040e50396e82cc7ac151b960e444e4f578352e9aef0e72a6"
+  },
+  {
+    "path": "scripts/rebuild_control_details.py",
+    "sha256": "1c634a0c2b71c370ffbd2c7186dda4abea47039e8c612d7b6a0f7da8562afd90"
+  },
+  {
+    "path": "scripts/freeze_codec.py",
+    "sha256": "e02914b278ec089c0d24c9612830fc4ca3504ce315fbb169b8e1dee00399fa45"
+  },
+  {
+    "path": "scripts/final_quality.py",
+    "sha256": "f014445eb34ddd51f5d113b2d48370fb14b9fcfff4ce22dc35aadfe232be5b39"
+  },
+  {
+    "path": "scripts/package_final.py",
+    "sha256": "a3318552522c7eda1848c923e59b87b3f4b5f33a25d97c6d7d33675026385ce6"
+  },
+  {
+    "path": "scripts/write_improvement_report.py",
+    "sha256": "18201ad61edd6c3d0d5064c58762b46e130c266d76e2618d694eab6a389ce618"
+  },
+  {
+    "path": "scripts/build_documents.py",
+    "sha256": "cedb94b106d5a9eacd55d7753cb41a32b2222d08e9ff2284dc2efff480e70be9"
+  },
+  {
+    "path": "scripts/run_model.py",
+    "sha256": "d18883b0bce2bcd10a73e1126443f420fca7b1d31247a3cb9ccaaab0b741b30e"
+  },
+  {
+    "path": "scripts/make_charts.py",
+    "sha256": "c2f3803d727c9d75ad253ae2b9bf5a7d954a529110bac539847f08e97c7f6879"
+  },
+  {
+    "path": "scripts/research_content.py",
+    "sha256": "ab5ee95b15d1f1ee6d4b00ececd9c56b701d930476c6368dd885a9feb81c85d4"
+  },
+  {
+    "path": "scripts/strengthen_evidence.py",
+    "sha256": "7b64dcd4a9fc3bd8b342883f2739275add73444bd1f00846f968811397885d33"
+  },
+  {
+    "path": "scripts/native_equations.py",
+    "sha256": "178b05030cd6abeb1ca97603ddfad843c100387694b29c9a0a789e69cac7b2dd"
+  },
+  {
+    "path": "scripts/competition_checks.py",
+    "sha256": "6842e8294af118e3f923ae4c038c16356057f98d8234297301df1881d296bcba"
+  },
+  {
+    "path": "scripts/build_workbooks.mjs",
+    "sha256": "c5927746622d280f2e7c89dd7669a9965879636a55f8f3340d23ae1151803d88"
+  },
+  {
+    "path": "scripts/unpack_frozen.py",
+    "sha256": "5f709e3aa4097da14c354d5ef1d8f82226c52d41d2f7633ab7ff53b198d3ce29"
+  },
+  {
+    "path": "scripts/paper_content.py",
+    "sha256": "a64bdd16d9e2f314521aa672578924eb4ec4381f2302c29d81eaff82547e7ec0"
+  },
+  {
+    "path": "tests/test_closed_loop.py",
+    "sha256": "1f61a806e5df4a92ca5d11ef707618216086f85e54fd890dc008f11ee5583017"
+  },
+  {
+    "path": "paper/main.md",
+    "sha256": "6fb628397b638270076c36737fff1b419223e1a5bec154a2a19df37d72b795e9"
+  },
+  {
+    "path": "config/final.yaml",
+    "sha256": "49e195de542a215f9483bbae47b362703bd7eeb51177439936b3cecd42c06570"
+  }
+]

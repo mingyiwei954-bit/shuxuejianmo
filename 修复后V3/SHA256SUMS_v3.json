@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T23:28:15.423307+08:00",
+  "generated_at": "2026-09-13T13:21:00.526148+08:00",
   "files": [
     {
       "path": "AI工具使用详情.pdf",
@@ -8,13 +8,18 @@
     },
     {
       "path": "C题论文_v3.docx",
-      "bytes": 545284,
-      "sha256": "3c83515864ce774eff67ede8eb64248b24e8250e5a01885aaf89a4b7bb3911d0"
+      "bytes": 1295445,
+      "sha256": "84d954711cbd63e82f8e963e74fecd518469648c20c3a35709e7283c79603e83"
     },
     {
       "path": "C题论文_v3.pdf",
-      "bytes": 3144201,
-      "sha256": "ecff358ac0ceba706300ff746e4c95f03bc0f60f89834923b6af238e8f160248"
+      "bytes": 2806183,
+      "sha256": "998eb469306a108781e63bcfe570ea689321c2589894038cd09bbb228b2cf3ea"
+    },
+    {
+      "path": "C题附录配套数据与源代码.zip",
+      "bytes": 16490924,
+      "sha256": "caca6f6846ff2ddd928d81264a7c93adda408277e2c6f03391b992b5bea4557c"
     },
     {
       "path": "comparison_stats.csv",
@@ -162,6 +167,11 @@
       "sha256": "908280666846dcb9394921d330766c07eea5055e39d10a7e37bf58eeaab4fbf2"
     },
     {
+      "path": "格式与专业表述逐条审查说明.md",
+      "bytes": 32535,
+      "sha256": "10bbb21429f5782058c2a6d39f23bda664a3d57e7cc005cdae8e82624df04fff"
+    },
+    {
       "path": "解包后独立数值与工作簿复验.json",
       "bytes": 43349,
       "sha256": "a22a3a4dd41783f8e53cc4b23b57b1ca92d5e10059f52f3381baf4b264be77de"
@@ -173,13 +183,13 @@
     },
     {
       "path": "论文逐页检查.json",
-      "bytes": 1036,
-      "sha256": "345c7ed0e14395bac18a514a53e991715c6c2202713acb7cf95677785731fce8"
+      "bytes": 5987,
+      "sha256": "09416a9a3973ab5a8fd1af4bf59c78a0a4b22988b00729767bb0daca05166d88"
     },
     {
       "path": "阅读与提交说明.md",
-      "bytes": 2515,
-      "sha256": "d0710098b7d79d4d4325aa5086c0f183fbeca3cd36922cfb4e63c6192d7c29b5"
+      "bytes": 3380,
+      "sha256": "e8488292ea31d25f6a114afb2598b4a1a780996cf7b24785c59efa6b61d822d2"
     }
   ]
 }

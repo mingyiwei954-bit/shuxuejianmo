@@ -1,0 +1,1634 @@
+[
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 480.41245,
+    "final_grid": 480.41245
+  },
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 445.4316500000001,
+    "final_grid": 445.4316500000001
+  },
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 531.8940499999999,
+    "final_grid": 531.8940499999999
+  },
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 4499.999999999999,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 833.3333333333333,
+    "discharge": 6365.8412
+  },
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 4787.964288065846,
+    "discharge": 1702.9969833333334
+  },
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 5286.035176954732,
+    "discharge": 91.10138333333339
+  },
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.0,
+    "discharge": 5780.1318833333335
+  },
+  {
+    "mode": "q1",
+    "date": "2025-01-01",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5333.333333333333,
+    "discharge": 2859.868116666667
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 662.062754166667,
+    "final_grid": 662.062754166667
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 521.3045375000002,
+    "final_grid": 521.3045375000002
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 701.0510291666668,
+    "final_grid": 701.0510291666668
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 4499.999999999999,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 833.3333333333333,
+    "discharge": 4986.856658333334
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 5898.785420833332,
+    "discharge": 3653.143341666665
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 5481.1265647633745,
+    "discharge": 577.7287083333329
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.0,
+    "discharge": 5666.233979166666
+  },
+  {
+    "mode": "q2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5333.333333333332,
+    "discharge": 2973.7660208333336
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 270.95439166666665,
+    "final_grid": 270.95439166666665
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 925.2726908950594,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 833.3333333333333,
+    "discharge": 2546.3942625000004
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 4007.402412500001,
+    "discharge": 32.766612500000065
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 2796.952123971195,
+    "discharge": 36.837179166666715
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.0,
+    "discharge": 5869.8662
+  },
+  {
+    "mode": "q2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5333.333333333332,
+    "discharge": 2770.1338
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 389.9034250000003,
+    "final_grid": 389.9034250000003
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 495.7207041666667,
+    "final_grid": 495.7207041666667
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 756.8144500000002,
+    "final_grid": 756.8144500000002
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 4499.999999999999,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 833.3333333333333,
+    "discharge": 6370.385604166666
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 5660.48287916667,
+    "discharge": 2269.6143958333346
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 5234.95014038066,
+    "discharge": 185.30074583333317
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.0,
+    "discharge": 5560.628658333332
+  },
+  {
+    "mode": "q2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5333.333333333332,
+    "discharge": 3079.371341666667
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 1060.2059166666672,
+    "final_grid": 1060.2059166666672
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 904.1864375,
+    "final_grid": 904.1864375
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 731.0643625000001,
+    "final_grid": 731.0643625000001
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 4499.999999999999,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 1666.6666666666665,
+    "discharge": 1508.3333333333335
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 5833.333333333333,
+    "discharge": 7806.666666666667
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 8333.333333333332,
+    "discharge": 2834.9999999999986
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.0,
+    "discharge": 5614.819587500002
+  },
+  {
+    "mode": "q2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5333.333333333332,
+    "discharge": 3025.1804125
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 850.5194861111113,
+    "final_grid": 572.921002777778
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 691.5550736111114,
+    "final_grid": 670.3114277777779
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 701.0163347222224,
+    "final_grid": 701.0163347222224
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 4486.8644125,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 833.3333333333333,
+    "discharge": 6288.241338888891
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 5443.171054166667,
+    "discharge": 2351.758661111111
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 6101.97228774005,
+    "discharge": 711.566106944444
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.0,
+    "discharge": 5666.233979166666
+  },
+  {
+    "mode": "q3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5333.333333333333,
+    "discharge": 2973.7660208333327
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 259.59061388888887,
+    "final_grid": 259.59061388888887
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 0.0,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 0.0,
+    "discharge": 4319.999999999999
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 6083.209178172157,
+    "discharge": 9.268219444444526
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 4594.899734722219,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 27.546178635116043,
+    "discharge": 5893.465861777777
+  },
+  {
+    "mode": "q3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5366.1146375,
+    "discharge": 2768.846542916669
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 556.9920805555555,
+    "final_grid": 435.2244361111112
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 697.7418458333332,
+    "final_grid": 697.7418458333332
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 755.3255305555557,
+    "final_grid": 755.3255305555557
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 4469.490479166667,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 832.9685222222224,
+    "discharge": 5845.376020805559
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 6055.958094444442,
+    "discharge": 2821.5470944444437
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 5546.08941584362,
+    "discharge": 757.6584833333329
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 16.647090192045574,
+    "discharge": 5574.112801388887
+  },
+  {
+    "mode": "q3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5357.053895833334,
+    "discharge": 3079.371341666666
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 1006.9192069444446,
+    "final_grid": 1006.9192069444446
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 965.4095430555554,
+    "final_grid": 965.4095430555554
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 731.0633402777779,
+    "final_grid": 731.0633402777779
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 4475.265845833333,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 1647.917422222222,
+    "discharge": 1600.461133666666
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 5833.333333333333,
+    "discharge": 7465.690387722223
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 8213.126853309328,
+    "discharge": 2975.9721594583325
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.4946502057605862,
+    "discharge": 5614.819587500001
+  },
+  {
+    "mode": "q3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5362.947570833333,
+    "discharge": 3025.1804124999994
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 662.062754166667,
+    "final_grid": 662.062754166667
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 521.3045375000002,
+    "final_grid": 521.3045375000002
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 701.0510291666668,
+    "final_grid": 701.0510291666668
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 3333.333333333333,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 2833.333333333333,
+    "discharge": 5283.2857791666665
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 5898.785420833332,
+    "discharge": 3704.897170833333
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 5101.5337869855975,
+    "discharge": 597.0756083333332
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.0,
+    "discharge": 5666.233979166665
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5333.333333333333,
+    "discharge": 2973.7660208333336
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 270.95439166666665,
+    "final_grid": 270.95439166666665
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 496.1851375000001,
+    "final_grid": 496.1851375000001
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 0.0,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 2247.6358648148116,
+    "discharge": 2559.557916666667
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 4303.042195833335,
+    "discharge": 40.19684166666707
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 2062.8868364711943,
+    "discharge": 57.232808333333764
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.0,
+    "discharge": 5869.866199999999
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 6263.5118312757195,
+    "discharge": 3523.5783833333335
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 389.9034250000003,
+    "final_grid": 389.9034250000003
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 495.7207041666667,
+    "final_grid": 495.7207041666667
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 5333.333333333333,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 0.0,
+    "discharge": 6352.933475
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 5691.222937499999,
+    "discharge": 2287.066525000001
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 5038.16017978395,
+    "discharge": 50.80032500000016
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.0,
+    "discharge": 6312.699491666666
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5333.333333333333,
+    "discharge": 2327.3005083333333
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 1060.2059166666672,
+    "final_grid": 1060.2059166666672
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 904.1864375,
+    "final_grid": 904.1864375
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 731.0643625000001,
+    "final_grid": 731.0643625000001
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 5333.333333333333,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 0.0,
+    "discharge": 833.3333333333334
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 5833.333333333333,
+    "discharge": 7806.666666666668
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 8696.695056584364,
+    "discharge": 3129.3229958333336
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.0,
+    "discharge": 5614.819587500002
+  },
+  {
+    "mode": "q4_2",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5333.333333333333,
+    "discharge": 3025.1804125
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 850.5194861111113,
+    "final_grid": 570.8778472222222
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 309.14261805555543,
+    "final_grid": -0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 691.5550736111114,
+    "final_grid": 687.3113708333333
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 701.0163347222224,
+    "final_grid": 701.0163347222224
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 3333.333333333333,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 2000.0,
+    "discharge": 6278.966223611111
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 5443.171054166667,
+    "discharge": 2361.0337763888892
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 6101.972287740051,
+    "discharge": 711.566106944444
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.0,
+    "discharge": 5666.233979166665
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-03-20",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5328.5293875,
+    "discharge": 2976.6885208333333
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 259.59061388888887,
+    "final_grid": 259.59061388888887
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 572.3498166666668,
+    "final_grid": 572.3498166666668
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 0.0,
+    "discharge": 3540.385163805556
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 1669.7949666666664,
+    "discharge": 2099.7834069444443
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 6083.209178172157,
+    "discharge": 9.268219444444526
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 4594.899734722219,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 27.546178635116043,
+    "discharge": 5892.175742194444
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-06-21",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 6263.5118312757195,
+    "discharge": 3521.6216625
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 66.33087777777791,
+    "final_grid": -0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 556.9920805555555,
+    "final_grid": 435.2244361111112
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 211.4517097222224,
+    "final_grid": 157.58290972222198
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 697.7418458333332,
+    "final_grid": 697.7418458333332
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 5333.333333333333,
+    "discharge": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 0.0,
+    "discharge": 5987.996925000002
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 6042.817055555553,
+    "discharge": 2652.0030749999996
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 5200.640374142661,
+    "discharge": 467.20051805555556
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 14.289362294239355,
+    "discharge": 6324.273875124998
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-09-23",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5333.333333333333,
+    "discharge": 2327.3005083333333
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "10:00-10:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "12:00-12:10",
+    "plan_grid": 1006.9192069444446,
+    "final_grid": 1006.9192069444446
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "14:00-14:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "16:00-16:10",
+    "plan_grid": 965.4095430555554,
+    "final_grid": 965.4095430555554
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "18:00-18:10",
+    "plan_grid": 731.0633402777779,
+    "final_grid": 731.0633402777779
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "ten_minute",
+    "key": "20:00-20:10",
+    "plan_grid": 0.0,
+    "final_grid": 0.0
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "0:00-4:00",
+    "charge": 5314.133048508229,
+    "discharge": 0.7858333333333576
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "4:00-8:00",
+    "charge": 0.0,
+    "discharge": 938.9770500000008
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "8:00-12:00",
+    "charge": 5833.333333333333,
+    "discharge": 7462.153836680553
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "12:00-16:00",
+    "charge": 8211.202450102879,
+    "discharge": 2975.3437645694426
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "16:00-20:00",
+    "charge": 0.4946502057613441,
+    "discharge": 5614.819587500001
+  },
+  {
+    "mode": "q4_3",
+    "date": "2025-12-21",
+    "kind": "four_hour",
+    "key": "20:00-24:00",
+    "charge": 5343.683154166666,
+    "discharge": 3025.1804125
+  }
+]

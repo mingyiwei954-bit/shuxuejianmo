@@ -1,23 +1,309 @@
 {
-  "generated_at": "2026-09-12T23:26:39.450421+08:00",
-  "paper_pages_reviewed": 100,
-  "ai_detail_pages_reviewed": 2,
-  "method": "Rendered every page; inspected contact sheets and changed page at full size. Latest 99 page PNGs are byte-identical to reviewed release; page 78 re-inspected after audit source change.",
-  "scope": "layout and legibility, not human mathematical authorship signoff",
-  "findings": [
-    "Abstract occupies first page; body and references occupy pages 2-15.",
-    "All 17 specified result groups remain readable with repeated table headers.",
-    "No clipped figures, equations, table cells or source lines observed.",
-    "Complete-source appendix has 32 exact source files; code wraps for display."
+  "pages": 113,
+  "tables": 99,
+  "figures": 5,
+  "native_equations": 12,
+  "table_caption_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99
   ],
-  "artifacts": [
+  "continuous_table_numbers": true,
+  "figure_caption_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "continuous_figure_numbers": true,
+  "numeric_cells_missing_from_pdf": [],
+  "tables_without_exact_single_page_text_match": [],
+  "a4_all_pages": true,
+  "margins_cm": [
     {
-      "path": "paper/C题论文.pdf",
-      "sha256": "ecff358ac0ceba706300ff746e4c95f03bc0f60f89834923b6af238e8f160248"
+      "top": 2.499,
+      "bottom": 2.499,
+      "left": 2.499,
+      "right": 2.499
+    }
+  ],
+  "blank_pages": [],
+  "anonymity_text_hits": [],
+  "author_metadata_blank": true,
+  "ai_statement_unchanged": true,
+  "source_files": [
+    {
+      "file": "config/final.yaml",
+      "exists": true,
+      "hash_matches_original_paper": true
     },
     {
-      "path": "paper/AI工具使用详情.pdf",
-      "sha256": "6bc3ac18ae7675b8a6dba811eacbf25d8406120eb8a9c0cd4341a601a1687850"
+      "file": "requirements.txt",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "run_pipeline.sh",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/analyze_results.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/build_documents.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/build_workbooks.mjs",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/competition_checks.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/final_quality.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/freeze_codec.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/make_charts.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/native_equations.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/package_final.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/paper_content.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/rebuild_control_details.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/research_content.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/run_model.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/strengthen_evidence.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/unpack_frozen.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/write_improvement_report.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "scripts/write_repair_report.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "src/audit/__init__.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "src/audit/audit_final.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "src/model/__init__.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "src/model/cli.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "src/model/config.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "src/model/data.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "src/model/experiments.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "src/model/forecast.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "src/model/lp.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "src/model/risk.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "src/model/rolling.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    },
+    {
+      "file": "tests/test_closed_loop.py",
+      "exists": true,
+      "hash_matches_original_paper": true
+    }
+  ],
+  "sha256_docx": "84d954711cbd63e82f8e963e74fecd518469648c20c3a35709e7283c79603e83",
+  "sha256_pdf": "998eb469306a108781e63bcfe570ea689321c2589894038cd09bbb228b2cf3ea",
+  "generated_at": "2026-09-13T13:21:00.526148+08:00",
+  "paper_pages_reviewed": 113,
+  "method": "逐页查看全部113页；附录标题最终调整后复查第14、34、113页，其余110页图像SHA256与已检查页一致。",
+  "scope": "格式、可读性和文本数值保留检查；未重新运行年度模型；AI说明暂缓。",
+  "artifacts": [
+    {
+      "path": "C题论文_v3.docx",
+      "sha256": "84d954711cbd63e82f8e963e74fecd518469648c20c3a35709e7283c79603e83"
+    },
+    {
+      "path": "C题论文_v3.pdf",
+      "sha256": "998eb469306a108781e63bcfe570ea689321c2589894038cd09bbb228b2cf3ea"
     }
   ]
 }

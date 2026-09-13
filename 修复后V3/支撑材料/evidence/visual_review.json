@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-09-12T23:26:39.450421+08:00",
+  "paper_pages_reviewed": 100,
+  "ai_detail_pages_reviewed": 2,
+  "method": "Rendered every page; inspected contact sheets and changed page at full size. Latest 99 page PNGs are byte-identical to reviewed release; page 78 re-inspected after audit source change.",
+  "scope": "layout and legibility, not human mathematical authorship signoff",
+  "findings": [
+    "Abstract occupies first page; body and references occupy pages 2-15.",
+    "All 17 specified result groups remain readable with repeated table headers.",
+    "No clipped figures, equations, table cells or source lines observed.",
+    "Complete-source appendix has 32 exact source files; code wraps for display."
+  ],
+  "artifacts": [
+    {
+      "path": "paper/C题论文.pdf",
+      "sha256": "ecff358ac0ceba706300ff746e4c95f03bc0f60f89834923b6af238e8f160248"
+    },
+    {
+      "path": "paper/AI工具使用详情.pdf",
+      "sha256": "6bc3ac18ae7675b8a6dba811eacbf25d8406120eb8a9c0cd4341a601a1687850"
+    }
+  ]
+}

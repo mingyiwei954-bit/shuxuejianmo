@@ -1,0 +1,34 @@
+{
+  "role": "post_selection_diagnostic; no policy replacement",
+  "methods": [
+    "highs (existing frozen run)",
+    "highs-ipm"
+  ],
+  "modes": [
+    "q3",
+    "q4_3"
+  ],
+  "schedules": [
+    "S2",
+    "S3"
+  ],
+  "period": [
+    "2025-02-01",
+    "2025-12-31"
+  ],
+  "initial_soc": 6000,
+  "common_plan": "existing S0 reference plan, fixed across all methods and schedules",
+  "selection": "January-selected configuration is frozen; all four IPM runs reported",
+  "recorded_at": "2026-09-12T23:10:05+0800",
+  "source_hashes": {
+    "src/model/forecast.py": "c148e88935f278fea55cd8aceb86b86781bc37bb2c6e770ae28a01d80cf764bb",
+    "src/model/config.py": "8f9800ac73bb699fa1d65cd5eea8ea4ac1d8949812fed19f930288b8ad171776",
+    "src/model/__init__.py": "5cb253a6bf42d59171e8d2a280901387c14f4942303ddd19a8b4b46f3c634cfe",
+    "src/model/rolling.py": "eab5712bae13320e2c960f9c9c07e55fd6814911ba2899992d56bf06cec3668e",
+    "src/model/lp.py": "9d84289c658d300124ce3c862359880a407f7a3154db01a65c146581d8d4c6e7",
+    "src/model/experiments.py": "16629a5fbfac9794b8f5d6a742d636fb988efd59aa8f9229dde00e47e2bb5a05",
+    "src/model/cli.py": "44f9863d234037e56260c544ac3637b85f5274d451fb9afb65bb968820b6bebf",
+    "src/model/risk.py": "93a7bf5c1a8572ee99e4098d67ba03fac164fdea33f9ea8198eab654fff0591a",
+    "src/model/data.py": "192c71b4505cf89305ddda219a898304c607445f32f0a559925ca4496ed24e6c"
+  }
+}
